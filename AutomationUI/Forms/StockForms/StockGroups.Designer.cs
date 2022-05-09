@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockGroups));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.myTextEdit1 = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.myPrivateCodeTextEdit1 = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
+            this.txtGroupName = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.txtGroupCode = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.lblGroupCode = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
@@ -41,14 +41,14 @@
             this.colGroupCode = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colGroupName = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.btnUpdate = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnExit = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnDelete = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnSave = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.btnUpdate = new AutomationUI.UserControls.Controls.MySimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myPrivateCodeTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGroupName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGroupCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlStockGroups)).BeginInit();
@@ -59,8 +59,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.myTextEdit1);
-            this.groupControl1.Controls.Add(this.myPrivateCodeTextEdit1);
+            this.groupControl1.Controls.Add(this.txtGroupName);
+            this.groupControl1.Controls.Add(this.txtGroupCode);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.lblGroupCode);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -70,31 +70,31 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Group Informations";
             // 
-            // myTextEdit1
+            // txtGroupName
             // 
-            this.myTextEdit1.EnterMoveNextControl = true;
-            this.myTextEdit1.Location = new System.Drawing.Point(95, 73);
-            this.myTextEdit1.Name = "myTextEdit1";
-            this.myTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myTextEdit1.Properties.MaxLength = 50;
-            this.myTextEdit1.Size = new System.Drawing.Size(215, 20);
-            this.myTextEdit1.TabIndex = 3;
+            this.txtGroupName.EnterMoveNextControl = true;
+            this.txtGroupName.Location = new System.Drawing.Point(95, 73);
+            this.txtGroupName.Name = "txtGroupName";
+            this.txtGroupName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtGroupName.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtGroupName.Properties.MaxLength = 50;
+            this.txtGroupName.Size = new System.Drawing.Size(215, 20);
+            this.txtGroupName.TabIndex = 3;
             // 
-            // myPrivateCodeTextEdit1
+            // txtGroupCode
             // 
-            this.myPrivateCodeTextEdit1.EnterMoveNextControl = true;
-            this.myPrivateCodeTextEdit1.Location = new System.Drawing.Point(95, 41);
-            this.myPrivateCodeTextEdit1.Name = "myPrivateCodeTextEdit1";
-            this.myPrivateCodeTextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.myPrivateCodeTextEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.myPrivateCodeTextEdit1.Properties.Appearance.Options.UseTextOptions = true;
-            this.myPrivateCodeTextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.myPrivateCodeTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myPrivateCodeTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myPrivateCodeTextEdit1.Properties.MaxLength = 20;
-            this.myPrivateCodeTextEdit1.Size = new System.Drawing.Size(215, 20);
-            this.myPrivateCodeTextEdit1.TabIndex = 2;
+            this.txtGroupCode.EnterMoveNextControl = true;
+            this.txtGroupCode.Location = new System.Drawing.Point(95, 41);
+            this.txtGroupCode.Name = "txtGroupCode";
+            this.txtGroupCode.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.txtGroupCode.Properties.Appearance.Options.UseBackColor = true;
+            this.txtGroupCode.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtGroupCode.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtGroupCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtGroupCode.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtGroupCode.Properties.MaxLength = 20;
+            this.txtGroupCode.Size = new System.Drawing.Size(215, 20);
+            this.txtGroupCode.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -170,7 +170,7 @@
             // colGroupId
             // 
             this.colGroupId.Caption = "ID";
-            this.colGroupId.FieldName = "Id";
+            this.colGroupId.FieldName = "GroupId";
             this.colGroupId.Name = "colGroupId";
             this.colGroupId.OptionsColumn.AllowEdit = false;
             // 
@@ -206,6 +206,17 @@
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "groupControl3";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.btnUpdate.Appearance.Options.UseForeColor = true;
+            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
+            this.btnUpdate.Location = new System.Drawing.Point(98, 15);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(79, 42);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Update";
+            // 
             // btnExit
             // 
             this.btnExit.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -238,17 +249,7 @@
             this.btnSave.Size = new System.Drawing.Size(79, 42);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.btnUpdate.Appearance.Options.UseForeColor = true;
-            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(98, 15);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(79, 42);
-            this.btnUpdate.TabIndex = 3;
-            this.btnUpdate.Text = "Update";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // StockGroups
             // 
@@ -263,11 +264,12 @@
             this.MinimizeBox = false;
             this.Name = "StockGroups";
             this.Text = "Stock Groups";
+            this.Load += new System.EventHandler(this.StockGroups_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myPrivateCodeTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGroupName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGroupCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlStockGroups)).EndInit();
@@ -281,8 +283,8 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private UserControls.Controls.MyTextEdit myTextEdit1;
-        private UserControls.Controls.MyPrivateCodeTextEdit myPrivateCodeTextEdit1;
+        private UserControls.Controls.MyTextEdit txtGroupName;
+        private UserControls.Controls.MyPrivateCodeTextEdit txtGroupCode;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl lblGroupCode;
         private DevExpress.XtraEditors.GroupControl groupControl2;

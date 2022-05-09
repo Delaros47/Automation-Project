@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
-    <Folder Include="Concrete\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Universal\Universal.csproj" />
   </ItemGroup>
 
 </Project>

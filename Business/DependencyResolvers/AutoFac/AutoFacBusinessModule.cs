@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
+using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 
 namespace Business.DependencyResolvers.AutoFac
 {
@@ -11,7 +15,11 @@ namespace Business.DependencyResolvers.AutoFac
     {
         protected override void Load(ContainerBuilder builder)
         {
-            
+            builder.RegisterType<StockGroupManager>().As<IStockGroupService>().SingleInstance();
+            builder.RegisterType<EfStockGroupDal>().As<IStockGroupDal>().SingleInstance();
+
+
+
         }
     }
 }

@@ -11,7 +11,7 @@ namespace AutomationUI
         {
 
             ApplicationConfiguration.Initialize();
-            Application.Run(new StockCard());
+            Application.Run(new MainForm());
         }
     }
 }

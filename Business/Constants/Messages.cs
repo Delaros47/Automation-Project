@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using DevExpress.Utils;
 
 namespace Business.Constants
 {
@@ -34,6 +37,12 @@ namespace Business.Constants
             }
 
             return result;
+        }
+
+        public static void MessageBoxAdded(string content,string title)
+        {
+           // XtraMessageBox.Show(content,title, MessageBoxButtons.OK,MessageBoxIcon.Information);
+
         }
 
 
