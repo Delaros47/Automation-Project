@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class StockGroup:IEntity
     {
-
+        [System.ComponentModel.DataAnnotations.Key]
         public int GroupId { get; set; }
         public string GroupName { get; set; }
         public string GroupCode { get; set; }

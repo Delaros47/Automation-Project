@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Business.Abstract;
 using Business.DependencyResolvers.AutoFac;
 using Entities.Concrete;
+using AutomationUI.Functions;
 
 namespace AutomationUI.Forms.StockForms
 {
@@ -45,11 +46,55 @@ namespace AutomationUI.Forms.StockForms
 
             if (result.Success)
             {
-                XtraMessageBox.Show(result.Message, "Adding a new Stock Group", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
+                MyMessageBox.Add(result.Message);
                 GetAllStockGroups();
+                Clean();
             }
 
+        }
+
+        private void Clean()
+        {
+            txtGroupCode.Text = "";
+            txtGroupName.Text = "";
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            var result = _stockGroupService.Update(new StockGroup
+            {
+                GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("GroupId").ToString()),
+                GroupCode = txtGroupCode.Text,
+                GroupName = txtGroupName.Text,
+                GroupEditDate = DateTime.Now,
+                GroupEditUser = MainForm.UserId
+            });
+            if (result.Success)
+            {
+                MyMessageBox.Update(result.Message);
+                GetAllStockGroups();
+                Clean();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+           
+            var result = _stockGroupService.Delete(new StockGroup
+            {
+                GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("GroupId").ToString())
+            });
+            if (result.Success)
+            {
+                MyMessageBox.Delete(result.Message);
+                GetAllStockGroups();
+                Clean();
+            }
         }
     }
 }

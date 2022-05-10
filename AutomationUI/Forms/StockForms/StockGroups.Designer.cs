@@ -66,14 +66,14 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(354, 109);
+            this.groupControl1.Size = new System.Drawing.Size(354, 97);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Group Informations";
             // 
             // txtGroupName
             // 
             this.txtGroupName.EnterMoveNextControl = true;
-            this.txtGroupName.Location = new System.Drawing.Point(95, 73);
+            this.txtGroupName.Location = new System.Drawing.Point(95, 68);
             this.txtGroupName.Name = "txtGroupName";
             this.txtGroupName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtGroupName.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -98,7 +98,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(13, 73);
+            this.labelControl2.Location = new System.Drawing.Point(13, 68);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(59, 13);
             this.labelControl2.TabIndex = 1;
@@ -117,7 +117,7 @@
             this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupControl2.Controls.Add(this.gridControlStockGroups);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl2.Location = new System.Drawing.Point(0, 109);
+            this.groupControl2.Location = new System.Drawing.Point(0, 97);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(354, 259);
             this.groupControl2.TabIndex = 1;
@@ -182,6 +182,7 @@
             this.colGroupCode.OptionsColumn.AllowEdit = false;
             this.colGroupCode.Visible = true;
             this.colGroupCode.VisibleIndex = 0;
+            this.colGroupCode.Width = 160;
             // 
             // colGroupName
             // 
@@ -191,6 +192,7 @@
             this.colGroupName.OptionsColumn.AllowEdit = false;
             this.colGroupName.Visible = true;
             this.colGroupName.VisibleIndex = 1;
+            this.colGroupName.Width = 160;
             // 
             // groupControl3
             // 
@@ -200,9 +202,9 @@
             this.groupControl3.Controls.Add(this.btnDelete);
             this.groupControl3.Controls.Add(this.btnSave);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl3.Location = new System.Drawing.Point(0, 368);
+            this.groupControl3.Location = new System.Drawing.Point(0, 356);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(354, 74);
+            this.groupControl3.Size = new System.Drawing.Size(354, 68);
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "groupControl3";
             // 
@@ -216,6 +218,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(79, 42);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnExit
             // 
@@ -227,6 +230,7 @@
             this.btnExit.Size = new System.Drawing.Size(79, 42);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
@@ -238,6 +242,7 @@
             this.btnDelete.Size = new System.Drawing.Size(79, 42);
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -255,7 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 442);
+            this.ClientSize = new System.Drawing.Size(354, 424);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
