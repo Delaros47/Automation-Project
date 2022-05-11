@@ -123,33 +123,45 @@ namespace AutomationUI.Forms.StockForms
         {
             StockGroupsForm stockgroupsForm = new StockGroupsForm();
             stockgroupsForm.ShowDialog();
-            var result = _stockGroupService.Get(GroupId);
-            if (result.Success)
+            if (GroupId != -1)
             {
-                btnGroupCode.Text = result.Data.GroupCode;
-                txtGroupName.Text = result.Data.GroupName;
+                var result = _stockGroupService.Get(GroupId);
+                if (result.Success)
+                {
+                    btnGroupCode.Text = result.Data.GroupCode;
+                    txtGroupName.Text = result.Data.GroupName;
+                }
             }
 
+
         }
-        
+
         private void btnStockCode_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             StockListsForm stockListsForm = new StockListsForm();
             stockListsForm.ShowDialog();
-            var result = _stockService.Get(StockId);
-            var group = _stockGroupService.Get(result.Data.GroupId);
-            if (result.Success)
+            if (StockId != -1)
             {
-                btnStockCode.Text = result.Data.StockCode;
-                txtPurchasePrice.Text = result.Data.StockPurchasePrice.ToString();
-                txtPurchaseVat.Text = result.Data.StockPurchaseVAT.ToString();
-                txtSalePrice.Text = result.Data.StockSalePrice.ToString();
-                txtSaleVAT.Text = result.Data.StockSaleVAT.ToString();
-                txtStockBarcode.Text = result.Data.StockBarcode;
-                txtStockName.Text = result.Data.StockName;
-                btnGroupCode.Text = group.Data.GroupCode;
-                txtGroupName.Text = group.Data.GroupName;
+                var result = _stockService.Get(StockId);
+                var group = _stockGroupService.Get(result.Data.GroupId);
+                if (result.Success)
+                {
+                    btnStockCode.Text = result.Data.StockCode;
+                    txtPurchasePrice.Text = result.Data.StockPurchasePrice.ToString();
+                    txtPurchaseVat.Text = result.Data.StockPurchaseVAT.ToString();
+                    txtSalePrice.Text = result.Data.StockSalePrice.ToString();
+                    txtSaleVAT.Text = result.Data.StockSaleVAT.ToString();
+                    txtStockBarcode.Text = result.Data.StockBarcode;
+                    txtStockName.Text = result.Data.StockName;
+                    btnGroupCode.Text = group.Data.GroupCode;
+                    txtGroupName.Text = group.Data.GroupName;
+                    using (MemoryStream memoryStream = new MemoryStream((byte[])result.Data.StockImage))
+                    {
+                        pictureEditStock.Image = Image.FromStream(memoryStream);
+                    }
+                }
             }
+
         }
     }
 }

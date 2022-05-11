@@ -98,13 +98,13 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(803, 100);
+            this.groupControl1.Size = new System.Drawing.Size(747, 142);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Main Stock Information";
             // 
             // btnStockCode
             // 
-            this.btnStockCode.Location = new System.Drawing.Point(121, 40);
+            this.btnStockCode.Location = new System.Drawing.Point(121, 59);
             this.btnStockCode.Name = "btnStockCode";
             this.btnStockCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.btnStockCode.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -126,13 +126,13 @@
             this.pictureEditStock.Properties.NullText = "No Picture";
             this.pictureEditStock.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEditStock.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEditStock.Size = new System.Drawing.Size(100, 65);
+            this.pictureEditStock.Size = new System.Drawing.Size(100, 100);
             this.pictureEditStock.TabIndex = 2;
             // 
             // txtStockName
             // 
             this.txtStockName.EnterMoveNextControl = true;
-            this.txtStockName.Location = new System.Drawing.Point(121, 65);
+            this.txtStockName.Location = new System.Drawing.Point(121, 84);
             this.txtStockName.Name = "txtStockName";
             this.txtStockName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtStockName.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -142,7 +142,7 @@
             // 
             // lblStockName
             // 
-            this.lblStockName.Location = new System.Drawing.Point(40, 72);
+            this.lblStockName.Location = new System.Drawing.Point(40, 91);
             this.lblStockName.Name = "lblStockName";
             this.lblStockName.Size = new System.Drawing.Size(56, 13);
             this.lblStockName.TabIndex = 1;
@@ -150,7 +150,7 @@
             // 
             // lblStockCode
             // 
-            this.lblStockCode.Location = new System.Drawing.Point(40, 43);
+            this.lblStockCode.Location = new System.Drawing.Point(40, 62);
             this.lblStockCode.Name = "lblStockCode";
             this.lblStockCode.Size = new System.Drawing.Size(54, 13);
             this.lblStockCode.TabIndex = 0;
@@ -163,9 +163,9 @@
             this.groupControl2.Controls.Add(this.groupControl5);
             this.groupControl2.Controls.Add(this.groupControl4);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl2.Location = new System.Drawing.Point(0, 100);
+            this.groupControl2.Location = new System.Drawing.Point(0, 142);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(803, 295);
+            this.groupControl2.Size = new System.Drawing.Size(747, 258);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "General Stock Information";
             // 
@@ -175,7 +175,7 @@
             this.groupControl7.Controls.Add(this.txtPurchaseVat);
             this.groupControl7.Controls.Add(this.lblSaleVAT);
             this.groupControl7.Controls.Add(this.lblPurchaseVAT);
-            this.groupControl7.Location = new System.Drawing.Point(422, 169);
+            this.groupControl7.Location = new System.Drawing.Point(378, 140);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.Size = new System.Drawing.Size(364, 108);
             this.groupControl7.TabIndex = 3;
@@ -225,7 +225,7 @@
             this.groupControl6.Controls.Add(this.lblSalePrice);
             this.groupControl6.Controls.Add(this.txtPurchasePrice);
             this.groupControl6.Controls.Add(this.lblPurchasePrice);
-            this.groupControl6.Location = new System.Drawing.Point(422, 41);
+            this.groupControl6.Location = new System.Drawing.Point(378, 26);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.Size = new System.Drawing.Size(364, 108);
             this.groupControl6.TabIndex = 2;
@@ -281,7 +281,7 @@
             this.groupControl5.Controls.Add(this.labelControl1);
             this.groupControl5.Controls.Add(this.cmbStockUnit);
             this.groupControl5.Controls.Add(this.lblUnit);
-            this.groupControl5.Location = new System.Drawing.Point(28, 169);
+            this.groupControl5.Location = new System.Drawing.Point(5, 140);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(364, 108);
             this.groupControl5.TabIndex = 1;
@@ -339,7 +339,7 @@
             this.groupControl4.Controls.Add(this.btnGroupCode);
             this.groupControl4.Controls.Add(this.lblGroupName);
             this.groupControl4.Controls.Add(this.lblGroupCode);
-            this.groupControl4.Location = new System.Drawing.Point(28, 41);
+            this.groupControl4.Location = new System.Drawing.Point(5, 26);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Size = new System.Drawing.Size(364, 108);
             this.groupControl4.TabIndex = 0;
@@ -394,9 +394,9 @@
             this.groupControl3.Controls.Add(this.btnUpdate);
             this.groupControl3.Controls.Add(this.btnSave);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl3.Location = new System.Drawing.Point(0, 395);
+            this.groupControl3.Location = new System.Drawing.Point(0, 400);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(803, 66);
+            this.groupControl3.Size = new System.Drawing.Size(747, 53);
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "groupControl3";
             // 
@@ -405,7 +405,7 @@
             this.btnExit.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnExit.Appearance.Options.UseForeColor = true;
             this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
-            this.btnExit.Location = new System.Drawing.Point(693, 14);
+            this.btnExit.Location = new System.Drawing.Point(645, 6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(92, 41);
             this.btnExit.TabIndex = 3;
@@ -417,7 +417,7 @@
             this.btnDelete.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnDelete.Appearance.Options.UseForeColor = true;
             this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(596, 14);
+            this.btnDelete.Location = new System.Drawing.Point(548, 6);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(92, 41);
             this.btnDelete.TabIndex = 2;
@@ -429,7 +429,7 @@
             this.btnUpdate.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnUpdate.Appearance.Options.UseForeColor = true;
             this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(500, 14);
+            this.btnUpdate.Location = new System.Drawing.Point(452, 6);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(92, 41);
             this.btnUpdate.TabIndex = 1;
@@ -441,7 +441,7 @@
             this.btnSave.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnSave.Appearance.Options.UseForeColor = true;
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.Location = new System.Drawing.Point(402, 14);
+            this.btnSave.Location = new System.Drawing.Point(354, 6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(92, 41);
             this.btnSave.TabIndex = 0;
@@ -452,7 +452,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 461);
+            this.ClientSize = new System.Drawing.Size(747, 453);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);

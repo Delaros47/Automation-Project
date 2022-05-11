@@ -35,8 +35,14 @@
             this.barBtnStockLists = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnStockGroups = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnStockMovements = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.barBtnCustomerCard = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCustomerGroups = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCustomerLists = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCustomerMovements = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageStocks = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageCustomers = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroupCustomers = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
@@ -47,17 +53,22 @@
             this.ribbonControlAutomation.ExpandCollapseItem.Id = 0;
             this.ribbonControlAutomation.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControlAutomation.ExpandCollapseItem,
+            this.ribbonControlAutomation.SearchEditItem,
             this.barBtnStockCard,
             this.barBtnStockLists,
             this.barBtnStockGroups,
             this.barBtnStockMovements,
-            this.ribbonControlAutomation.SearchEditItem});
+            this.barBtnCustomerCard,
+            this.barBtnCustomerGroups,
+            this.barBtnCustomerLists,
+            this.barBtnCustomerMovements});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 5;
+            this.ribbonControlAutomation.MaxItemId = 9;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControlAutomation.Size = new System.Drawing.Size(973, 158);
+            this.ribbonPageStocks,
+            this.ribbonPageCustomers});
+            this.ribbonControlAutomation.Size = new System.Drawing.Size(1498, 158);
             // 
             // barBtnStockCard
             // 
@@ -87,12 +98,40 @@
             this.barBtnStockMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnStockMovements.ImageOptions.LargeImage")));
             this.barBtnStockMovements.Name = "barBtnStockMovements";
             // 
-            // ribbonPage1
+            // barBtnCustomerCard
             // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.barBtnCustomerCard.Caption = "Customer Card";
+            this.barBtnCustomerCard.Id = 5;
+            this.barBtnCustomerCard.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCustomerCard.ImageOptions.LargeImage")));
+            this.barBtnCustomerCard.Name = "barBtnCustomerCard";
+            // 
+            // barBtnCustomerGroups
+            // 
+            this.barBtnCustomerGroups.Caption = "Customer Groups";
+            this.barBtnCustomerGroups.Id = 6;
+            this.barBtnCustomerGroups.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCustomerGroups.ImageOptions.LargeImage")));
+            this.barBtnCustomerGroups.Name = "barBtnCustomerGroups";
+            // 
+            // barBtnCustomerLists
+            // 
+            this.barBtnCustomerLists.Caption = "Customer Lists";
+            this.barBtnCustomerLists.Id = 7;
+            this.barBtnCustomerLists.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCustomerLists.ImageOptions.LargeImage")));
+            this.barBtnCustomerLists.Name = "barBtnCustomerLists";
+            // 
+            // barBtnCustomerMovements
+            // 
+            this.barBtnCustomerMovements.Caption = "Customer Movements";
+            this.barBtnCustomerMovements.Id = 8;
+            this.barBtnCustomerMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCustomerMovements.ImageOptions.LargeImage")));
+            this.barBtnCustomerMovements.Name = "barBtnCustomerMovements";
+            // 
+            // ribbonPageStocks
+            // 
+            this.ribbonPageStocks.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Stock";
+            this.ribbonPageStocks.Name = "ribbonPageStocks";
+            this.ribbonPageStocks.Text = "Stocks";
             // 
             // ribbonPageGroup1
             // 
@@ -103,6 +142,22 @@
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Stock Transections";
             // 
+            // ribbonPageCustomers
+            // 
+            this.ribbonPageCustomers.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroupCustomers});
+            this.ribbonPageCustomers.Name = "ribbonPageCustomers";
+            this.ribbonPageCustomers.Text = "Customers";
+            // 
+            // ribbonPageGroupCustomers
+            // 
+            this.ribbonPageGroupCustomers.ItemLinks.Add(this.barBtnCustomerCard);
+            this.ribbonPageGroupCustomers.ItemLinks.Add(this.barBtnCustomerGroups);
+            this.ribbonPageGroupCustomers.ItemLinks.Add(this.barBtnCustomerLists);
+            this.ribbonPageGroupCustomers.ItemLinks.Add(this.barBtnCustomerMovements);
+            this.ribbonPageGroupCustomers.Name = "ribbonPageGroupCustomers";
+            this.ribbonPageGroupCustomers.Text = "Customer Process";
+            // 
             // xtraTabbedMdiManager
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
@@ -111,13 +166,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 764);
+            this.ClientSize = new System.Drawing.Size(1498, 799);
             this.Controls.Add(this.ribbonControlAutomation);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
             this.Ribbon = this.ribbonControlAutomation;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Automation";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();
             this.ResumeLayout(false);
@@ -126,7 +181,7 @@
         }
 
         #endregion
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageStocks;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem barBtnStockCard;
         private DevExpress.XtraBars.BarButtonItem barBtnStockLists;
@@ -134,5 +189,11 @@
         private DevExpress.XtraBars.BarButtonItem barBtnStockMovements;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
         public DevExpress.XtraBars.Ribbon.RibbonControl ribbonControlAutomation;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageCustomers;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupCustomers;
+        private DevExpress.XtraBars.BarButtonItem barBtnCustomerCard;
+        private DevExpress.XtraBars.BarButtonItem barBtnCustomerGroups;
+        private DevExpress.XtraBars.BarButtonItem barBtnCustomerLists;
+        private DevExpress.XtraBars.BarButtonItem barBtnCustomerMovements;
     }
 }

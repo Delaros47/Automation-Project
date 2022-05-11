@@ -22,10 +22,16 @@ namespace Business.Concrete
             _stockDal = stockDal;
         }
 
+        public IResult Update(Stock stock)
+        {
+            _stockDal.Update(stock);
+            return new SuccessResult(Messages.GetMessage("Stock", Process.Update));
+        }
+
         public IResult Add(Stock stock)
         {
             _stockDal.Add(stock);
-            return new SuccessResult(Messages.GetMessage("Stock",Process.Add));
+            return new SuccessResult(Messages.GetMessage("Stock", Process.Add));
         }
 
         public IResult Delete(Stock stock)
@@ -36,7 +42,7 @@ namespace Business.Concrete
 
         public IDataResult<Stock> Get(int stockId)
         {
-            return new SuccessDataResult<Stock>(_stockDal.Get(s=>s.Id==stockId));
+            return new SuccessDataResult<Stock>(_stockDal.Get(s => s.Id == stockId));
         }
 
         public IDataResult<List<Stock>> GetAll()
@@ -49,15 +55,24 @@ namespace Business.Concrete
             return new SuccessDataResult<List<StockDetailDto>>(_stockDal.GetStockDetailDto());
         }
 
-        public IDataResult<List<StockDetailDto>> SearchStockDetailDto(string stockCode,string stockBarcode,string stockName)
+        public IDataResult<List<StockDetailDto>> SearchStockNameDetailDto(string stockName)
         {
-            return new SuccessDataResult<List<StockDetailDto>>(_stockDal.GetStockDetailDto().Where(s=>s.StockCode.Contains(stockCode) || s.StockBarcode.Contains(stockBarcode) || s.StockName.Contains(stockName)).ToList());
+            return new SuccessDataResult<List<StockDetailDto>>(_stockDal.GetStockDetailDto()
+                .Where(s => s.StockName.Contains(stockName)).ToList());
         }
 
-        public IResult Update(Stock stock)
+        public IDataResult<List<StockDetailDto>> SearchStockCodeDetailDto(string stockCode)
         {
-            _stockDal.Update(stock);
-            return new SuccessResult(Messages.GetMessage("Stock", Process.Update));
+            return new SuccessDataResult<List<StockDetailDto>>(_stockDal.GetStockDetailDto()
+                .Where(s => s.StockCode.Contains(stockCode)).ToList());
         }
+
+        public IDataResult<List<StockDetailDto>> SearchStockBarcodeDetailDto(string stockBarcode)
+        {
+            return new SuccessDataResult<List<StockDetailDto>>(_stockDal.GetStockDetailDto()
+                .Where(s => s.StockBarcode.Contains(stockBarcode)).ToList());
+        }
+
+
     }
 }

@@ -105,9 +105,12 @@ namespace AutomationUI.Forms.StockForms
 
         private void gridViewStockGroups_DoubleClick(object sender, EventArgs e)
         {
-            int x = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString());
-            StockCardForm.GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString());
-            this.Close();
+            if (Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString())>0)
+            {
+                StockCardForm.GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString());
+                this.Close();
+            }
+            
         }
 
         private void StockGroupsForm_Load(object sender, EventArgs e)

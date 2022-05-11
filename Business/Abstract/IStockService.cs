@@ -14,7 +14,9 @@ namespace Business.Abstract
         IDataResult<List<Stock>> GetAll();
         IDataResult<Stock> Get(int stockId);
         IDataResult<List<StockDetailDto>> GetStockDetailDto();
-        IDataResult<List<StockDetailDto>> SearchStockDetailDto(string stockCode, string stockBarcode, string stockName);
+        IDataResult<List<StockDetailDto>> SearchStockNameDetailDto(string stockName);
+        IDataResult<List<StockDetailDto>> SearchStockCodeDetailDto(string stockCode);
+        IDataResult<List<StockDetailDto>> SearchStockBarcodeDetailDto(string stockBarcode);
         IResult Add(Stock stock);
         IResult Update(Stock stock);
         IResult Delete(Stock stock);
