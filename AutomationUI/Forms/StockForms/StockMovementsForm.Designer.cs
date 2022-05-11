@@ -1,6 +1,6 @@
 ﻿namespace AutomationUI.Forms.StockForms
 {
-    partial class StockMovements
+    partial class StockMovementsForm
     {
         /// <summary>
         /// Required designer variable.

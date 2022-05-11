@@ -20,7 +20,6 @@ namespace AutomationUI.UserControls.Controls
             Properties.NullText = "No Picture";
             Properties.SizeMode = PictureSizeMode.Stretch;
             //We dont want default menu to be shown we will later create own Menu
-            Properties.ShowMenu = false;
         }
 
         public override bool EnterMoveNextControl { get; set; } = true;

@@ -1,6 +1,6 @@
 ﻿namespace AutomationUI.Forms.StockForms
 {
-    partial class StockGroups
+    partial class StockGroupsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockGroups));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockGroupsForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtGroupName = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.txtGroupCode = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
@@ -167,6 +167,7 @@
             this.gridViewStockGroups.OptionsView.ShowViewCaption = true;
             this.gridViewStockGroups.ViewCaption = "Stock Groups";
             this.gridViewStockGroups.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewStockGroups_FocusedRowChanged);
+            this.gridViewStockGroups.DoubleClick += new System.EventHandler(this.gridViewStockGroups_DoubleClick);
             // 
             // colGroupId
             // 

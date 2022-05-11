@@ -13,20 +13,15 @@ using System.Windows.Forms;
 
 namespace AutomationUI.Forms.StockForms
 {
-    public partial class StockLists : DevExpress.XtraEditors.XtraForm
+    public partial class StockListsForm : DevExpress.XtraEditors.XtraForm
     {
-
+        private int SelectedId = -1;
         private readonly IStockService _stockService;
 
-        public StockLists()
+        public StockListsForm()
         {
             InitializeComponent();
             _stockService = InstanceFactory.GetInstance<IStockService>();
-        }
-
-        private void StockLists_Load(object sender, EventArgs e)
-        {
-            GetAllStockDetailDto();
         }
 
         private void GetAllStockDetailDto()
@@ -34,15 +29,34 @@ namespace AutomationUI.Forms.StockForms
             gridControlStockLists.DataSource = _stockService.GetStockDetailDto().Data;
         }
 
+        private void ClearAll()
+        {
+            txtStockName.Text = "";
+            txtStockBarcode.Text = "";
+            txtStockCode.Text = "";
+        }
+
         private void btnClean_Click(object sender, EventArgs e)
         {
-
+            ClearAll();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             gridControlStockLists.DataSource = _stockService
                 .SearchStockDetailDto(txtStockCode.Text, txtStockBarcode.Text, txtStockName.Text).Data;
+        }
+
+        private void gridViewStockLists_DoubleClick(object sender, EventArgs e)
+        {
+            SelectedId = Convert.ToInt32(gridViewStockLists.GetFocusedRowCellValue("StockId").ToString());
+            MainForm.TransferId = SelectedId;
+            this.Close();
+        }
+
+        private void StockListsForm_Load(object sender, EventArgs e)
+        {
+            GetAllStockDetailDto();
         }
     }
 }

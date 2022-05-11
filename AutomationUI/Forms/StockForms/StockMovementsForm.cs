@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace AutomationUI.Forms.StockForms
 {
-    public partial class StockMovements : DevExpress.XtraEditors.XtraForm
+    public partial class StockMovementsForm : DevExpress.XtraEditors.XtraForm
     {
-        public StockMovements()
+        public StockMovementsForm()
         {
             InitializeComponent();
         }

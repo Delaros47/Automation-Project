@@ -1,6 +1,6 @@
 ﻿namespace AutomationUI.Forms.StockForms
 {
-    partial class StockLists
+    partial class StockListsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockLists));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockListsForm));
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.xtraTabControlStocks = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
@@ -247,6 +247,7 @@
             this.gridViewStockLists.OptionsView.ShowGroupPanel = false;
             this.gridViewStockLists.OptionsView.ShowViewCaption = true;
             this.gridViewStockLists.ViewCaption = "Stocks";
+            this.gridViewStockLists.DoubleClick += new System.EventHandler(this.gridViewStockLists_DoubleClick);
             // 
             // colStockBarcode
             // 
@@ -348,19 +349,19 @@
             this.colGroupName.VisibleIndex = 9;
             this.colGroupName.Width = 100;
             // 
-            // StockLists
+            // StockListsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1277, 548);
             this.Controls.Add(this.splitContainerControl1);
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("StockLists.IconOptions.Image")));
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("StockListsForm.IconOptions.Image")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "StockLists";
+            this.Name = "StockListsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock Lists";
-            this.Load += new System.EventHandler(this.StockLists_Load);
+            this.Load += new System.EventHandler(this.StockListsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
             this.splitContainerControl1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();

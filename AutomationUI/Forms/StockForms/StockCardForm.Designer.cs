@@ -1,6 +1,6 @@
 ﻿namespace AutomationUI.Forms.StockForms
 {
-    partial class StockCard
+    partial class StockCardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockCard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockCardForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.pictureEditStock = new AutomationUI.UserControls.Controls.MyPictureEdit();
             this.txtStockName = new AutomationUI.UserControls.Controls.MyTextEdit();
@@ -47,7 +47,7 @@
             this.txtPurchasePrice = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblPurchasePrice = new DevExpress.XtraEditors.LabelControl();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.txtBarcode = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.txtStockBarcode = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.cmbStockUnit = new AutomationUI.UserControls.Controls.MyComboBoxEdit();
             this.lblUnit = new DevExpress.XtraEditors.LabelControl();
@@ -78,7 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPurchasePrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBarcode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStockBarcode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbStockUnit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
@@ -105,7 +105,7 @@
             // pictureEditStock
             // 
             this.pictureEditStock.EnterMoveNextControl = true;
-            this.pictureEditStock.Location = new System.Drawing.Point(375, 29);
+            this.pictureEditStock.Location = new System.Drawing.Point(377, 29);
             this.pictureEditStock.Name = "pictureEditStock";
             this.pictureEditStock.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.pictureEditStock.Properties.Appearance.Options.UseForeColor = true;
@@ -113,10 +113,9 @@
             this.pictureEditStock.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.pictureEditStock.Properties.NullText = "No Picture";
             this.pictureEditStock.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEditStock.Properties.ShowMenu = false;
             this.pictureEditStock.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEditStock.Size = new System.Drawing.Size(100, 61);
-            this.pictureEditStock.TabIndex = 4;
+            this.pictureEditStock.Size = new System.Drawing.Size(100, 65);
+            this.pictureEditStock.TabIndex = 2;
             // 
             // txtStockName
             // 
@@ -127,10 +126,11 @@
             this.txtStockName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtStockName.Properties.MaxLength = 50;
             this.txtStockName.Size = new System.Drawing.Size(228, 20);
-            this.txtStockName.TabIndex = 3;
+            this.txtStockName.TabIndex = 1;
             // 
             // btnStockCode
             // 
+            this.btnStockCode.EditValue = "S-0000001";
             this.btnStockCode.EnterMoveNextControl = true;
             this.btnStockCode.Location = new System.Drawing.Point(121, 36);
             this.btnStockCode.Name = "btnStockCode";
@@ -140,7 +140,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.btnStockCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnStockCode.Size = new System.Drawing.Size(228, 20);
-            this.btnStockCode.TabIndex = 2;
+            this.btnStockCode.TabIndex = 0;
+            this.btnStockCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnStockCode_ButtonClick);
             // 
             // lblStockName
             // 
@@ -192,7 +193,7 @@
             this.txtSaleVAT.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtSaleVAT.Properties.MaxLength = 50;
             this.txtSaleVAT.Size = new System.Drawing.Size(218, 20);
-            this.txtSaleVAT.TabIndex = 3;
+            this.txtSaleVAT.TabIndex = 1;
             // 
             // txtPurchaseVat
             // 
@@ -203,7 +204,7 @@
             this.txtPurchaseVat.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtPurchaseVat.Properties.MaxLength = 50;
             this.txtPurchaseVat.Size = new System.Drawing.Size(218, 20);
-            this.txtPurchaseVat.TabIndex = 2;
+            this.txtPurchaseVat.TabIndex = 0;
             // 
             // lblSaleVAT
             // 
@@ -245,7 +246,7 @@
             this.txtSalePrice.Properties.MaskSettings.Set("mask", "c");
             this.txtSalePrice.Properties.MaxLength = 50;
             this.txtSalePrice.Size = new System.Drawing.Size(218, 20);
-            this.txtSalePrice.TabIndex = 3;
+            this.txtSalePrice.TabIndex = 1;
             // 
             // lblSalePrice
             // 
@@ -267,7 +268,7 @@
             this.txtPurchasePrice.Properties.MaskSettings.Set("mask", "c");
             this.txtPurchasePrice.Properties.MaxLength = 50;
             this.txtPurchasePrice.Size = new System.Drawing.Size(218, 20);
-            this.txtPurchasePrice.TabIndex = 1;
+            this.txtPurchasePrice.TabIndex = 0;
             // 
             // lblPurchasePrice
             // 
@@ -279,7 +280,7 @@
             // 
             // groupControl5
             // 
-            this.groupControl5.Controls.Add(this.txtBarcode);
+            this.groupControl5.Controls.Add(this.txtStockBarcode);
             this.groupControl5.Controls.Add(this.labelControl1);
             this.groupControl5.Controls.Add(this.cmbStockUnit);
             this.groupControl5.Controls.Add(this.lblUnit);
@@ -289,16 +290,16 @@
             this.groupControl5.TabIndex = 1;
             this.groupControl5.Text = "Unit and Barcode";
             // 
-            // txtBarcode
+            // txtStockBarcode
             // 
-            this.txtBarcode.EnterMoveNextControl = true;
-            this.txtBarcode.Location = new System.Drawing.Point(93, 71);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtBarcode.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtBarcode.Properties.MaxLength = 50;
-            this.txtBarcode.Size = new System.Drawing.Size(228, 20);
-            this.txtBarcode.TabIndex = 3;
+            this.txtStockBarcode.EnterMoveNextControl = true;
+            this.txtStockBarcode.Location = new System.Drawing.Point(93, 71);
+            this.txtStockBarcode.Name = "txtStockBarcode";
+            this.txtStockBarcode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtStockBarcode.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtStockBarcode.Properties.MaxLength = 50;
+            this.txtStockBarcode.Size = new System.Drawing.Size(228, 20);
+            this.txtStockBarcode.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -310,6 +311,7 @@
             // 
             // cmbStockUnit
             // 
+            this.cmbStockUnit.EditValue = "Number";
             this.cmbStockUnit.EnterMoveNextControl = true;
             this.cmbStockUnit.Location = new System.Drawing.Point(93, 41);
             this.cmbStockUnit.Name = "cmbStockUnit";
@@ -317,9 +319,14 @@
             this.cmbStockUnit.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.cmbStockUnit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbStockUnit.Properties.Items.AddRange(new object[] {
+            "Number",
+            "Piece",
+            "Kilo",
+            "Metre"});
             this.cmbStockUnit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbStockUnit.Size = new System.Drawing.Size(228, 20);
-            this.cmbStockUnit.TabIndex = 1;
+            this.cmbStockUnit.TabIndex = 0;
             // 
             // lblUnit
             // 
@@ -350,7 +357,7 @@
             this.txtGroupName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtGroupName.Properties.MaxLength = 50;
             this.txtGroupName.Size = new System.Drawing.Size(228, 20);
-            this.txtGroupName.TabIndex = 3;
+            this.txtGroupName.TabIndex = 1;
             // 
             // btnGroupCode
             // 
@@ -363,7 +370,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.btnGroupCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnGroupCode.Size = new System.Drawing.Size(228, 20);
-            this.btnGroupCode.TabIndex = 2;
+            this.btnGroupCode.TabIndex = 0;
+            this.btnGroupCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnGroupCode_ButtonClick);
             // 
             // lblGroupName
             // 
@@ -405,6 +413,7 @@
             this.btnExit.Size = new System.Drawing.Size(92, 41);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
@@ -416,6 +425,7 @@
             this.btnDelete.Size = new System.Drawing.Size(92, 41);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -427,6 +437,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(92, 41);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -438,8 +449,9 @@
             this.btnSave.Size = new System.Drawing.Size(92, 41);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // StockCard
+            // StockCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -447,10 +459,10 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("StockCard.IconOptions.Image")));
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("StockCardForm.IconOptions.Image")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "StockCard";
+            this.Name = "StockCardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Stock Card";
             this.Load += new System.EventHandler(this.StockCard_Load);
@@ -475,7 +487,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBarcode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStockBarcode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbStockUnit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
@@ -505,12 +517,11 @@
         private DevExpress.XtraEditors.LabelControl lblStockCode;
         private UserControls.Controls.MyButtonEdit btnStockCode;
         private UserControls.Controls.MyTextEdit txtStockName;
-        private UserControls.Controls.MyPictureEdit pictureEditStock;
         private UserControls.Controls.MyButtonEdit btnGroupCode;
         private DevExpress.XtraEditors.LabelControl lblGroupName;
         private DevExpress.XtraEditors.LabelControl lblGroupCode;
         private UserControls.Controls.MyTextEdit txtGroupName;
-        private UserControls.Controls.MyTextEdit txtBarcode;
+        private UserControls.Controls.MyTextEdit txtStockBarcode;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private UserControls.Controls.MyComboBoxEdit cmbStockUnit;
         private DevExpress.XtraEditors.LabelControl lblUnit;
@@ -522,5 +533,6 @@
         private UserControls.Controls.MyTextEdit txtPurchaseVat;
         private DevExpress.XtraEditors.LabelControl lblSaleVAT;
         private DevExpress.XtraEditors.LabelControl lblPurchaseVAT;
+        private UserControls.Controls.MyPictureEdit pictureEditStock;
     }
 }

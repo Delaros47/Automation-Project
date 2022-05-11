@@ -15,10 +15,11 @@ using AutomationUI.Functions;
 
 namespace AutomationUI.Forms.StockForms
 {
-    public partial class StockGroups : DevExpress.XtraEditors.XtraForm
+    public partial class StockGroupsForm : DevExpress.XtraEditors.XtraForm
     {
+        private int SelectedId = -1;
         private readonly IStockGroupService _stockGroupService;
-        public StockGroups()
+        public StockGroupsForm()
         {
             InitializeComponent();
             _stockGroupService = InstanceFactory.GetInstance<IStockGroupService>();
@@ -105,6 +106,13 @@ namespace AutomationUI.Forms.StockForms
                 txtGroupName.Text = gridViewStockGroups.GetFocusedRowCellValue("GroupName").ToString();
             }
 
+        }
+
+        private void gridViewStockGroups_DoubleClick(object sender, EventArgs e)
+        {
+            SelectedId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("GroupId").ToString());
+            MainForm.TransferId = SelectedId;
+            this.Close();
         }
     }
 }
