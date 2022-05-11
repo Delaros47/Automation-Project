@@ -18,7 +18,8 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<StockGroupManager>().As<IStockGroupService>().SingleInstance();
             builder.RegisterType<EfStockGroupDal>().As<IStockGroupDal>().SingleInstance();
 
-
+            builder.RegisterType<StockManager>().As<IStockService>().SingleInstance();
+            builder.RegisterType<EfStockDal>().As<IStockDal>().SingleInstance();
 
         }
     }

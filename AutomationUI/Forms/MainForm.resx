@@ -95,7 +95,7 @@
   <data name="barBtnStockLists.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6AAAAOgBhtX2rwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAK3SURBVFhH7ZTL
+        5wAAAOcB8BtYtQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAK3SURBVFhH7ZTL
         axNRFMYDbly4EXf+IRV3gmAFbbGLLO3CjTtBQTDKhGgSEQpVUJs2aR4WijSVgkiKtAmZJpNHBTFOHm0S
         J0nbpHm0M2PBKlWb6z3DTDJJk4FKYlzkwI+ZnDvnfN89uTOqfvzXMTBKzA5cJ5hzo8SaWq0+Iaa7F17d
         hZP+e1dOuzUjZy7ft8YHNZavlzSWbwD+nb1JjJ2Hda9OfUos6WxQ2uEFSjuEfNphNPjAdoRZ4gaCdUxF
@@ -113,7 +113,7 @@
   <data name="barBtnStockGroups.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6AAAAOgBhtX2rwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHNSURBVFhH7ZZL
+        5wAAAOcB8BtYtQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHNSURBVFhH7ZZL
         SwJRFID9If2Q/kh7JTNFDUsKWrcww6zIFlHRInqA1UorqE2Zu4TMILB8lSbjID7oQQSe5lyuNo5Xm1GH
         IfDAt7lz5pyPOzDn6DpFyq0fznrGzNyqzSvl7dgS+Dy3XX9d2SMIKwfhfVYjLac80vMG/6vXDNWN6Rbg
         xgRwbwdIzhBYOUhxzfFCyymPPwUi4wBxp4YCdW4tzBxENYHvC2sTrBxENQG5DAQGAj0L5GQKVLZmoRzY
@@ -152,5 +152,8 @@
   </data>
   <metadata name="xtraTabbedMdiManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>40</value>
   </metadata>
 </root>

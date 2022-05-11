@@ -166,6 +166,7 @@
             this.gridViewStockGroups.OptionsView.ShowGroupPanel = false;
             this.gridViewStockGroups.OptionsView.ShowViewCaption = true;
             this.gridViewStockGroups.ViewCaption = "Stock Groups";
+            this.gridViewStockGroups.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewStockGroups_FocusedRowChanged);
             // 
             // colGroupId
             // 

@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
     {
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<StockGroup>().HasKey(c=>c.GroupId);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

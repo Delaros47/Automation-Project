@@ -84,7 +84,7 @@ namespace AutomationUI.Forms.StockForms
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-           
+
             var result = _stockGroupService.Delete(new StockGroup
             {
                 GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("GroupId").ToString())
@@ -95,6 +95,16 @@ namespace AutomationUI.Forms.StockForms
                 GetAllStockGroups();
                 Clean();
             }
+        }
+
+        private void gridViewStockGroups_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            if (e.FocusedRowHandle > -1)
+            {
+                txtGroupCode.Text = gridViewStockGroups.GetFocusedRowCellValue("GroupCode").ToString();
+                txtGroupName.Text = gridViewStockGroups.GetFocusedRowCellValue("GroupName").ToString();
+            }
+
         }
     }
 }

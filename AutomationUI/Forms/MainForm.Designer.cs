@@ -50,21 +50,14 @@
             this.barBtnStockCard,
             this.barBtnStockLists,
             this.barBtnStockGroups,
-            this.barBtnStockMovements});
+            this.barBtnStockMovements,
+            this.ribbonControlAutomation.SearchEditItem});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
             this.ribbonControlAutomation.MaxItemId = 5;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            // 
-            // 
-            // 
-            this.ribbonControlAutomation.SearchEditItem.AccessibleName = "Search Item";
-            this.ribbonControlAutomation.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
-            this.ribbonControlAutomation.SearchEditItem.EditWidth = 150;
-            this.ribbonControlAutomation.SearchEditItem.Id = -5000;
-            this.ribbonControlAutomation.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControlAutomation.Size = new System.Drawing.Size(924, 158);
+            this.ribbonControlAutomation.Size = new System.Drawing.Size(973, 158);
             // 
             // barBtnStockCard
             // 
@@ -118,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 742);
+            this.ClientSize = new System.Drawing.Size(973, 764);
             this.Controls.Add(this.ribbonControlAutomation);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
