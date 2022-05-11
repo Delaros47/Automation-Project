@@ -17,7 +17,6 @@ namespace AutomationUI.Forms.StockForms
 {
     public partial class StockGroupsForm : DevExpress.XtraEditors.XtraForm
     {
-        private int SelectedId = -1;
         private readonly IStockGroupService _stockGroupService;
         public StockGroupsForm()
         {
@@ -30,10 +29,6 @@ namespace AutomationUI.Forms.StockForms
             gridControlStockGroups.DataSource = _stockGroupService.GetAll().Data;
         }
 
-        private void StockGroups_Load(object sender, EventArgs e)
-        {
-            GetAllStockGroups();
-        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -69,7 +64,7 @@ namespace AutomationUI.Forms.StockForms
         {
             var result = _stockGroupService.Update(new StockGroup
             {
-                GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("GroupId").ToString()),
+                Id = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString()),
                 GroupCode = txtGroupCode.Text,
                 GroupName = txtGroupName.Text,
                 GroupEditDate = DateTime.Now,
@@ -88,7 +83,7 @@ namespace AutomationUI.Forms.StockForms
 
             var result = _stockGroupService.Delete(new StockGroup
             {
-                GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("GroupId").ToString())
+                Id = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString())
             });
             if (result.Success)
             {
@@ -110,9 +105,14 @@ namespace AutomationUI.Forms.StockForms
 
         private void gridViewStockGroups_DoubleClick(object sender, EventArgs e)
         {
-            SelectedId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("GroupId").ToString());
-            MainForm.TransferId = SelectedId;
+            int x = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString());
+            StockCardForm.GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString());
             this.Close();
+        }
+
+        private void StockGroupsForm_Load(object sender, EventArgs e)
+        {
+            GetAllStockGroups();
         }
     }
 }

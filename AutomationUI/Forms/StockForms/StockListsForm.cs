@@ -15,7 +15,7 @@ namespace AutomationUI.Forms.StockForms
 {
     public partial class StockListsForm : DevExpress.XtraEditors.XtraForm
     {
-        private int SelectedId = -1;
+
         private readonly IStockService _stockService;
 
         public StockListsForm()
@@ -47,16 +47,18 @@ namespace AutomationUI.Forms.StockForms
                 .SearchStockDetailDto(txtStockCode.Text, txtStockBarcode.Text, txtStockName.Text).Data;
         }
 
-        private void gridViewStockLists_DoubleClick(object sender, EventArgs e)
-        {
-            SelectedId = Convert.ToInt32(gridViewStockLists.GetFocusedRowCellValue("StockId").ToString());
-            MainForm.TransferId = SelectedId;
-            this.Close();
-        }
+
 
         private void StockListsForm_Load(object sender, EventArgs e)
         {
-            GetAllStockDetailDto();
+            gridControlStockLists.DataSource = _stockService.GetStockDetailDto().Data;
+
+        }
+
+        private void gridViewStockLists_DoubleClick(object sender, EventArgs e)
+        {
+            StockCardForm.StockId = Convert.ToInt32(gridViewStockLists.GetFocusedRowCellValue("Id").ToString());
+            this.Close();
         }
     }
 }

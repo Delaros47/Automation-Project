@@ -172,7 +172,7 @@
             // colGroupId
             // 
             this.colGroupId.Caption = "ID";
-            this.colGroupId.FieldName = "GroupId";
+            this.colGroupId.FieldName = "Id";
             this.colGroupId.Name = "colGroupId";
             this.colGroupId.OptionsColumn.AllowEdit = false;
             // 
@@ -258,7 +258,7 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // StockGroups
+            // StockGroupsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -266,13 +266,13 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("StockGroups.IconOptions.Image")));
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("StockGroupsForm.IconOptions.Image")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "StockGroups";
+            this.Name = "StockGroupsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Stock Groups";
-            this.Load += new System.EventHandler(this.StockGroups_Load);
+            this.Load += new System.EventHandler(this.StockGroupsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

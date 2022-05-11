@@ -42,16 +42,6 @@
             this.btnSearch = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.gridControlStockLists = new AutomationUI.UserControls.Grids.MyGridControl();
             this.gridViewStockLists = new AutomationUI.UserControls.Grids.MyGridView();
-            this.colStockBarcode = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockCode = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockName = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockUnit = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockPurchasePrice = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colSalePrice = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockPurchaseVAT = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockSaleVAT = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockImage = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colGroupName = new AutomationUI.UserControls.Grids.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
             this.splitContainerControl1.Panel1.SuspendLayout();
@@ -220,17 +210,6 @@
             this.gridViewStockLists.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewStockLists.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewStockLists.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.gridViewStockLists.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colStockBarcode,
-            this.colStockCode,
-            this.colStockName,
-            this.colStockUnit,
-            this.colStockPurchasePrice,
-            this.colSalePrice,
-            this.colStockPurchaseVAT,
-            this.colStockSaleVAT,
-            this.colStockImage,
-            this.colGroupName});
             this.gridViewStockLists.GridControl = this.gridControlStockLists;
             this.gridViewStockLists.Name = "gridViewStockLists";
             this.gridViewStockLists.OptionsMenu.EnableColumnMenu = false;
@@ -248,106 +227,6 @@
             this.gridViewStockLists.OptionsView.ShowViewCaption = true;
             this.gridViewStockLists.ViewCaption = "Stocks";
             this.gridViewStockLists.DoubleClick += new System.EventHandler(this.gridViewStockLists_DoubleClick);
-            // 
-            // colStockBarcode
-            // 
-            this.colStockBarcode.Caption = "Barcode";
-            this.colStockBarcode.FieldName = "StockBarcode";
-            this.colStockBarcode.Name = "colStockBarcode";
-            this.colStockBarcode.OptionsColumn.AllowEdit = false;
-            this.colStockBarcode.Visible = true;
-            this.colStockBarcode.VisibleIndex = 0;
-            this.colStockBarcode.Width = 100;
-            // 
-            // colStockCode
-            // 
-            this.colStockCode.Caption = "Code";
-            this.colStockCode.FieldName = "StockCode";
-            this.colStockCode.Name = "colStockCode";
-            this.colStockCode.OptionsColumn.AllowEdit = false;
-            this.colStockCode.Visible = true;
-            this.colStockCode.VisibleIndex = 1;
-            this.colStockCode.Width = 100;
-            // 
-            // colStockName
-            // 
-            this.colStockName.Caption = "Name";
-            this.colStockName.FieldName = "StockName";
-            this.colStockName.Name = "colStockName";
-            this.colStockName.OptionsColumn.AllowEdit = false;
-            this.colStockName.Visible = true;
-            this.colStockName.VisibleIndex = 2;
-            this.colStockName.Width = 100;
-            // 
-            // colStockUnit
-            // 
-            this.colStockUnit.Caption = "Unit";
-            this.colStockUnit.FieldName = "StockUnit";
-            this.colStockUnit.Name = "colStockUnit";
-            this.colStockUnit.OptionsColumn.AllowEdit = false;
-            this.colStockUnit.Visible = true;
-            this.colStockUnit.VisibleIndex = 3;
-            this.colStockUnit.Width = 100;
-            // 
-            // colStockPurchasePrice
-            // 
-            this.colStockPurchasePrice.Caption = "Purchase Price";
-            this.colStockPurchasePrice.FieldName = "StockPurchasePrice";
-            this.colStockPurchasePrice.Name = "colStockPurchasePrice";
-            this.colStockPurchasePrice.OptionsColumn.AllowEdit = false;
-            this.colStockPurchasePrice.Visible = true;
-            this.colStockPurchasePrice.VisibleIndex = 4;
-            this.colStockPurchasePrice.Width = 100;
-            // 
-            // colSalePrice
-            // 
-            this.colSalePrice.Caption = "Sale Price";
-            this.colSalePrice.FieldName = "StockSalePrice";
-            this.colSalePrice.Name = "colSalePrice";
-            this.colSalePrice.OptionsColumn.AllowEdit = false;
-            this.colSalePrice.Visible = true;
-            this.colSalePrice.VisibleIndex = 5;
-            this.colSalePrice.Width = 100;
-            // 
-            // colStockPurchaseVAT
-            // 
-            this.colStockPurchaseVAT.Caption = "Purchase VAT";
-            this.colStockPurchaseVAT.FieldName = "StockPurchaseVAT";
-            this.colStockPurchaseVAT.Name = "colStockPurchaseVAT";
-            this.colStockPurchaseVAT.OptionsColumn.AllowEdit = false;
-            this.colStockPurchaseVAT.Visible = true;
-            this.colStockPurchaseVAT.VisibleIndex = 6;
-            this.colStockPurchaseVAT.Width = 100;
-            // 
-            // colStockSaleVAT
-            // 
-            this.colStockSaleVAT.Caption = "Sale VAT";
-            this.colStockSaleVAT.FieldName = "StockSaleVAT";
-            this.colStockSaleVAT.Name = "colStockSaleVAT";
-            this.colStockSaleVAT.OptionsColumn.AllowEdit = false;
-            this.colStockSaleVAT.Visible = true;
-            this.colStockSaleVAT.VisibleIndex = 7;
-            this.colStockSaleVAT.Width = 100;
-            // 
-            // colStockImage
-            // 
-            this.colStockImage.Caption = "Image";
-            this.colStockImage.FieldName = "StockImage";
-            this.colStockImage.Name = "colStockImage";
-            this.colStockImage.OptionsColumn.AllowEdit = false;
-            this.colStockImage.Visible = true;
-            this.colStockImage.VisibleIndex = 8;
-            this.colStockImage.Width = 100;
-            // 
-            // colGroupName
-            // 
-            this.colGroupName.Caption = "Group";
-            this.colGroupName.FieldName = "GroupName";
-            this.colGroupName.Name = "colGroupName";
-            this.colGroupName.OptionsColumn.AllowEdit = false;
-            this.colGroupName.Visible = true;
-            this.colGroupName.VisibleIndex = 9;
-            this.colGroupName.Width = 100;
             // 
             // StockListsForm
             // 
@@ -384,8 +263,6 @@
         #endregion
 
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
-        private UserControls.Grids.MyGridControl gridControlStockLists;
-        private UserControls.Grids.MyGridView gridViewStockLists;
         private DevExpress.XtraTab.XtraTabControl xtraTabControlStocks;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private UserControls.Controls.MySimpleButton btnClean;
@@ -396,15 +273,7 @@
         private DevExpress.XtraEditors.LabelControl lblStockName;
         private UserControls.Controls.MyPrivateCodeTextEdit txtStockCode;
         private DevExpress.XtraEditors.LabelControl lblStockCode;
-        private UserControls.Grids.MyGridColumn colStockBarcode;
-        private UserControls.Grids.MyGridColumn colStockCode;
-        private UserControls.Grids.MyGridColumn colStockName;
-        private UserControls.Grids.MyGridColumn colStockUnit;
-        private UserControls.Grids.MyGridColumn colStockPurchasePrice;
-        private UserControls.Grids.MyGridColumn colSalePrice;
-        private UserControls.Grids.MyGridColumn colStockPurchaseVAT;
-        private UserControls.Grids.MyGridColumn colStockSaleVAT;
-        private UserControls.Grids.MyGridColumn colStockImage;
-        private UserControls.Grids.MyGridColumn colGroupName;
+        private UserControls.Grids.MyGridControl gridControlStockLists;
+        private UserControls.Grids.MyGridView gridViewStockLists;
     }
 }

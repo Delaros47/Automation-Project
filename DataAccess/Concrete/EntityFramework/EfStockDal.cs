@@ -19,10 +19,10 @@ namespace DataAccess.Concrete.EntityFramework
             {
                 var result = from s in context.Stocks
                              join g in context.StockGroups
-                             on s.GroupId equals g.GroupId
+                             on s.GroupId equals g.Id
                              select new StockDetailDto
                              {
-                                 StockId = s.StockId,
+                                 Id = s.Id,
                                  StockCode = s.StockCode,
                                  StockBarcode = s.StockBarcode,
                                  StockName = s.StockName,

@@ -28,7 +28,7 @@ namespace Business.Concrete
 
         public IDataResult<StockGroup> Get(int stockGroupId)
         {
-            return new SuccessDataResult<StockGroup>(_stockGroupDal.Get(s=>s.GroupId==stockGroupId));
+            return new SuccessDataResult<StockGroup>(_stockGroupDal.Get(s=>s.Id==stockGroupId));
         }
 
         public IResult Add(StockGroup stockGroup)

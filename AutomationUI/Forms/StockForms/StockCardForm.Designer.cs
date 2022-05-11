@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockCardForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnStockCode = new DevExpress.XtraEditors.ButtonEdit();
             this.pictureEditStock = new AutomationUI.UserControls.Controls.MyPictureEdit();
             this.txtStockName = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.btnStockCode = new AutomationUI.UserControls.Controls.MyButtonEdit();
             this.lblStockName = new DevExpress.XtraEditors.LabelControl();
             this.lblStockCode = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
@@ -63,9 +63,9 @@
             this.btnSave = new AutomationUI.UserControls.Controls.MySimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnStockCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEditStock.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStockName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnStockCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
@@ -90,9 +90,9 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnStockCode);
             this.groupControl1.Controls.Add(this.pictureEditStock);
             this.groupControl1.Controls.Add(this.txtStockName);
-            this.groupControl1.Controls.Add(this.btnStockCode);
             this.groupControl1.Controls.Add(this.lblStockName);
             this.groupControl1.Controls.Add(this.lblStockCode);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -101,6 +101,18 @@
             this.groupControl1.Size = new System.Drawing.Size(803, 100);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Main Stock Information";
+            // 
+            // btnStockCode
+            // 
+            this.btnStockCode.Location = new System.Drawing.Point(121, 40);
+            this.btnStockCode.Name = "btnStockCode";
+            this.btnStockCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.btnStockCode.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.btnStockCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnStockCode.Size = new System.Drawing.Size(228, 20);
+            this.btnStockCode.TabIndex = 3;
+            this.btnStockCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnStockCode_ButtonClick);
             // 
             // pictureEditStock
             // 
@@ -127,21 +139,6 @@
             this.txtStockName.Properties.MaxLength = 50;
             this.txtStockName.Size = new System.Drawing.Size(228, 20);
             this.txtStockName.TabIndex = 1;
-            // 
-            // btnStockCode
-            // 
-            this.btnStockCode.EditValue = "S-0000001";
-            this.btnStockCode.EnterMoveNextControl = true;
-            this.btnStockCode.Location = new System.Drawing.Point(121, 36);
-            this.btnStockCode.Name = "btnStockCode";
-            this.btnStockCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.btnStockCode.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.btnStockCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnStockCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnStockCode.Size = new System.Drawing.Size(228, 20);
-            this.btnStockCode.TabIndex = 0;
-            this.btnStockCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnStockCode_ButtonClick);
             // 
             // lblStockName
             // 
@@ -469,9 +466,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnStockCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEditStock.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStockName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnStockCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
@@ -515,7 +512,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraEditors.LabelControl lblStockName;
         private DevExpress.XtraEditors.LabelControl lblStockCode;
-        private UserControls.Controls.MyButtonEdit btnStockCode;
         private UserControls.Controls.MyTextEdit txtStockName;
         private UserControls.Controls.MyButtonEdit btnGroupCode;
         private DevExpress.XtraEditors.LabelControl lblGroupName;
@@ -534,5 +530,6 @@
         private DevExpress.XtraEditors.LabelControl lblSaleVAT;
         private DevExpress.XtraEditors.LabelControl lblPurchaseVAT;
         private UserControls.Controls.MyPictureEdit pictureEditStock;
+        private DevExpress.XtraEditors.ButtonEdit btnStockCode;
     }
 }

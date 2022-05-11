@@ -10,7 +10,7 @@ namespace Entities.Concrete
     public class Stock:IEntity
     {
 
-        public int StockId { get; set; }
+        public int Id { get; set; }
         public string StockBarcode { get; set; }
         public string StockCode { get; set; }
         public string StockName { get; set; }

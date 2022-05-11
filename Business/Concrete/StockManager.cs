@@ -36,7 +36,7 @@ namespace Business.Concrete
 
         public IDataResult<Stock> Get(int stockId)
         {
-            return new SuccessDataResult<Stock>(_stockDal.Get(s=>s.StockId==stockId));
+            return new SuccessDataResult<Stock>(_stockDal.Get(s=>s.Id==stockId));
         }
 
         public IDataResult<List<Stock>> GetAll()

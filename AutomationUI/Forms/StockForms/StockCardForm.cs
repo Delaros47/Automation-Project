@@ -18,8 +18,8 @@ namespace AutomationUI.Forms.StockForms
 {
     public partial class StockCardForm : DevExpress.XtraEditors.XtraForm
     {
-        private int StockId = -1;
-        private int GroupId = -1;
+        public static int StockId = -1;
+        public static int GroupId = -1;
         private readonly IStockService _stockService;
         private readonly IStockGroupService _stockGroupService;
         public StockCardForm()
@@ -49,7 +49,6 @@ namespace AutomationUI.Forms.StockForms
             pictureEditStock.Image = null;
             StockId = -1;
             GroupId = -1;
-            MainForm.TransferId = -1;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -85,7 +84,7 @@ namespace AutomationUI.Forms.StockForms
         {
             var result = _stockService.Update(new Stock
             {
-                StockId = StockId,
+                Id = StockId,
                 StockName = txtStockName.Text,
                 StockCode = btnStockCode.Text,
                 StockBarcode = txtStockBarcode.Text,
@@ -110,7 +109,7 @@ namespace AutomationUI.Forms.StockForms
         {
             var result = _stockService.Delete(new Stock
             {
-                StockId = StockId
+                Id = StockId
             });
             if (result.Success)
             {
@@ -119,24 +118,38 @@ namespace AutomationUI.Forms.StockForms
             }
         }
 
-        private void btnStockCode_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-
-
-        }
 
         private void btnGroupCode_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             StockGroupsForm stockgroupsForm = new StockGroupsForm();
             stockgroupsForm.ShowDialog();
-            var result = _stockGroupService.Get(MainForm.TransferId);
+            var result = _stockGroupService.Get(GroupId);
             if (result.Success)
             {
                 btnGroupCode.Text = result.Data.GroupCode;
                 txtGroupName.Text = result.Data.GroupName;
             }
 
-            MainForm.TransferId = -1;
+        }
+        
+        private void btnStockCode_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            StockListsForm stockListsForm = new StockListsForm();
+            stockListsForm.ShowDialog();
+            var result = _stockService.Get(StockId);
+            var group = _stockGroupService.Get(result.Data.GroupId);
+            if (result.Success)
+            {
+                btnStockCode.Text = result.Data.StockCode;
+                txtPurchasePrice.Text = result.Data.StockPurchasePrice.ToString();
+                txtPurchaseVat.Text = result.Data.StockPurchaseVAT.ToString();
+                txtSalePrice.Text = result.Data.StockSalePrice.ToString();
+                txtSaleVAT.Text = result.Data.StockSaleVAT.ToString();
+                txtStockBarcode.Text = result.Data.StockBarcode;
+                txtStockName.Text = result.Data.StockName;
+                btnGroupCode.Text = group.Data.GroupCode;
+                txtGroupName.Text = group.Data.GroupName;
+            }
         }
     }
 }

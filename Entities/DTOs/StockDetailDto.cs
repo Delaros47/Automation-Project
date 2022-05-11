@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace Entities.DTOs
 {
     public class StockDetailDto:IDto
     {
-        public int StockId { get; set; }
+        public int Id { get; set; }
         public string StockBarcode { get; set; }
         public string StockCode { get; set; }
         public string StockName { get; set; }
