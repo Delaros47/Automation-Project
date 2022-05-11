@@ -51,7 +51,7 @@ namespace Business.Concrete
 
         public IDataResult<List<StockDetailDto>> SearchStockDetailDto(string stockCode,string stockBarcode,string stockName)
         {
-            return new SuccessDataResult<List<StockDetailDto>>(_stockDal.GetStockDetailDto());
+            return new SuccessDataResult<List<StockDetailDto>>(_stockDal.GetStockDetailDto().Where(s=>s.StockCode.Contains(stockCode) || s.StockBarcode.Contains(stockBarcode) || s.StockName.Contains(stockName)).ToList());
         }
 
         public IResult Update(Stock stock)

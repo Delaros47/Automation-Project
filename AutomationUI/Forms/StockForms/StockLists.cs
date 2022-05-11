@@ -41,7 +41,8 @@ namespace AutomationUI.Forms.StockForms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            gridControlStockLists.DataSource = _stockService.GetStockDetailDto().Data.Where(s=>s.StockCode==txtStockCode.Text || s.StockBarcode==txtStockBarcode.Text || s.StockName==txtStockName.Text);
+            gridControlStockLists.DataSource = _stockService
+                .SearchStockDetailDto(txtStockCode.Text, txtStockBarcode.Text, txtStockName.Text).Data;
         }
     }
 }

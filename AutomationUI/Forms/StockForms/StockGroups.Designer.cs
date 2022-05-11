@@ -269,6 +269,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StockGroups";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Stock Groups";
             this.Load += new System.EventHandler(this.StockGroups_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

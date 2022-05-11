@@ -451,7 +451,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StockCard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Stock Card";
+            this.Load += new System.EventHandler(this.StockCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
