@@ -17,5 +17,10 @@ namespace AutomationUI.Forms.CustomerForms
         {
             InitializeComponent();
         }
+
+        private void CustomerGroupsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

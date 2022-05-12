@@ -21,6 +21,8 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
 
         public DbSet<StockGroup> StockGroups { get; set; }
         public DbSet<Stock> Stocks { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<CustomerGroup> CustomerGroups { get; set; }
 
 
 

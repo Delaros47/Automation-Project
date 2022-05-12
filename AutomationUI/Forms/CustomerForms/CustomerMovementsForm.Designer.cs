@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerMovementsForm));
             this.SuspendLayout();
             // 
             // CustomerMovementsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 268);
+            this.ClientSize = new System.Drawing.Size(719, 450);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("CustomerMovementsForm.IconOptions.Image")));
             this.Name = "CustomerMovementsForm";
             this.Text = "CustomerMovementsForm";
             this.Load += new System.EventHandler(this.CustomerMovementsForm_Load);

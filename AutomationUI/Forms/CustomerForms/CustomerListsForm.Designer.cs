@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerListsForm));
-            this.colGroupName = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockPurchaseVAT = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockSalePrice = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.txtCustomerBarcode = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblCustomerBarcode = new DevExpress.XtraEditors.LabelControl();
             this.txtCustomerName = new AutomationUI.UserControls.Controls.MyTextEdit();
@@ -39,14 +36,8 @@
             this.txtCustomerCode = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
             this.lblCustomerCode = new DevExpress.XtraEditors.LabelControl();
             this.btnClean = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.colStockPurchasePrice = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockUnit = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockBarcode = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colStockCode = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.btnSearch = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.gridViewCustomerLists = new AutomationUI.UserControls.Grids.MyGridView();
-            this.colStockName = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colSaleVAT = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.gridControlCustomerLists = new AutomationUI.UserControls.Grids.MyGridControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControlStocks = new DevExpress.XtraTab.XtraTabControl();
@@ -66,36 +57,6 @@
             this.splitContainerControl1.Panel2.SuspendLayout();
             this.splitContainerControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // colGroupName
-            // 
-            this.colGroupName.Caption = "Group Name";
-            this.colGroupName.FieldName = "GroupName";
-            this.colGroupName.Name = "colGroupName";
-            this.colGroupName.OptionsColumn.AllowEdit = false;
-            this.colGroupName.Visible = true;
-            this.colGroupName.VisibleIndex = 7;
-            this.colGroupName.Width = 125;
-            // 
-            // colStockPurchaseVAT
-            // 
-            this.colStockPurchaseVAT.Caption = "Purchase VAT";
-            this.colStockPurchaseVAT.FieldName = "StockPurchaseVAT";
-            this.colStockPurchaseVAT.Name = "colStockPurchaseVAT";
-            this.colStockPurchaseVAT.OptionsColumn.AllowEdit = false;
-            this.colStockPurchaseVAT.Visible = true;
-            this.colStockPurchaseVAT.VisibleIndex = 6;
-            this.colStockPurchaseVAT.Width = 125;
-            // 
-            // colStockSalePrice
-            // 
-            this.colStockSalePrice.Caption = "Sale Price";
-            this.colStockSalePrice.FieldName = "StockSalePrice";
-            this.colStockSalePrice.Name = "colStockSalePrice";
-            this.colStockSalePrice.OptionsColumn.AllowEdit = false;
-            this.colStockSalePrice.Visible = true;
-            this.colStockSalePrice.VisibleIndex = 5;
-            this.colStockSalePrice.Width = 125;
             // 
             // txtCustomerBarcode
             // 
@@ -169,46 +130,6 @@
             this.btnClean.TabIndex = 1;
             this.btnClean.Text = "Clean";
             // 
-            // colStockPurchasePrice
-            // 
-            this.colStockPurchasePrice.Caption = "Purchase Price";
-            this.colStockPurchasePrice.FieldName = "StockPurchasePrice";
-            this.colStockPurchasePrice.Name = "colStockPurchasePrice";
-            this.colStockPurchasePrice.OptionsColumn.AllowEdit = false;
-            this.colStockPurchasePrice.Visible = true;
-            this.colStockPurchasePrice.VisibleIndex = 4;
-            this.colStockPurchasePrice.Width = 125;
-            // 
-            // colStockUnit
-            // 
-            this.colStockUnit.Caption = "Stock Unit";
-            this.colStockUnit.FieldName = "StockUnit";
-            this.colStockUnit.Name = "colStockUnit";
-            this.colStockUnit.OptionsColumn.AllowEdit = false;
-            this.colStockUnit.Visible = true;
-            this.colStockUnit.VisibleIndex = 3;
-            this.colStockUnit.Width = 125;
-            // 
-            // colStockBarcode
-            // 
-            this.colStockBarcode.Caption = "Stock Barcode";
-            this.colStockBarcode.FieldName = "StockBarcode";
-            this.colStockBarcode.Name = "colStockBarcode";
-            this.colStockBarcode.OptionsColumn.AllowEdit = false;
-            this.colStockBarcode.Visible = true;
-            this.colStockBarcode.VisibleIndex = 1;
-            this.colStockBarcode.Width = 125;
-            // 
-            // colStockCode
-            // 
-            this.colStockCode.Caption = "Stock Code";
-            this.colStockCode.FieldName = "StockCode";
-            this.colStockCode.Name = "colStockCode";
-            this.colStockCode.OptionsColumn.AllowEdit = false;
-            this.colStockCode.Visible = true;
-            this.colStockCode.VisibleIndex = 0;
-            this.colStockCode.Width = 125;
-            // 
             // btnSearch
             // 
             this.btnSearch.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -232,16 +153,6 @@
             this.gridViewCustomerLists.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewCustomerLists.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewCustomerLists.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.gridViewCustomerLists.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colStockName,
-            this.colStockCode,
-            this.colStockBarcode,
-            this.colStockUnit,
-            this.colStockPurchasePrice,
-            this.colStockSalePrice,
-            this.colStockPurchaseVAT,
-            this.colSaleVAT,
-            this.colGroupName});
             this.gridViewCustomerLists.GridControl = this.gridControlCustomerLists;
             this.gridViewCustomerLists.Name = "gridViewCustomerLists";
             this.gridViewCustomerLists.OptionsMenu.EnableColumnMenu = false;
@@ -258,26 +169,6 @@
             this.gridViewCustomerLists.OptionsView.ShowGroupPanel = false;
             this.gridViewCustomerLists.OptionsView.ShowViewCaption = true;
             this.gridViewCustomerLists.ViewCaption = "Customers";
-            // 
-            // colStockName
-            // 
-            this.colStockName.Caption = "Stock Name";
-            this.colStockName.FieldName = "StockName";
-            this.colStockName.Name = "colStockName";
-            this.colStockName.OptionsColumn.AllowEdit = false;
-            this.colStockName.Visible = true;
-            this.colStockName.VisibleIndex = 2;
-            this.colStockName.Width = 200;
-            // 
-            // colSaleVAT
-            // 
-            this.colSaleVAT.Caption = "Sale VAT";
-            this.colSaleVAT.FieldName = "StockSaleVAT";
-            this.colSaleVAT.Name = "colSaleVAT";
-            this.colSaleVAT.OptionsColumn.AllowEdit = false;
-            this.colSaleVAT.Visible = true;
-            this.colSaleVAT.VisibleIndex = 8;
-            this.colSaleVAT.Width = 125;
             // 
             // gridControlCustomerLists
             // 
@@ -340,6 +231,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1498, 568);
             this.Controls.Add(this.splitContainerControl1);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("CustomerListsForm.IconOptions.Image")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CustomerListsForm";
@@ -365,10 +257,6 @@
         }
 
         #endregion
-
-        private UserControls.Grids.MyGridColumn colGroupName;
-        private UserControls.Grids.MyGridColumn colStockPurchaseVAT;
-        private UserControls.Grids.MyGridColumn colStockSalePrice;
         private UserControls.Controls.MyTextEdit txtCustomerBarcode;
         private DevExpress.XtraEditors.LabelControl lblCustomerBarcode;
         private UserControls.Controls.MyTextEdit txtCustomerName;
@@ -376,14 +264,8 @@
         private UserControls.Controls.MyPrivateCodeTextEdit txtCustomerCode;
         private DevExpress.XtraEditors.LabelControl lblCustomerCode;
         private UserControls.Controls.MySimpleButton btnClean;
-        private UserControls.Grids.MyGridColumn colStockPurchasePrice;
-        private UserControls.Grids.MyGridColumn colStockUnit;
-        private UserControls.Grids.MyGridColumn colStockBarcode;
-        private UserControls.Grids.MyGridColumn colStockCode;
         private UserControls.Controls.MySimpleButton btnSearch;
         private UserControls.Grids.MyGridView gridViewCustomerLists;
-        private UserControls.Grids.MyGridColumn colStockName;
-        private UserControls.Grids.MyGridColumn colSaleVAT;
         private UserControls.Grids.MyGridControl gridControlCustomerLists;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraTab.XtraTabControl xtraTabControlStocks;

@@ -29,81 +29,77 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerGroupsForm));
-            this.gridControlStockGroups = new AutomationUI.UserControls.Grids.MyGridControl();
-            this.gridViewStockGroups = new AutomationUI.UserControls.Grids.MyGridView();
+            this.gridControlCustomerGroups = new AutomationUI.UserControls.Grids.MyGridControl();
+            this.gridViewCustomerGroups = new AutomationUI.UserControls.Grids.MyGridView();
             this.colGroupId = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colGroupCode = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colGroupName = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnUpdate = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.btnExit = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.btnDelete = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnSave = new AutomationUI.UserControls.Controls.MySimpleButton();
+            this.btnDelete = new AutomationUI.UserControls.Controls.MySimpleButton();
+            this.btnExit = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtGroupName = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.txtGroupCode = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.lblGroupCode = new DevExpress.XtraEditors.LabelControl();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.mySimpleButton1 = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.mySimpleButton2 = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.mySimpleButton3 = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.mySimpleButton4 = new AutomationUI.UserControls.Controls.MySimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlStockGroups)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewStockGroups)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCustomerGroups)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCustomerGroups)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtGroupName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGroupCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gridControlStockGroups
+            // gridControlCustomerGroups
             // 
-            this.gridControlStockGroups.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gridControlStockGroups.Location = new System.Drawing.Point(0, 0);
-            this.gridControlStockGroups.MainView = this.gridViewStockGroups;
-            this.gridControlStockGroups.Name = "gridControlStockGroups";
-            this.gridControlStockGroups.Size = new System.Drawing.Size(348, 259);
-            this.gridControlStockGroups.TabIndex = 3;
-            this.gridControlStockGroups.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewStockGroups});
+            this.gridControlCustomerGroups.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gridControlCustomerGroups.Location = new System.Drawing.Point(0, 0);
+            this.gridControlCustomerGroups.MainView = this.gridViewCustomerGroups;
+            this.gridControlCustomerGroups.Name = "gridControlCustomerGroups";
+            this.gridControlCustomerGroups.Size = new System.Drawing.Size(348, 256);
+            this.gridControlCustomerGroups.TabIndex = 3;
+            this.gridControlCustomerGroups.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewCustomerGroups});
             // 
-            // gridViewStockGroups
+            // gridViewCustomerGroups
             // 
-            this.gridViewStockGroups.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.gridViewStockGroups.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.gridViewStockGroups.Appearance.FooterPanel.Options.UseFont = true;
-            this.gridViewStockGroups.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.gridViewStockGroups.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.gridViewStockGroups.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.gridViewStockGroups.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.gridViewStockGroups.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridViewStockGroups.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.gridViewStockGroups.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.gridViewStockGroups.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridViewCustomerGroups.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gridViewCustomerGroups.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCustomerGroups.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewCustomerGroups.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridViewCustomerGroups.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCustomerGroups.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridViewCustomerGroups.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridViewCustomerGroups.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewCustomerGroups.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCustomerGroups.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewCustomerGroups.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colGroupId,
             this.colGroupCode,
             this.colGroupName});
-            this.gridViewStockGroups.GridControl = this.gridControlStockGroups;
-            this.gridViewStockGroups.Name = "gridViewStockGroups";
-            this.gridViewStockGroups.OptionsMenu.EnableColumnMenu = false;
-            this.gridViewStockGroups.OptionsMenu.EnableFooterMenu = false;
-            this.gridViewStockGroups.OptionsMenu.EnableGroupPanelMenu = false;
-            this.gridViewStockGroups.OptionsNavigation.EnterMoveNextColumn = true;
-            this.gridViewStockGroups.OptionsPrint.AutoWidth = false;
-            this.gridViewStockGroups.OptionsPrint.PrintFooter = false;
-            this.gridViewStockGroups.OptionsPrint.PrintGroupFooter = false;
-            this.gridViewStockGroups.OptionsView.ColumnAutoWidth = false;
-            this.gridViewStockGroups.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.gridViewStockGroups.OptionsView.RowAutoHeight = true;
-            this.gridViewStockGroups.OptionsView.ShowAutoFilterRow = true;
-            this.gridViewStockGroups.OptionsView.ShowGroupPanel = false;
-            this.gridViewStockGroups.OptionsView.ShowViewCaption = true;
-            this.gridViewStockGroups.ViewCaption = "Stock Groups";
+            this.gridViewCustomerGroups.GridControl = this.gridControlCustomerGroups;
+            this.gridViewCustomerGroups.Name = "gridViewCustomerGroups";
+            this.gridViewCustomerGroups.OptionsMenu.EnableColumnMenu = false;
+            this.gridViewCustomerGroups.OptionsMenu.EnableFooterMenu = false;
+            this.gridViewCustomerGroups.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridViewCustomerGroups.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gridViewCustomerGroups.OptionsPrint.AutoWidth = false;
+            this.gridViewCustomerGroups.OptionsPrint.PrintFooter = false;
+            this.gridViewCustomerGroups.OptionsPrint.PrintGroupFooter = false;
+            this.gridViewCustomerGroups.OptionsView.ColumnAutoWidth = false;
+            this.gridViewCustomerGroups.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gridViewCustomerGroups.OptionsView.RowAutoHeight = true;
+            this.gridViewCustomerGroups.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewCustomerGroups.OptionsView.ShowGroupPanel = false;
+            this.gridViewCustomerGroups.OptionsView.ShowViewCaption = true;
+            this.gridViewCustomerGroups.ViewCaption = "Stock Groups";
             // 
             // colGroupId
             // 
@@ -135,11 +131,8 @@
             // groupControl3
             // 
             this.groupControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl3.Controls.Add(this.gridControlCustomerGroups);
             this.groupControl3.Controls.Add(this.groupControl2);
-            this.groupControl3.Controls.Add(this.btnUpdate);
-            this.groupControl3.Controls.Add(this.btnExit);
-            this.groupControl3.Controls.Add(this.btnDelete);
-            this.groupControl3.Controls.Add(this.btnSave);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl3.Location = new System.Drawing.Point(0, 97);
             this.groupControl3.Name = "groupControl3";
@@ -147,49 +140,63 @@
             this.groupControl3.TabIndex = 5;
             this.groupControl3.Text = "groupControl3";
             // 
+            // groupControl2
+            // 
+            this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl2.Controls.Add(this.btnUpdate);
+            this.groupControl2.Controls.Add(this.btnSave);
+            this.groupControl2.Controls.Add(this.btnDelete);
+            this.groupControl2.Controls.Add(this.btnExit);
+            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupControl2.Location = new System.Drawing.Point(0, 253);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(348, 68);
+            this.groupControl2.TabIndex = 4;
+            this.groupControl2.Text = "groupControl2";
+            // 
             // btnUpdate
             // 
             this.btnUpdate.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnUpdate.Appearance.Options.UseForeColor = true;
             this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(92, 9);
+            this.btnUpdate.Location = new System.Drawing.Point(92, 14);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(79, 42);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.btnExit.Appearance.Options.UseForeColor = true;
-            this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
-            this.btnExit.Location = new System.Drawing.Point(262, 9);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(79, 42);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Exit";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.btnDelete.Appearance.Options.UseForeColor = true;
-            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(177, 9);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(79, 42);
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "Delete";
             // 
             // btnSave
             // 
             this.btnSave.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnSave.Appearance.Options.UseForeColor = true;
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.Location = new System.Drawing.Point(7, 9);
+            this.btnSave.Location = new System.Drawing.Point(7, 14);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(79, 42);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.btnDelete.Appearance.Options.UseForeColor = true;
+            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
+            this.btnDelete.Location = new System.Drawing.Point(177, 14);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(79, 42);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Delete";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.btnExit.Appearance.Options.UseForeColor = true;
+            this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
+            this.btnExit.Location = new System.Drawing.Point(262, 14);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(79, 42);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Exit";
             // 
             // groupControl1
             // 
@@ -246,65 +253,6 @@
             this.lblGroupCode.TabIndex = 0;
             this.lblGroupCode.Text = "Group Code";
             // 
-            // groupControl2
-            // 
-            this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.groupControl2.Controls.Add(this.mySimpleButton1);
-            this.groupControl2.Controls.Add(this.gridControlStockGroups);
-            this.groupControl2.Controls.Add(this.mySimpleButton2);
-            this.groupControl2.Controls.Add(this.mySimpleButton3);
-            this.groupControl2.Controls.Add(this.mySimpleButton4);
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl2.Location = new System.Drawing.Point(0, 0);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(348, 321);
-            this.groupControl2.TabIndex = 4;
-            this.groupControl2.Text = "groupControl2";
-            // 
-            // mySimpleButton1
-            // 
-            this.mySimpleButton1.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.mySimpleButton1.Appearance.Options.UseForeColor = true;
-            this.mySimpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mySimpleButton1.ImageOptions.Image")));
-            this.mySimpleButton1.Location = new System.Drawing.Point(92, 268);
-            this.mySimpleButton1.Name = "mySimpleButton1";
-            this.mySimpleButton1.Size = new System.Drawing.Size(79, 42);
-            this.mySimpleButton1.TabIndex = 3;
-            this.mySimpleButton1.Text = "Update";
-            // 
-            // mySimpleButton2
-            // 
-            this.mySimpleButton2.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.mySimpleButton2.Appearance.Options.UseForeColor = true;
-            this.mySimpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mySimpleButton2.ImageOptions.Image")));
-            this.mySimpleButton2.Location = new System.Drawing.Point(262, 268);
-            this.mySimpleButton2.Name = "mySimpleButton2";
-            this.mySimpleButton2.Size = new System.Drawing.Size(79, 42);
-            this.mySimpleButton2.TabIndex = 2;
-            this.mySimpleButton2.Text = "Exit";
-            // 
-            // mySimpleButton3
-            // 
-            this.mySimpleButton3.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.mySimpleButton3.Appearance.Options.UseForeColor = true;
-            this.mySimpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mySimpleButton3.ImageOptions.Image")));
-            this.mySimpleButton3.Location = new System.Drawing.Point(177, 268);
-            this.mySimpleButton3.Name = "mySimpleButton3";
-            this.mySimpleButton3.Size = new System.Drawing.Size(79, 42);
-            this.mySimpleButton3.TabIndex = 1;
-            this.mySimpleButton3.Text = "Delete";
-            // 
-            // mySimpleButton4
-            // 
-            this.mySimpleButton4.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.mySimpleButton4.Appearance.Options.UseForeColor = true;
-            this.mySimpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mySimpleButton4.ImageOptions.Image")));
-            this.mySimpleButton4.Location = new System.Drawing.Point(7, 268);
-            this.mySimpleButton4.Name = "mySimpleButton4";
-            this.mySimpleButton4.Size = new System.Drawing.Size(79, 42);
-            this.mySimpleButton4.TabIndex = 0;
-            this.mySimpleButton4.Text = "Save";
-            // 
             // CustomerGroupsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,27 +260,32 @@
             this.ClientSize = new System.Drawing.Size(348, 418);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl1);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("CustomerGroupsForm.IconOptions.Image")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CustomerGroupsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Customer Groups";
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlStockGroups)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewStockGroups)).EndInit();
+            this.Load += new System.EventHandler(this.CustomerGroupsForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCustomerGroups)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCustomerGroups)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtGroupName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGroupCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private UserControls.Grids.MyGridControl gridControlStockGroups;
-        private UserControls.Grids.MyGridView gridViewStockGroups;
+        private UserControls.Grids.MyGridControl gridControlCustomerGroups;
+        private UserControls.Grids.MyGridView gridViewCustomerGroups;
         private UserControls.Grids.MyGridColumn colGroupId;
         private UserControls.Grids.MyGridColumn colGroupCode;
         private UserControls.Grids.MyGridColumn colGroupName;
@@ -347,9 +300,5 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl lblGroupCode;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private UserControls.Controls.MySimpleButton mySimpleButton1;
-        private UserControls.Controls.MySimpleButton mySimpleButton2;
-        private UserControls.Controls.MySimpleButton mySimpleButton3;
-        private UserControls.Controls.MySimpleButton mySimpleButton4;
     }
 }
