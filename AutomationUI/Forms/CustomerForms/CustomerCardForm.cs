@@ -54,6 +54,7 @@ namespace AutomationUI.Forms.CustomerForms
             memoAddress.Text = "";
             btnCustomerCode.Text = "";
             btnCustomerGroupCode.Text = "";
+            txtCustomerGroupName.Text = "";
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -85,7 +86,7 @@ namespace AutomationUI.Forms.CustomerForms
             });
             if (result.Success)
             {
-                MyMessageBox.Add("Customer");
+                MyMessageBox.Add(result.Message);
                 ClearAll();
             }
         }
@@ -141,6 +142,52 @@ namespace AutomationUI.Forms.CustomerForms
             }
         }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            var result = _customerService.Update(new Customer
+            {
+                Id = CustomerId,
+                CustomerCode = btnCustomerCode.Text,
+                Address = memoAddress.Text,
+                City = txtCity.Text,
+                Country = txtCountry.Text,
+                Authorized1 = txtAuthorized1.Text,
+                Authorized2 = txtAuthorized2.Text,
+                AuthorizedEmail1 = txtAuthorizedEmail1.Text,
+                AuthorizedEmail2 = txtAuthorizedEmail2.Text,
+                CustomerSaveDate = DateTime.Now,
+                CustomerSaveUser = MainForm.UserId,
+                CustomerName = txtCustomerName.Text,
+                District = txtDistrict.Text,
+                Fax1 = txtFax1.Text,
+                Fax2 = txtFax2.Text,
+                MailInfo = txtEmailInfo.Text,
+                Phone1 = txtPhoneNumber1.Text,
+                Phone2 = txtPhoneNumber2.Text,
+                TaxNumber = txtTaxNumber.Text,
+                TaxOffice = txtTaxOffice.Text,
+                WebAddress = txtWebAddress.Text,
+                CustomerGroupId = CustomerGroupId,
 
+            });
+            if (result.Success)
+            {
+                MyMessageBox.Update(result.Message);
+                ClearAll();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var result = _customerService.Delete(new Customer
+            {
+                Id = CustomerId
+            });
+            if (result.Success)
+            {
+                MyMessageBox.Delete(result.Message);
+                ClearAll();
+            }
+        }
     }
 }

@@ -37,6 +37,21 @@ namespace Business.Concrete
             return new SuccessDataResult<List<CustomerDetailDto>>(_customerDal.GetCustomerDetailDto());
         }
 
+        public IDataResult<List<CustomerDetailDto>> SearchCustomerNameDetailDto(string customerName)
+        {
+            return new SuccessDataResult<List<CustomerDetailDto>>(_customerDal.GetCustomerDetailDto().Where(c=>c.CustomerName==customerName).ToList());
+        }
+
+        public IDataResult<List<CustomerDetailDto>> SearchCustomerCodeDetailDto(string customerCode)
+        {
+            return new SuccessDataResult<List<CustomerDetailDto>>(_customerDal.GetCustomerDetailDto().Where(c => c.CustomerCode == customerCode).ToList());
+        }
+
+        public IDataResult<List<CustomerDetailDto>> SearchCustomerGroupDetailDto(string customerGroup)
+        {
+            return new SuccessDataResult<List<CustomerDetailDto>>(_customerDal.GetCustomerDetailDto().Where(c => c.GroupName == customerGroup).ToList());
+        }
+
         public IResult Add(Customer customer)
         {
             _customerDal.Add(customer);

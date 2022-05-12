@@ -43,6 +43,8 @@
             this.lblCustomerCode = new DevExpress.XtraEditors.LabelControl();
             this.btnCustomerCode = new DevExpress.XtraEditors.ButtonEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.txtPhoneNumber2 = new AutomationUI.UserControls.Controls.MyPhoneNumberTextEdit();
+            this.txtPhoneNumber1 = new AutomationUI.UserControls.Controls.MyPhoneNumberTextEdit();
             this.txtAuthorizedEmail2 = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
             this.txtAuthorizedEmail1 = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
             this.txtEmailInfo = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
@@ -59,9 +61,7 @@
             this.lblEmailInfo = new DevExpress.XtraEditors.LabelControl();
             this.txtWebAddress = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblWebAddress = new DevExpress.XtraEditors.LabelControl();
-            this.txtPhoneNumber2 = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblPhoneNumber2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtPhoneNumber1 = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblPhoneNumber1 = new DevExpress.XtraEditors.LabelControl();
             this.lblAddress = new DevExpress.XtraEditors.LabelControl();
             this.memoAddress = new AutomationUI.UserControls.Controls.MyMemoEdit();
@@ -86,6 +86,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomerCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmailInfo.Properties)).BeginInit();
@@ -94,8 +96,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWebAddress.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoAddress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDistrict.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).BeginInit();
@@ -128,7 +128,7 @@
             // txtCustomerGroupName
             // 
             this.txtCustomerGroupName.EnterMoveNextControl = true;
-            this.txtCustomerGroupName.Location = new System.Drawing.Point(441, 95);
+            this.txtCustomerGroupName.Location = new System.Drawing.Point(430, 95);
             this.txtCustomerGroupName.Name = "txtCustomerGroupName";
             this.txtCustomerGroupName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtCustomerGroupName.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -147,7 +147,7 @@
             // txtTaxNumber
             // 
             this.txtTaxNumber.EnterMoveNextControl = true;
-            this.txtTaxNumber.Location = new System.Drawing.Point(441, 67);
+            this.txtTaxNumber.Location = new System.Drawing.Point(430, 67);
             this.txtTaxNumber.Name = "txtTaxNumber";
             this.txtTaxNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtTaxNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -166,7 +166,7 @@
             // txtTaxOffice
             // 
             this.txtTaxOffice.EnterMoveNextControl = true;
-            this.txtTaxOffice.Location = new System.Drawing.Point(441, 39);
+            this.txtTaxOffice.Location = new System.Drawing.Point(430, 39);
             this.txtTaxOffice.Name = "txtTaxOffice";
             this.txtTaxOffice.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtTaxOffice.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -243,6 +243,8 @@
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.txtPhoneNumber2);
+            this.groupControl2.Controls.Add(this.txtPhoneNumber1);
             this.groupControl2.Controls.Add(this.txtAuthorizedEmail2);
             this.groupControl2.Controls.Add(this.txtAuthorizedEmail1);
             this.groupControl2.Controls.Add(this.txtEmailInfo);
@@ -259,9 +261,7 @@
             this.groupControl2.Controls.Add(this.lblEmailInfo);
             this.groupControl2.Controls.Add(this.txtWebAddress);
             this.groupControl2.Controls.Add(this.lblWebAddress);
-            this.groupControl2.Controls.Add(this.txtPhoneNumber2);
             this.groupControl2.Controls.Add(this.lblPhoneNumber2);
-            this.groupControl2.Controls.Add(this.txtPhoneNumber1);
             this.groupControl2.Controls.Add(this.lblPhoneNumber1);
             this.groupControl2.Controls.Add(this.lblAddress);
             this.groupControl2.Controls.Add(this.memoAddress);
@@ -278,10 +278,44 @@
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Basic Customer Information";
             // 
+            // txtPhoneNumber2
+            // 
+            this.txtPhoneNumber2.EnterMoveNextControl = true;
+            this.txtPhoneNumber2.Location = new System.Drawing.Point(139, 288);
+            this.txtPhoneNumber2.Name = "txtPhoneNumber2";
+            this.txtPhoneNumber2.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtPhoneNumber2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtPhoneNumber2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtPhoneNumber2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPhoneNumber2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtPhoneNumber2.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
+            this.txtPhoneNumber2.Properties.MaskSettings.Set("isAutoComplete", false);
+            this.txtPhoneNumber2.Properties.MaskSettings.Set("isOptimistic", false);
+            this.txtPhoneNumber2.Properties.MaxLength = 50;
+            this.txtPhoneNumber2.Size = new System.Drawing.Size(189, 20);
+            this.txtPhoneNumber2.TabIndex = 34;
+            // 
+            // txtPhoneNumber1
+            // 
+            this.txtPhoneNumber1.EnterMoveNextControl = true;
+            this.txtPhoneNumber1.Location = new System.Drawing.Point(139, 262);
+            this.txtPhoneNumber1.Name = "txtPhoneNumber1";
+            this.txtPhoneNumber1.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtPhoneNumber1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtPhoneNumber1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtPhoneNumber1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPhoneNumber1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtPhoneNumber1.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
+            this.txtPhoneNumber1.Properties.MaskSettings.Set("isAutoComplete", false);
+            this.txtPhoneNumber1.Properties.MaskSettings.Set("isOptimistic", false);
+            this.txtPhoneNumber1.Properties.MaxLength = 50;
+            this.txtPhoneNumber1.Size = new System.Drawing.Size(189, 20);
+            this.txtPhoneNumber1.TabIndex = 33;
+            // 
             // txtAuthorizedEmail2
             // 
             this.txtAuthorizedEmail2.EnterMoveNextControl = true;
-            this.txtAuthorizedEmail2.Location = new System.Drawing.Point(442, 161);
+            this.txtAuthorizedEmail2.Location = new System.Drawing.Point(431, 165);
             this.txtAuthorizedEmail2.Name = "txtAuthorizedEmail2";
             this.txtAuthorizedEmail2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAuthorizedEmail2.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -298,7 +332,7 @@
             // txtAuthorizedEmail1
             // 
             this.txtAuthorizedEmail1.EnterMoveNextControl = true;
-            this.txtAuthorizedEmail1.Location = new System.Drawing.Point(442, 109);
+            this.txtAuthorizedEmail1.Location = new System.Drawing.Point(431, 113);
             this.txtAuthorizedEmail1.Name = "txtAuthorizedEmail1";
             this.txtAuthorizedEmail1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAuthorizedEmail1.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -315,7 +349,7 @@
             // txtEmailInfo
             // 
             this.txtEmailInfo.EnterMoveNextControl = true;
-            this.txtEmailInfo.Location = new System.Drawing.Point(441, 57);
+            this.txtEmailInfo.Location = new System.Drawing.Point(430, 61);
             this.txtEmailInfo.Name = "txtEmailInfo";
             this.txtEmailInfo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtEmailInfo.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -332,7 +366,7 @@
             // txtFax2
             // 
             this.txtFax2.EnterMoveNextControl = true;
-            this.txtFax2.Location = new System.Drawing.Point(441, 213);
+            this.txtFax2.Location = new System.Drawing.Point(430, 217);
             this.txtFax2.Name = "txtFax2";
             this.txtFax2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtFax2.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -342,7 +376,7 @@
             // 
             // lblFax2
             // 
-            this.lblFax2.Location = new System.Drawing.Point(343, 216);
+            this.lblFax2.Location = new System.Drawing.Point(343, 220);
             this.lblFax2.Name = "lblFax2";
             this.lblFax2.Size = new System.Drawing.Size(27, 13);
             this.lblFax2.TabIndex = 28;
@@ -351,7 +385,7 @@
             // txtFax1
             // 
             this.txtFax1.EnterMoveNextControl = true;
-            this.txtFax1.Location = new System.Drawing.Point(441, 187);
+            this.txtFax1.Location = new System.Drawing.Point(430, 191);
             this.txtFax1.Name = "txtFax1";
             this.txtFax1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtFax1.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -361,7 +395,7 @@
             // 
             // lblFax1
             // 
-            this.lblFax1.Location = new System.Drawing.Point(343, 190);
+            this.lblFax1.Location = new System.Drawing.Point(343, 194);
             this.lblFax1.Name = "lblFax1";
             this.lblFax1.Size = new System.Drawing.Size(27, 13);
             this.lblFax1.TabIndex = 26;
@@ -369,7 +403,7 @@
             // 
             // lblAuthorizedEmail2
             // 
-            this.lblAuthorizedEmail2.Location = new System.Drawing.Point(343, 164);
+            this.lblAuthorizedEmail2.Location = new System.Drawing.Point(343, 168);
             this.lblAuthorizedEmail2.Name = "lblAuthorizedEmail2";
             this.lblAuthorizedEmail2.Size = new System.Drawing.Size(79, 13);
             this.lblAuthorizedEmail2.TabIndex = 24;
@@ -378,7 +412,7 @@
             // txtAuthorized2
             // 
             this.txtAuthorized2.EnterMoveNextControl = true;
-            this.txtAuthorized2.Location = new System.Drawing.Point(441, 135);
+            this.txtAuthorized2.Location = new System.Drawing.Point(430, 139);
             this.txtAuthorized2.Name = "txtAuthorized2";
             this.txtAuthorized2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAuthorized2.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -388,7 +422,7 @@
             // 
             // lblAuthorized2
             // 
-            this.lblAuthorized2.Location = new System.Drawing.Point(343, 138);
+            this.lblAuthorized2.Location = new System.Drawing.Point(343, 142);
             this.lblAuthorized2.Name = "lblAuthorized2";
             this.lblAuthorized2.Size = new System.Drawing.Size(52, 13);
             this.lblAuthorized2.TabIndex = 22;
@@ -396,7 +430,7 @@
             // 
             // lblAuthorizedEmail1
             // 
-            this.lblAuthorizedEmail1.Location = new System.Drawing.Point(343, 112);
+            this.lblAuthorizedEmail1.Location = new System.Drawing.Point(343, 116);
             this.lblAuthorizedEmail1.Name = "lblAuthorizedEmail1";
             this.lblAuthorizedEmail1.Size = new System.Drawing.Size(79, 13);
             this.lblAuthorizedEmail1.TabIndex = 20;
@@ -405,7 +439,7 @@
             // txtAuthorized1
             // 
             this.txtAuthorized1.EnterMoveNextControl = true;
-            this.txtAuthorized1.Location = new System.Drawing.Point(441, 83);
+            this.txtAuthorized1.Location = new System.Drawing.Point(430, 87);
             this.txtAuthorized1.Name = "txtAuthorized1";
             this.txtAuthorized1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAuthorized1.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -432,7 +466,7 @@
             // txtWebAddress
             // 
             this.txtWebAddress.EnterMoveNextControl = true;
-            this.txtWebAddress.Location = new System.Drawing.Point(441, 31);
+            this.txtWebAddress.Location = new System.Drawing.Point(430, 35);
             this.txtWebAddress.Name = "txtWebAddress";
             this.txtWebAddress.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtWebAddress.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -448,17 +482,6 @@
             this.lblWebAddress.TabIndex = 14;
             this.lblWebAddress.Text = "Web Address";
             // 
-            // txtPhoneNumber2
-            // 
-            this.txtPhoneNumber2.EnterMoveNextControl = true;
-            this.txtPhoneNumber2.Location = new System.Drawing.Point(139, 288);
-            this.txtPhoneNumber2.Name = "txtPhoneNumber2";
-            this.txtPhoneNumber2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtPhoneNumber2.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtPhoneNumber2.Properties.MaxLength = 50;
-            this.txtPhoneNumber2.Size = new System.Drawing.Size(189, 20);
-            this.txtPhoneNumber2.TabIndex = 13;
-            // 
             // lblPhoneNumber2
             // 
             this.lblPhoneNumber2.Location = new System.Drawing.Point(24, 291);
@@ -466,17 +489,6 @@
             this.lblPhoneNumber2.Size = new System.Drawing.Size(79, 13);
             this.lblPhoneNumber2.TabIndex = 12;
             this.lblPhoneNumber2.Text = "Phone Number 2";
-            // 
-            // txtPhoneNumber1
-            // 
-            this.txtPhoneNumber1.EnterMoveNextControl = true;
-            this.txtPhoneNumber1.Location = new System.Drawing.Point(139, 262);
-            this.txtPhoneNumber1.Name = "txtPhoneNumber1";
-            this.txtPhoneNumber1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtPhoneNumber1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtPhoneNumber1.Properties.MaxLength = 50;
-            this.txtPhoneNumber1.Size = new System.Drawing.Size(189, 20);
-            this.txtPhoneNumber1.TabIndex = 11;
             // 
             // lblPhoneNumber1
             // 
@@ -586,6 +598,7 @@
             this.btnExit.Size = new System.Drawing.Size(92, 41);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
@@ -597,6 +610,7 @@
             this.btnDelete.Size = new System.Drawing.Size(92, 41);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -608,6 +622,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(92, 41);
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -619,6 +634,7 @@
             this.btnSave.Size = new System.Drawing.Size(92, 41);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // CustomerCardForm
             // 
@@ -646,6 +662,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmailInfo.Properties)).EndInit();
@@ -654,8 +672,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWebAddress.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNumber1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoAddress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDistrict.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).EndInit();
@@ -683,9 +699,7 @@
         private DevExpress.XtraEditors.LabelControl lblCustomerName;
         private DevExpress.XtraEditors.LabelControl lblCustomerCode;
         private DevExpress.XtraEditors.ButtonEdit btnCustomerCode;
-        private UserControls.Controls.MyTextEdit txtPhoneNumber2;
         private DevExpress.XtraEditors.LabelControl lblPhoneNumber2;
-        private UserControls.Controls.MyTextEdit txtPhoneNumber1;
         private DevExpress.XtraEditors.LabelControl lblPhoneNumber1;
         private DevExpress.XtraEditors.LabelControl lblAddress;
         private UserControls.Controls.MyMemoEdit memoAddress;
@@ -715,5 +729,7 @@
         private UserControls.Controls.MyEmailTextEdit txtAuthorizedEmail2;
         private UserControls.Controls.MyEmailTextEdit txtAuthorizedEmail1;
         private UserControls.Controls.MyEmailTextEdit txtEmailInfo;
+        private UserControls.Controls.MyPhoneNumberTextEdit txtPhoneNumber2;
+        private UserControls.Controls.MyPhoneNumberTextEdit txtPhoneNumber1;
     }
 }

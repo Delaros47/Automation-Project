@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerListsForm));
-            this.txtCustomerBarcode = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.lblCustomerBarcode = new DevExpress.XtraEditors.LabelControl();
+            this.txtCustomerGroup = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.lblCustomerGroup = new DevExpress.XtraEditors.LabelControl();
             this.txtCustomerName = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblCustomerName = new DevExpress.XtraEditors.LabelControl();
             this.txtCustomerCode = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
@@ -61,7 +61,7 @@
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControlStocks = new DevExpress.XtraTab.XtraTabControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCustomerBarcode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCustomerGroup.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCustomerName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCustomerCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCustomerLists)).BeginInit();
@@ -77,24 +77,25 @@
             this.splitContainerControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtCustomerBarcode
+            // txtCustomerGroup
             // 
-            this.txtCustomerBarcode.EnterMoveNextControl = true;
-            this.txtCustomerBarcode.Location = new System.Drawing.Point(14, 162);
-            this.txtCustomerBarcode.Name = "txtCustomerBarcode";
-            this.txtCustomerBarcode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtCustomerBarcode.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtCustomerBarcode.Properties.MaxLength = 50;
-            this.txtCustomerBarcode.Size = new System.Drawing.Size(181, 20);
-            this.txtCustomerBarcode.TabIndex = 7;
+            this.txtCustomerGroup.EnterMoveNextControl = true;
+            this.txtCustomerGroup.Location = new System.Drawing.Point(14, 162);
+            this.txtCustomerGroup.Name = "txtCustomerGroup";
+            this.txtCustomerGroup.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCustomerGroup.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtCustomerGroup.Properties.MaxLength = 50;
+            this.txtCustomerGroup.Size = new System.Drawing.Size(181, 20);
+            this.txtCustomerGroup.TabIndex = 7;
+            this.txtCustomerGroup.EditValueChanged += new System.EventHandler(this.txtCustomerGroup_EditValueChanged);
             // 
-            // lblCustomerBarcode
+            // lblCustomerGroup
             // 
-            this.lblCustomerBarcode.Location = new System.Drawing.Point(14, 143);
-            this.lblCustomerBarcode.Name = "lblCustomerBarcode";
-            this.lblCustomerBarcode.Size = new System.Drawing.Size(88, 13);
-            this.lblCustomerBarcode.TabIndex = 6;
-            this.lblCustomerBarcode.Text = "Customer Barcode";
+            this.lblCustomerGroup.Location = new System.Drawing.Point(14, 143);
+            this.lblCustomerGroup.Name = "lblCustomerGroup";
+            this.lblCustomerGroup.Size = new System.Drawing.Size(78, 13);
+            this.lblCustomerGroup.TabIndex = 6;
+            this.lblCustomerGroup.Text = "Customer Group";
             // 
             // txtCustomerName
             // 
@@ -106,6 +107,7 @@
             this.txtCustomerName.Properties.MaxLength = 50;
             this.txtCustomerName.Size = new System.Drawing.Size(181, 20);
             this.txtCustomerName.TabIndex = 5;
+            this.txtCustomerName.EditValueChanged += new System.EventHandler(this.txtCustomerName_EditValueChanged);
             // 
             // lblCustomerName
             // 
@@ -129,6 +131,7 @@
             this.txtCustomerCode.Properties.MaxLength = 20;
             this.txtCustomerCode.Size = new System.Drawing.Size(181, 20);
             this.txtCustomerCode.TabIndex = 3;
+            this.txtCustomerCode.EditValueChanged += new System.EventHandler(this.txtCustomerCode_EditValueChanged);
             // 
             // lblCustomerCode
             // 
@@ -159,6 +162,7 @@
             this.btnSearch.Size = new System.Drawing.Size(82, 48);
             this.btnSearch.TabIndex = 0;
             this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // gridViewCustomerLists
             // 
@@ -396,8 +400,8 @@
             // 
             // xtraTabPage1
             // 
-            this.xtraTabPage1.Controls.Add(this.txtCustomerBarcode);
-            this.xtraTabPage1.Controls.Add(this.lblCustomerBarcode);
+            this.xtraTabPage1.Controls.Add(this.txtCustomerGroup);
+            this.xtraTabPage1.Controls.Add(this.lblCustomerGroup);
             this.xtraTabPage1.Controls.Add(this.txtCustomerName);
             this.xtraTabPage1.Controls.Add(this.lblCustomerName);
             this.xtraTabPage1.Controls.Add(this.txtCustomerCode);
@@ -451,7 +455,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Customer Lists";
             this.Load += new System.EventHandler(this.CustomerListsForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtCustomerBarcode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCustomerGroup.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCustomerName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCustomerCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCustomerLists)).EndInit();
@@ -471,8 +475,8 @@
         }
 
         #endregion
-        private UserControls.Controls.MyTextEdit txtCustomerBarcode;
-        private DevExpress.XtraEditors.LabelControl lblCustomerBarcode;
+        private UserControls.Controls.MyTextEdit txtCustomerGroup;
+        private DevExpress.XtraEditors.LabelControl lblCustomerGroup;
         private UserControls.Controls.MyTextEdit txtCustomerName;
         private DevExpress.XtraEditors.LabelControl lblCustomerName;
         private UserControls.Controls.MyPrivateCodeTextEdit txtCustomerCode;

@@ -38,5 +38,56 @@ namespace AutomationUI.Forms.CustomerForms
             CustomerCardForm.CustomerId = Convert.ToInt32(gridViewCustomerLists.GetFocusedRowCellValue("Id").ToString());
             this.Close();
         }
+
+        private void txtCustomerCode_EditValueChanged(object sender, EventArgs e)
+        {
+            SearchCustomerCodeDetailDto();
+        }
+
+        private void SearchCustomerNameDetailDto()
+        {
+            gridControlCustomerLists.DataSource =
+                _customerService.SearchCustomerNameDetailDto(txtCustomerName.Text).Data;
+        }
+
+        private void SearchCustomerCodeDetailDto()
+        {
+            gridControlCustomerLists.DataSource =
+                _customerService.SearchCustomerCodeDetailDto(txtCustomerCode.Text).Data;
+        }
+
+        private void SearchCustomerGroupDetailDto()
+        {
+            gridControlCustomerLists.DataSource =
+                _customerService.SearchCustomerGroupDetailDto(txtCustomerGroup.Text).Data;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (txtCustomerCode.Text!="")
+            {
+                SearchCustomerCodeDetailDto();
+            }
+
+            if (txtCustomerGroup.Text!="")
+            {
+                SearchCustomerGroupDetailDto();
+            }
+
+            if (txtCustomerName.Text!="")
+            {
+                SearchCustomerNameDetailDto();
+            }
+        }
+
+        private void txtCustomerName_EditValueChanged(object sender, EventArgs e)
+        {
+            SearchCustomerNameDetailDto();
+        }
+
+        private void txtCustomerGroup_EditValueChanged(object sender, EventArgs e)
+        {
+            SearchCustomerGroupDetailDto();
+        }
     }
 }

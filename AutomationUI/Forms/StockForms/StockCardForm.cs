@@ -75,7 +75,7 @@ namespace AutomationUI.Forms.StockForms
             });
             if (result.Success)
             {
-                MyMessageBox.Add("Stock");
+                MyMessageBox.Add(result.Message);
                 ClearAll();
             }
         }
@@ -100,7 +100,7 @@ namespace AutomationUI.Forms.StockForms
             });
             if (result.Success)
             {
-                MyMessageBox.Update("Stock");
+                MyMessageBox.Update(result.Message);
                 ClearAll();
             }
         }
@@ -113,7 +113,7 @@ namespace AutomationUI.Forms.StockForms
             });
             if (result.Success)
             {
-                MyMessageBox.Delete("Stock");
+                MyMessageBox.Delete(result.Message);
                 ClearAll();
             }
         }
