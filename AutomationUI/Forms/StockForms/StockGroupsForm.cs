@@ -17,6 +17,7 @@ namespace AutomationUI.Forms.StockForms
 {
     public partial class StockGroupsForm : DevExpress.XtraEditors.XtraForm
     {
+        private int StockGroupId = -1;
         private readonly IStockGroupService _stockGroupService;
         public StockGroupsForm()
         {
@@ -64,7 +65,7 @@ namespace AutomationUI.Forms.StockForms
         {
             var result = _stockGroupService.Update(new StockGroup
             {
-                Id = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString()),
+                Id = StockGroupId,
                 GroupCode = txtGroupCode.Text,
                 GroupName = txtGroupName.Text,
                 GroupEditDate = DateTime.Now,
@@ -83,7 +84,7 @@ namespace AutomationUI.Forms.StockForms
 
             var result = _stockGroupService.Delete(new StockGroup
             {
-                Id = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString())
+                Id = StockGroupId,
             });
             if (result.Success)
             {
@@ -99,6 +100,7 @@ namespace AutomationUI.Forms.StockForms
             {
                 txtGroupCode.Text = gridViewStockGroups.GetFocusedRowCellValue("GroupCode").ToString();
                 txtGroupName.Text = gridViewStockGroups.GetFocusedRowCellValue("GroupName").ToString();
+                StockGroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString());
             }
 
         }
@@ -107,7 +109,7 @@ namespace AutomationUI.Forms.StockForms
         {
             if (Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString())>0)
             {
-                StockCardForm.GroupId = Convert.ToInt32(gridViewStockGroups.GetFocusedRowCellValue("Id").ToString());
+                StockCardForm.GroupId = StockGroupId;
                 this.Close();
             }
             

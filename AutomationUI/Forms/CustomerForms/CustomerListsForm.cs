@@ -8,14 +8,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.Abstract;
+using Business.DependencyResolvers.AutoFac;
 
 namespace AutomationUI.Forms.CustomerForms
 {
     public partial class CustomerListsForm : DevExpress.XtraEditors.XtraForm
     {
+        private readonly ICustomerService _customerService;
+        private int CustomerId = -1;
         public CustomerListsForm()
         {
             InitializeComponent();
+            _customerService = InstanceFactory.GetInstance<ICustomerService>();
+        }
+
+        private void CustomerListsForm_Load(object sender, EventArgs e)
+        {
+            GetCustomerDetailDto();
+        }
+
+        private void GetCustomerDetailDto()
+        {
+            gridControlCustomerLists.DataSource = _customerService.GetCustomerDetailDto().Data;
+        }
+
+        private void gridViewCustomerLists_DoubleClick(object sender, EventArgs e)
+        {
+            CustomerCardForm.CustomerId = Convert.ToInt32(gridViewCustomerLists.GetFocusedRowCellValue("Id").ToString());
+            this.Close();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace AutomationUI.Functions
 
         public static void Add(string content)
         {
-            XtraMessageBox.Show(content, "Addig a new.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            XtraMessageBox.Show(content, "Adding a new.", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public static void Update(string content)

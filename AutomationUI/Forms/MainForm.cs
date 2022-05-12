@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutomationUI.Forms.CustomerForms;
 using AutomationUI.Forms.StockForms;
 using DevExpress.XtraBars;
 
@@ -49,14 +50,32 @@ namespace AutomationUI.Forms
             {
                 StockCardForm stockCard = new StockCardForm();
                 stockCard.ShowDialog();
-            }else if (e.Item==barBtnStockGroups)
+            }
+            else if (e.Item == barBtnStockGroups)
             {
                 StockGroupsForm stockGroups = new StockGroupsForm();
                 stockGroups.ShowDialog();
-            }else if (e.Item==barBtnStockMovements)
+            }
+            else if (e.Item == barBtnStockMovements)
             {
                 StockMovementsForm stockMovements = new StockMovementsForm();
                 stockMovements.ShowDialog();
+            }
+            else if (e.Item == barBtnCustomerGroups)
+            {
+                CustomerGroupsForm customerGroupsForm = new CustomerGroupsForm();
+                customerGroupsForm.ShowDialog();
+            }
+            else if (e.Item == barBtnCustomerCard)
+            {
+                CustomerCardForm customerCardForm = new CustomerCardForm();
+                customerCardForm.ShowDialog();
+            }
+            else if (e.Item == barBtnCustomerLists)
+            {
+                CustomerListsForm customerListsForm = new CustomerListsForm();
+                customerListsForm.MdiParent = ActiveForm;
+                customerListsForm.Show();
             }
         }
     }

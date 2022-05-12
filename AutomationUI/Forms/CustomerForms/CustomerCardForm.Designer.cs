@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerCardForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.myTextEdit4 = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.txtCustomerGroupName = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblCustomerGroupName = new DevExpress.XtraEditors.LabelControl();
             this.txtTaxNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblTaxNumber = new DevExpress.XtraEditors.LabelControl();
@@ -43,6 +43,13 @@
             this.lblCustomerCode = new DevExpress.XtraEditors.LabelControl();
             this.btnCustomerCode = new DevExpress.XtraEditors.ButtonEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.txtAuthorizedEmail2 = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
+            this.txtAuthorizedEmail1 = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
+            this.txtEmailInfo = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
+            this.txtFax2 = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.lblFax2 = new DevExpress.XtraEditors.LabelControl();
+            this.txtFax1 = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.lblFax1 = new DevExpress.XtraEditors.LabelControl();
             this.lblAuthorizedEmail2 = new DevExpress.XtraEditors.LabelControl();
             this.txtAuthorized2 = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblAuthorized2 = new DevExpress.XtraEditors.LabelControl();
@@ -65,20 +72,13 @@
             this.txtCountry = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblCountry = new DevExpress.XtraEditors.LabelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.txtFax2 = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.lblFax2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtFax1 = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.lblFax1 = new DevExpress.XtraEditors.LabelControl();
             this.btnExit = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnDelete = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnUpdate = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnSave = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.txtEmailInfo = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
-            this.txtlAuthorizedEmail1 = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
-            this.txtAuthorizedEmail2 = new AutomationUI.UserControls.Controls.MyEmailTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCustomerGroupName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxOffice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomerGroupCode.Properties)).BeginInit();
@@ -86,6 +86,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomerCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmailInfo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFax2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFax1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWebAddress.Properties)).BeginInit();
@@ -97,16 +102,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCountry.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFax2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFax1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmailInfo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtlAuthorizedEmail1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.myTextEdit4);
+            this.groupControl1.Controls.Add(this.txtCustomerGroupName);
             this.groupControl1.Controls.Add(this.lblCustomerGroupName);
             this.groupControl1.Controls.Add(this.txtTaxNumber);
             this.groupControl1.Controls.Add(this.lblTaxNumber);
@@ -125,16 +125,16 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Customer Front Information";
             // 
-            // myTextEdit4
+            // txtCustomerGroupName
             // 
-            this.myTextEdit4.EnterMoveNextControl = true;
-            this.myTextEdit4.Location = new System.Drawing.Point(441, 95);
-            this.myTextEdit4.Name = "myTextEdit4";
-            this.myTextEdit4.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myTextEdit4.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myTextEdit4.Properties.MaxLength = 50;
-            this.myTextEdit4.Size = new System.Drawing.Size(189, 20);
-            this.myTextEdit4.TabIndex = 11;
+            this.txtCustomerGroupName.EnterMoveNextControl = true;
+            this.txtCustomerGroupName.Location = new System.Drawing.Point(441, 95);
+            this.txtCustomerGroupName.Name = "txtCustomerGroupName";
+            this.txtCustomerGroupName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCustomerGroupName.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtCustomerGroupName.Properties.MaxLength = 50;
+            this.txtCustomerGroupName.Size = new System.Drawing.Size(189, 20);
+            this.txtCustomerGroupName.TabIndex = 11;
             // 
             // lblCustomerGroupName
             // 
@@ -202,6 +202,7 @@
             this.btnCustomerGroupCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnCustomerGroupCode.Size = new System.Drawing.Size(189, 20);
             this.btnCustomerGroupCode.TabIndex = 4;
+            this.btnCustomerGroupCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnCustomerGroupCode_ButtonClick);
             // 
             // txtCustomerName
             // 
@@ -238,11 +239,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.btnCustomerCode.Size = new System.Drawing.Size(189, 20);
             this.btnCustomerCode.TabIndex = 0;
+            this.btnCustomerCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnCustomerCode_ButtonClick);
             // 
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.txtAuthorizedEmail2);
-            this.groupControl2.Controls.Add(this.txtlAuthorizedEmail1);
+            this.groupControl2.Controls.Add(this.txtAuthorizedEmail1);
             this.groupControl2.Controls.Add(this.txtEmailInfo);
             this.groupControl2.Controls.Add(this.txtFax2);
             this.groupControl2.Controls.Add(this.lblFax2);
@@ -275,6 +277,95 @@
             this.groupControl2.Size = new System.Drawing.Size(640, 323);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Basic Customer Information";
+            // 
+            // txtAuthorizedEmail2
+            // 
+            this.txtAuthorizedEmail2.EnterMoveNextControl = true;
+            this.txtAuthorizedEmail2.Location = new System.Drawing.Point(442, 161);
+            this.txtAuthorizedEmail2.Name = "txtAuthorizedEmail2";
+            this.txtAuthorizedEmail2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAuthorizedEmail2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("allowBlankInput", true);
+            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+        "-])+)+");
+            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("isAutoComplete", true);
+            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("isOptimistic", false);
+            this.txtAuthorizedEmail2.Properties.MaxLength = 50;
+            this.txtAuthorizedEmail2.Size = new System.Drawing.Size(188, 20);
+            this.txtAuthorizedEmail2.TabIndex = 32;
+            // 
+            // txtAuthorizedEmail1
+            // 
+            this.txtAuthorizedEmail1.EnterMoveNextControl = true;
+            this.txtAuthorizedEmail1.Location = new System.Drawing.Point(442, 109);
+            this.txtAuthorizedEmail1.Name = "txtAuthorizedEmail1";
+            this.txtAuthorizedEmail1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAuthorizedEmail1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAuthorizedEmail1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtAuthorizedEmail1.Properties.MaskSettings.Set("allowBlankInput", true);
+            this.txtAuthorizedEmail1.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+        "-])+)+");
+            this.txtAuthorizedEmail1.Properties.MaskSettings.Set("isAutoComplete", true);
+            this.txtAuthorizedEmail1.Properties.MaskSettings.Set("isOptimistic", false);
+            this.txtAuthorizedEmail1.Properties.MaxLength = 50;
+            this.txtAuthorizedEmail1.Size = new System.Drawing.Size(188, 20);
+            this.txtAuthorizedEmail1.TabIndex = 31;
+            // 
+            // txtEmailInfo
+            // 
+            this.txtEmailInfo.EnterMoveNextControl = true;
+            this.txtEmailInfo.Location = new System.Drawing.Point(441, 57);
+            this.txtEmailInfo.Name = "txtEmailInfo";
+            this.txtEmailInfo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtEmailInfo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtEmailInfo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtEmailInfo.Properties.MaskSettings.Set("allowBlankInput", true);
+            this.txtEmailInfo.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+        "-])+)+");
+            this.txtEmailInfo.Properties.MaskSettings.Set("isAutoComplete", true);
+            this.txtEmailInfo.Properties.MaskSettings.Set("isOptimistic", false);
+            this.txtEmailInfo.Properties.MaxLength = 50;
+            this.txtEmailInfo.Size = new System.Drawing.Size(189, 20);
+            this.txtEmailInfo.TabIndex = 30;
+            // 
+            // txtFax2
+            // 
+            this.txtFax2.EnterMoveNextControl = true;
+            this.txtFax2.Location = new System.Drawing.Point(441, 213);
+            this.txtFax2.Name = "txtFax2";
+            this.txtFax2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtFax2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtFax2.Properties.MaxLength = 50;
+            this.txtFax2.Size = new System.Drawing.Size(189, 20);
+            this.txtFax2.TabIndex = 29;
+            // 
+            // lblFax2
+            // 
+            this.lblFax2.Location = new System.Drawing.Point(343, 216);
+            this.lblFax2.Name = "lblFax2";
+            this.lblFax2.Size = new System.Drawing.Size(27, 13);
+            this.lblFax2.TabIndex = 28;
+            this.lblFax2.Text = "Fax 2";
+            // 
+            // txtFax1
+            // 
+            this.txtFax1.EnterMoveNextControl = true;
+            this.txtFax1.Location = new System.Drawing.Point(441, 187);
+            this.txtFax1.Name = "txtFax1";
+            this.txtFax1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtFax1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtFax1.Properties.MaxLength = 50;
+            this.txtFax1.Size = new System.Drawing.Size(189, 20);
+            this.txtFax1.TabIndex = 27;
+            // 
+            // lblFax1
+            // 
+            this.lblFax1.Location = new System.Drawing.Point(343, 190);
+            this.lblFax1.Name = "lblFax1";
+            this.lblFax1.Size = new System.Drawing.Size(27, 13);
+            this.lblFax1.TabIndex = 26;
+            this.lblFax1.Text = "Fax 1";
             // 
             // lblAuthorizedEmail2
             // 
@@ -485,44 +576,6 @@
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "groupControl3";
             // 
-            // txtFax2
-            // 
-            this.txtFax2.EnterMoveNextControl = true;
-            this.txtFax2.Location = new System.Drawing.Point(441, 213);
-            this.txtFax2.Name = "txtFax2";
-            this.txtFax2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtFax2.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtFax2.Properties.MaxLength = 50;
-            this.txtFax2.Size = new System.Drawing.Size(189, 20);
-            this.txtFax2.TabIndex = 29;
-            // 
-            // lblFax2
-            // 
-            this.lblFax2.Location = new System.Drawing.Point(343, 216);
-            this.lblFax2.Name = "lblFax2";
-            this.lblFax2.Size = new System.Drawing.Size(27, 13);
-            this.lblFax2.TabIndex = 28;
-            this.lblFax2.Text = "Fax 2";
-            // 
-            // txtFax1
-            // 
-            this.txtFax1.EnterMoveNextControl = true;
-            this.txtFax1.Location = new System.Drawing.Point(441, 187);
-            this.txtFax1.Name = "txtFax1";
-            this.txtFax1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtFax1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtFax1.Properties.MaxLength = 50;
-            this.txtFax1.Size = new System.Drawing.Size(189, 20);
-            this.txtFax1.TabIndex = 27;
-            // 
-            // lblFax1
-            // 
-            this.lblFax1.Location = new System.Drawing.Point(343, 190);
-            this.lblFax1.Name = "lblFax1";
-            this.lblFax1.Size = new System.Drawing.Size(27, 13);
-            this.lblFax1.TabIndex = 26;
-            this.lblFax1.Text = "Fax 1";
-            // 
             // btnExit
             // 
             this.btnExit.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -567,57 +620,6 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             // 
-            // txtEmailInfo
-            // 
-            this.txtEmailInfo.EnterMoveNextControl = true;
-            this.txtEmailInfo.Location = new System.Drawing.Point(441, 57);
-            this.txtEmailInfo.Name = "txtEmailInfo";
-            this.txtEmailInfo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtEmailInfo.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtEmailInfo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtEmailInfo.Properties.MaskSettings.Set("allowBlankInput", true);
-            this.txtEmailInfo.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
-        "-])+)+");
-            this.txtEmailInfo.Properties.MaskSettings.Set("isAutoComplete", true);
-            this.txtEmailInfo.Properties.MaskSettings.Set("isOptimistic", false);
-            this.txtEmailInfo.Properties.MaxLength = 50;
-            this.txtEmailInfo.Size = new System.Drawing.Size(189, 20);
-            this.txtEmailInfo.TabIndex = 30;
-            // 
-            // txtlAuthorizedEmail1
-            // 
-            this.txtlAuthorizedEmail1.EnterMoveNextControl = true;
-            this.txtlAuthorizedEmail1.Location = new System.Drawing.Point(442, 109);
-            this.txtlAuthorizedEmail1.Name = "txtlAuthorizedEmail1";
-            this.txtlAuthorizedEmail1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtlAuthorizedEmail1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtlAuthorizedEmail1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtlAuthorizedEmail1.Properties.MaskSettings.Set("allowBlankInput", true);
-            this.txtlAuthorizedEmail1.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
-        "-])+)+");
-            this.txtlAuthorizedEmail1.Properties.MaskSettings.Set("isAutoComplete", true);
-            this.txtlAuthorizedEmail1.Properties.MaskSettings.Set("isOptimistic", false);
-            this.txtlAuthorizedEmail1.Properties.MaxLength = 50;
-            this.txtlAuthorizedEmail1.Size = new System.Drawing.Size(188, 20);
-            this.txtlAuthorizedEmail1.TabIndex = 31;
-            // 
-            // txtAuthorizedEmail2
-            // 
-            this.txtAuthorizedEmail2.EnterMoveNextControl = true;
-            this.txtAuthorizedEmail2.Location = new System.Drawing.Point(442, 161);
-            this.txtAuthorizedEmail2.Name = "txtAuthorizedEmail2";
-            this.txtAuthorizedEmail2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtAuthorizedEmail2.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("allowBlankInput", true);
-            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
-        "-])+)+");
-            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("isAutoComplete", true);
-            this.txtAuthorizedEmail2.Properties.MaskSettings.Set("isOptimistic", false);
-            this.txtAuthorizedEmail2.Properties.MaxLength = 50;
-            this.txtAuthorizedEmail2.Size = new System.Drawing.Size(188, 20);
-            this.txtAuthorizedEmail2.TabIndex = 32;
-            // 
             // CustomerCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -626,16 +628,16 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("CustomerCardForm.IconOptions.Image")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CustomerCardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Customer Card";
+            this.Load += new System.EventHandler(this.CustomerCardForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCustomerGroupName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxOffice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomerGroupCode.Properties)).EndInit();
@@ -644,6 +646,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmailInfo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFax2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFax1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWebAddress.Properties)).EndInit();
@@ -655,11 +662,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCountry.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtFax2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFax1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmailInfo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtlAuthorizedEmail1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorizedEmail2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -669,7 +671,7 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private UserControls.Controls.MyTextEdit myTextEdit4;
+        private UserControls.Controls.MyTextEdit txtCustomerGroupName;
         private DevExpress.XtraEditors.LabelControl lblCustomerGroupName;
         private UserControls.Controls.MyTextEdit txtTaxNumber;
         private DevExpress.XtraEditors.LabelControl lblTaxNumber;
@@ -711,7 +713,7 @@
         private UserControls.Controls.MySimpleButton btnUpdate;
         private UserControls.Controls.MySimpleButton btnSave;
         private UserControls.Controls.MyEmailTextEdit txtAuthorizedEmail2;
-        private UserControls.Controls.MyEmailTextEdit txtlAuthorizedEmail1;
+        private UserControls.Controls.MyEmailTextEdit txtAuthorizedEmail1;
         private UserControls.Controls.MyEmailTextEdit txtEmailInfo;
     }
 }

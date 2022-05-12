@@ -17,6 +17,7 @@ namespace AutomationUI.UserControls.Controls
         {
             
             Properties.AppearanceFocused.BackColor = Color.LightCyan;
+            Properties.Appearance.BackColor = Color.PaleGoldenrod;
             Properties.MaxLength = 500;
 
         }

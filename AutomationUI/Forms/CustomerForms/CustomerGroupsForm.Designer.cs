@@ -99,7 +99,9 @@
             this.gridViewCustomerGroups.OptionsView.ShowAutoFilterRow = true;
             this.gridViewCustomerGroups.OptionsView.ShowGroupPanel = false;
             this.gridViewCustomerGroups.OptionsView.ShowViewCaption = true;
-            this.gridViewCustomerGroups.ViewCaption = "Stock Groups";
+            this.gridViewCustomerGroups.ViewCaption = "Customer Groups";
+            this.gridViewCustomerGroups.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewCustomerGroups_FocusedRowChanged);
+            this.gridViewCustomerGroups.DoubleClick += new System.EventHandler(this.gridViewCustomerGroups_DoubleClick);
             // 
             // colGroupId
             // 
@@ -164,6 +166,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(79, 42);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -175,6 +178,7 @@
             this.btnSave.Size = new System.Drawing.Size(79, 42);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -186,6 +190,7 @@
             this.btnDelete.Size = new System.Drawing.Size(79, 42);
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnExit
             // 
@@ -197,6 +202,7 @@
             this.btnExit.Size = new System.Drawing.Size(79, 42);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // groupControl1
             // 

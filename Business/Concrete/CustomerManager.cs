@@ -7,6 +7,7 @@ using Business.Abstract;
 using Business.Constants;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using Universal.Utilities.Results.Abstract;
 using Universal.Utilities.Results.Concrete;
 
@@ -29,6 +30,11 @@ namespace Business.Concrete
         public IDataResult<Customer> Get(int customerId)
         {
             return new SuccessDataResult<Customer>(_customerDal.Get(c=>c.Id==customerId));
+        }
+
+        public IDataResult<List<CustomerDetailDto>> GetCustomerDetailDto()
+        {
+            return new SuccessDataResult<List<CustomerDetailDto>>(_customerDal.GetCustomerDetailDto());
         }
 
         public IResult Add(Customer customer)
