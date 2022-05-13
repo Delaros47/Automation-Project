@@ -17,5 +17,10 @@ namespace AutomationUI.Forms.BankForms
         {
             InitializeComponent();
         }
+
+        private void BankTransactionsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

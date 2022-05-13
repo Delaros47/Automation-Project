@@ -28,9 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BankListsForm));
+            this.SuspendLayout();
+            // 
+            // BankListsForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "BankListsForm";
+            this.ClientSize = new System.Drawing.Size(1498, 568);
+            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BankListsForm.IconOptions.LargeImage")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "BankListsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Bank Lists";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -81,6 +81,23 @@ namespace AutomationUI.Forms
             {
                 BankCardForm bankCardForm = new BankCardForm();
                 bankCardForm.ShowDialog();
+            }else if (e.Item==barBtnBankMovements)
+            {
+                BankMovementsForm bankMovementsForm = new BankMovementsForm();
+                bankMovementsForm.ShowDialog();
+            }else if (e.Item==barBtnBankTransactions)
+            {
+                BankTransactionsForm bankTransactionsForm = new BankTransactionsForm();
+                bankTransactionsForm.ShowDialog();
+            }else if (e.Item==barBtnBankLists)
+            {
+                BankListsForm bankListsForm = new BankListsForm();
+                bankListsForm.MdiParent = ActiveForm;
+                bankListsForm.Show();
+            }else if (e.Item==barBtnMoneyTransfers)
+            {
+                MoneyTransfersForm moneyTransfersForm = new MoneyTransfersForm();
+                moneyTransfersForm.ShowDialog();
             }
         }
     }

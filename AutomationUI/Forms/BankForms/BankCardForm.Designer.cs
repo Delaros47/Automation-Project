@@ -46,7 +46,7 @@
             this.lblBankBranch = new DevExpress.XtraEditors.LabelControl();
             this.lblAddress = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.myTextEdit2 = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.txtAccountNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblAccountNumber = new DevExpress.XtraEditors.LabelControl();
             this.txtAccountName = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblAccountName = new DevExpress.XtraEditors.LabelControl();
@@ -55,10 +55,10 @@
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlBanks = new AutomationUI.UserControls.Grids.MyGridControl();
             this.gridViewBanks = new AutomationUI.UserControls.Grids.MyGridView();
+            this.colId = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colBankName = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colAccountName = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colBalance = new AutomationUI.UserControls.Grids.MyGridColumn();
-            this.colId = new AutomationUI.UserControls.Grids.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmailAddress.Properties)).BeginInit();
@@ -67,7 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtIBAN.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRepresentative.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBankBranch.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccountName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
@@ -94,7 +94,7 @@
             this.groupControl1.Controls.Add(this.lblBankBranch);
             this.groupControl1.Controls.Add(this.lblAddress);
             this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.myTextEdit2);
+            this.groupControl1.Controls.Add(this.txtAccountNumber);
             this.groupControl1.Controls.Add(this.lblAccountNumber);
             this.groupControl1.Controls.Add(this.txtAccountName);
             this.groupControl1.Controls.Add(this.lblAccountName);
@@ -136,10 +136,6 @@
             this.txtEmailAddress.Name = "txtEmailAddress";
             this.txtEmailAddress.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtEmailAddress.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtEmailAddress.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
-            this.txtEmailAddress.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
-    "-])+)+";
-            this.txtEmailAddress.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEmailAddress.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtEmailAddress.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtEmailAddress.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -194,9 +190,6 @@
             this.txtPhoneNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPhoneNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPhoneNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtPhoneNumber.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtPhoneNumber.Properties.Mask.EditMask = "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
-            this.txtPhoneNumber.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtPhoneNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtPhoneNumber.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtPhoneNumber.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -212,9 +205,6 @@
             this.txtIBAN.Name = "txtIBAN";
             this.txtIBAN.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtIBAN.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtIBAN.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtIBAN.Properties.Mask.EditMask = "TR\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?";
-            this.txtIBAN.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtIBAN.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtIBAN.Properties.MaskSettings.Set("mask", "TR\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?");
             this.txtIBAN.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -293,16 +283,16 @@
             this.labelControl6.TabIndex = 16;
             this.labelControl6.Text = "IBAN";
             // 
-            // myTextEdit2
+            // txtAccountNumber
             // 
-            this.myTextEdit2.EnterMoveNextControl = true;
-            this.myTextEdit2.Location = new System.Drawing.Point(109, 87);
-            this.myTextEdit2.Name = "myTextEdit2";
-            this.myTextEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myTextEdit2.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myTextEdit2.Properties.MaxLength = 50;
-            this.myTextEdit2.Size = new System.Drawing.Size(191, 20);
-            this.myTextEdit2.TabIndex = 13;
+            this.txtAccountNumber.EnterMoveNextControl = true;
+            this.txtAccountNumber.Location = new System.Drawing.Point(109, 87);
+            this.txtAccountNumber.Name = "txtAccountNumber";
+            this.txtAccountNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAccountNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAccountNumber.Properties.MaxLength = 50;
+            this.txtAccountNumber.Size = new System.Drawing.Size(191, 20);
+            this.txtAccountNumber.TabIndex = 13;
             // 
             // lblAccountNumber
             // 
@@ -406,6 +396,13 @@
             this.gridViewBanks.OptionsView.ShowViewCaption = true;
             this.gridViewBanks.ViewCaption = "Banks";
             // 
+            // colId
+            // 
+            this.colId.Caption = "ID";
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
+            // 
             // colBankName
             // 
             this.colBankName.Caption = "Bank";
@@ -436,13 +433,6 @@
             this.colBalance.VisibleIndex = 2;
             this.colBalance.Width = 125;
             // 
-            // colId
-            // 
-            this.colId.Caption = "ID";
-            this.colId.FieldName = "Id";
-            this.colId.Name = "colId";
-            this.colId.OptionsColumn.AllowEdit = false;
-            // 
             // BankCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,7 +455,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtIBAN.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRepresentative.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBankBranch.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccountName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
@@ -496,7 +486,7 @@
         private DevExpress.XtraEditors.LabelControl lblBankBranch;
         private DevExpress.XtraEditors.LabelControl lblAddress;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private UserControls.Controls.MyTextEdit myTextEdit2;
+        private UserControls.Controls.MyTextEdit txtAccountNumber;
         private DevExpress.XtraEditors.LabelControl lblAccountNumber;
         private UserControls.Controls.MyTextEdit txtAccountName;
         private DevExpress.XtraEditors.LabelControl lblAccountName;
