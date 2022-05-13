@@ -282,7 +282,7 @@
   <data name="barBtnBankCard.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6gAAAOoB+Ss1JgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAUQSURBVFhH5Vdd
+        6QAAAOkBVJIUSwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAUQSURBVFhH5Vdd
         cBNVFEZ90hnHR198cdQnZ3yTR1998tXxyTcdGRQEiswwlOLAjCDCI8gwTdIC0gZpqa205acIadNiEVqz
         mybZTTZNNpsfQgFpSn9MPs+52d3ctOsMoqAznplvunvPt993eu+5dzfrHjd8Ct71qbWwAF3bw08+/FG8
         4VdqQQJkBCK1iwEVb9q0fz6O3cBLAbV6kMyWHNOT6oqAc8855jDXfuzvxx7g2YCCD0m8IBlhNDGHRCIJ
@@ -310,7 +310,7 @@
   <data name="barBtnMoneyTransfers.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6gAAAOoB+Ss1JgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAASOSURBVFhH3ZZr
+        6QAAAOkBVJIUSwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAASOSURBVFhH3ZZr
         TJtVHMYPbd9W6Eq7UkKAAYNxG50iDgmaIZYUTIA5o0uGMDBjyXBubM4haGICRhPxMqdhwGYwxmSJc2ab
         7oNKjJkC84O6L+qcjhEvhAlOMxwgoMDj/5y3fYH29JLwZfFJfuk55X953nNODy+76WSw2Q5H6PVzNES4
         8HjKO0TjlYsXc139E2UzCBvX1T+4iX89JVasZcXvHR5Dxr49iE2Lg2LUwZFgwfq9O+EaubYsjuep6SHV
@@ -336,7 +336,7 @@
   <data name="barBtnBankLists.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6gAAAOoB+Ss1JgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAP6SURBVFhHzVfr
+        6QAAAOkBVJIUSwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAP6SURBVFhHzVfr
         S1RBFF+CPvWX9MVSd/eu3se60q7Zh4IoEqEgIjMpeqD5SGUxQ6WEVLIwA7MC0w/1JcgeVGAFavYGW1SC
         LFswzGSXfE7nN86ue++u7l1T6AeHuXPmnN+de2bmzLmW/wrJyclOh8PhRytUOkCfKkl+0U0I8bi5gawo
         weaWa0yW5YDRkPqaXdWmrenKQkpKCoNIaWm/7HbHKWGyLOJxW1JTUxVVVac77t5jQ6Pf2f3HT5iqan/o
@@ -408,7 +408,7 @@
   <data name="barBtnBankMovements.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6gAAAOoB+Ss1JgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAATMSURBVFhHzZd7
+        6QAAAOkBVJIUSwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAATMSURBVFhHzZd7
         TNtVFMf5T2GD8eqgUIqxHc8BLdAWKIUyyhtbOggwxtxwgynLFpY5pxOcYzhUXNyYmI1ATKYZZL4Q2UvF
         f0bAKY9SYG46BmwQo67t79EWiVmOPT/SBtAiMiDe5Jv7O+eec8/n9p6+HBwdHfP9OJwHfB5vdC2FNbG2
         g4uLy8HzDedganxyTYU1sfY8gLGf7sGtwZFVFdawC6DKUROi+ARClpKqXw3h3ljDLkB6Zpbu61t3YJg2

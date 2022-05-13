@@ -42,10 +42,10 @@
             this.barBtnBankCard = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnMoneyTransfers = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnBankLists = new DevExpress.XtraBars.BarButtonItem();
-            this.barBtnBankTransections = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnBankTransactions = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnBankMovements = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageStocks = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupStocks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageCustomers = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupCustomers = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageBanks = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -72,7 +72,7 @@
             this.barBtnBankCard,
             this.barBtnMoneyTransfers,
             this.barBtnBankLists,
-            this.barBtnBankTransections,
+            this.barBtnBankTransactions,
             this.barBtnBankMovements});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
             this.ribbonControlAutomation.MaxItemId = 19;
@@ -171,13 +171,13 @@
             this.barBtnBankLists.LargeWidth = 100;
             this.barBtnBankLists.Name = "barBtnBankLists";
             // 
-            // barBtnBankTransections
+            // barBtnBankTransactions
             // 
-            this.barBtnBankTransections.Caption = "Bank Transections";
-            this.barBtnBankTransections.Id = 17;
-            this.barBtnBankTransections.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankTransections.ImageOptions.LargeImage")));
-            this.barBtnBankTransections.LargeWidth = 100;
-            this.barBtnBankTransections.Name = "barBtnBankTransections";
+            this.barBtnBankTransactions.Caption = "Bank Transactions";
+            this.barBtnBankTransactions.Id = 17;
+            this.barBtnBankTransactions.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankTransections.ImageOptions.LargeImage")));
+            this.barBtnBankTransactions.LargeWidth = 100;
+            this.barBtnBankTransactions.Name = "barBtnBankTransactions";
             // 
             // barBtnBankMovements
             // 
@@ -190,19 +190,19 @@
             // ribbonPageStocks
             // 
             this.ribbonPageStocks.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
+            this.ribbonPageGroupStocks});
             this.ribbonPageStocks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageStocks.ImageOptions.Image")));
             this.ribbonPageStocks.Name = "ribbonPageStocks";
             this.ribbonPageStocks.Text = "Stocks";
             // 
-            // ribbonPageGroup1
+            // ribbonPageGroupStocks
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStockCard);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStockLists);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStockGroups);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStockMovements);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Stock Transections";
+            this.ribbonPageGroupStocks.ItemLinks.Add(this.barBtnStockCard);
+            this.ribbonPageGroupStocks.ItemLinks.Add(this.barBtnStockLists);
+            this.ribbonPageGroupStocks.ItemLinks.Add(this.barBtnStockGroups);
+            this.ribbonPageGroupStocks.ItemLinks.Add(this.barBtnStockMovements);
+            this.ribbonPageGroupStocks.Name = "ribbonPageGroupStocks";
+            this.ribbonPageGroupStocks.Text = "Stock Transactions";
             // 
             // ribbonPageCustomers
             // 
@@ -234,7 +234,7 @@
             this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankCard);
             this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnMoneyTransfers);
             this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankLists);
-            this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankTransections);
+            this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankTransactions);
             this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankMovements);
             this.ribbonPageGroupBanks.Name = "ribbonPageGroupBanks";
             this.ribbonPageGroupBanks.Text = "Bank Transections";
@@ -263,7 +263,7 @@
 
         #endregion
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageStocks;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupStocks;
         private DevExpress.XtraBars.BarButtonItem barBtnStockCard;
         private DevExpress.XtraBars.BarButtonItem barBtnStockLists;
         private DevExpress.XtraBars.BarButtonItem barBtnStockGroups;
@@ -279,7 +279,7 @@
         private DevExpress.XtraBars.BarButtonItem barBtnBankCard;
         private DevExpress.XtraBars.BarButtonItem barBtnMoneyTransfers;
         private DevExpress.XtraBars.BarButtonItem barBtnBankLists;
-        private DevExpress.XtraBars.BarButtonItem barBtnBankTransections;
+        private DevExpress.XtraBars.BarButtonItem barBtnBankTransactions;
         private DevExpress.XtraBars.BarButtonItem barBtnBankMovements;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageBanks;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupBanks;
