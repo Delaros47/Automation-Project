@@ -287,6 +287,9 @@
             this.txtPhoneNumber2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPhoneNumber2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPhoneNumber2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPhoneNumber2.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.txtPhoneNumber2.Properties.Mask.EditMask = "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
+            this.txtPhoneNumber2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtPhoneNumber2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtPhoneNumber2.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtPhoneNumber2.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -304,6 +307,9 @@
             this.txtPhoneNumber1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPhoneNumber1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPhoneNumber1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPhoneNumber1.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.txtPhoneNumber1.Properties.Mask.EditMask = "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
+            this.txtPhoneNumber1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtPhoneNumber1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtPhoneNumber1.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtPhoneNumber1.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -319,6 +325,10 @@
             this.txtAuthorizedEmail2.Name = "txtAuthorizedEmail2";
             this.txtAuthorizedEmail2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAuthorizedEmail2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAuthorizedEmail2.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.txtAuthorizedEmail2.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.txtAuthorizedEmail2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtAuthorizedEmail2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtAuthorizedEmail2.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtAuthorizedEmail2.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -336,6 +346,10 @@
             this.txtAuthorizedEmail1.Name = "txtAuthorizedEmail1";
             this.txtAuthorizedEmail1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAuthorizedEmail1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAuthorizedEmail1.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.txtAuthorizedEmail1.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.txtAuthorizedEmail1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtAuthorizedEmail1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtAuthorizedEmail1.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtAuthorizedEmail1.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -353,6 +367,10 @@
             this.txtEmailInfo.Name = "txtEmailInfo";
             this.txtEmailInfo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtEmailInfo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtEmailInfo.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.txtEmailInfo.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.txtEmailInfo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEmailInfo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtEmailInfo.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtEmailInfo.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -644,6 +662,7 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("CustomerCardForm.IconOptions.LargeImage")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CustomerCardForm";

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutomationUI.Forms.BankForms;
 using AutomationUI.Forms.CustomerForms;
 using AutomationUI.Forms.StockForms;
 using DevExpress.XtraBars;
@@ -76,12 +77,11 @@ namespace AutomationUI.Forms
                 CustomerListsForm customerListsForm = new CustomerListsForm();
                 customerListsForm.MdiParent = ActiveForm;
                 customerListsForm.Show();
+            }else if (e.Item==barBtnBankCard)
+            {
+                BankCardForm bankCardForm = new BankCardForm();
+                bankCardForm.ShowDialog();
             }
-        }
-
-        private void ribbonControlAutomation_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

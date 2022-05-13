@@ -82,7 +82,6 @@
             this.ribbonPageCustomers,
             this.ribbonPageBanks});
             this.ribbonControlAutomation.Size = new System.Drawing.Size(1498, 177);
-            this.ribbonControlAutomation.Click += new System.EventHandler(this.ribbonControlAutomation_Click);
             // 
             // barBtnStockCard
             // 
