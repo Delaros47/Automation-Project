@@ -42,20 +42,15 @@
             this.barBtnBankCard = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnMoneyTransfers = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnBankLists = new DevExpress.XtraBars.BarButtonItem();
-            this.barBtnBankTransection = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnBankTransections = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnBankMovements = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageStocks = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageCustomers = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupCustomers = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.ribbonPageBanks = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupBanks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -77,13 +72,8 @@
             this.barBtnBankCard,
             this.barBtnMoneyTransfers,
             this.barBtnBankLists,
-            this.barBtnBankTransection,
-            this.barBtnBankMovements,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4,
-            this.barButtonItem5});
+            this.barBtnBankTransections,
+            this.barBtnBankMovements});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
             this.ribbonControlAutomation.MaxItemId = 19;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
@@ -161,7 +151,7 @@
             // barBtnBankCard
             // 
             this.barBtnBankCard.Caption = "Bank Card";
-            this.barBtnBankCard.Id = 9;
+            this.barBtnBankCard.Id = 14;
             this.barBtnBankCard.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankCard.ImageOptions.LargeImage")));
             this.barBtnBankCard.LargeWidth = 100;
             this.barBtnBankCard.Name = "barBtnBankCard";
@@ -169,7 +159,7 @@
             // barBtnMoneyTransfers
             // 
             this.barBtnMoneyTransfers.Caption = "Money Transfers";
-            this.barBtnMoneyTransfers.Id = 10;
+            this.barBtnMoneyTransfers.Id = 15;
             this.barBtnMoneyTransfers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnMoneyTransfers.ImageOptions.LargeImage")));
             this.barBtnMoneyTransfers.LargeWidth = 100;
             this.barBtnMoneyTransfers.Name = "barBtnMoneyTransfers";
@@ -177,23 +167,23 @@
             // barBtnBankLists
             // 
             this.barBtnBankLists.Caption = "Bank Lists";
-            this.barBtnBankLists.Id = 11;
+            this.barBtnBankLists.Id = 16;
             this.barBtnBankLists.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankLists.ImageOptions.LargeImage")));
             this.barBtnBankLists.LargeWidth = 100;
             this.barBtnBankLists.Name = "barBtnBankLists";
             // 
-            // barBtnBankTransection
+            // barBtnBankTransections
             // 
-            this.barBtnBankTransection.Caption = "Bank Transections";
-            this.barBtnBankTransection.Id = 12;
-            this.barBtnBankTransection.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankTransection.ImageOptions.LargeImage")));
-            this.barBtnBankTransection.LargeWidth = 100;
-            this.barBtnBankTransection.Name = "barBtnBankTransection";
+            this.barBtnBankTransections.Caption = "Bank Transections";
+            this.barBtnBankTransections.Id = 17;
+            this.barBtnBankTransections.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankTransections.ImageOptions.LargeImage")));
+            this.barBtnBankTransections.LargeWidth = 100;
+            this.barBtnBankTransections.Name = "barBtnBankTransections";
             // 
             // barBtnBankMovements
             // 
             this.barBtnBankMovements.Caption = "Bank Movements";
-            this.barBtnBankMovements.Id = 13;
+            this.barBtnBankMovements.Id = 18;
             this.barBtnBankMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankMovements.ImageOptions.LargeImage")));
             this.barBtnBankMovements.LargeWidth = 100;
             this.barBtnBankMovements.Name = "barBtnBankMovements";
@@ -232,10 +222,6 @@
             this.ribbonPageGroupCustomers.Name = "ribbonPageGroupCustomers";
             this.ribbonPageGroupCustomers.Text = "Customer Process";
             // 
-            // xtraTabbedMdiManager
-            // 
-            this.xtraTabbedMdiManager.MdiParent = this;
-            // 
             // ribbonPageBanks
             // 
             this.ribbonPageBanks.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -246,43 +232,17 @@
             // 
             // ribbonPageGroupBanks
             // 
-            this.ribbonPageGroupBanks.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroupBanks.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroupBanks.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroupBanks.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroupBanks.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankCard);
+            this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnMoneyTransfers);
+            this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankLists);
+            this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankTransections);
+            this.ribbonPageGroupBanks.ItemLinks.Add(this.barBtnBankMovements);
             this.ribbonPageGroupBanks.Name = "ribbonPageGroupBanks";
             this.ribbonPageGroupBanks.Text = "Bank Transections";
             // 
-            // barButtonItem1
+            // xtraTabbedMdiManager
             // 
-            this.barButtonItem1.Caption = "barButtonItem1";
-            this.barButtonItem1.Id = 14;
-            this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "barButtonItem2";
-            this.barButtonItem2.Id = 15;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "barButtonItem3";
-            this.barButtonItem3.Id = 16;
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "barButtonItem4";
-            this.barButtonItem4.Id = 17;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "barButtonItem5";
-            this.barButtonItem5.Id = 18;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.xtraTabbedMdiManager.MdiParent = this;
             // 
             // MainForm
             // 
@@ -320,13 +280,8 @@
         private DevExpress.XtraBars.BarButtonItem barBtnBankCard;
         private DevExpress.XtraBars.BarButtonItem barBtnMoneyTransfers;
         private DevExpress.XtraBars.BarButtonItem barBtnBankLists;
-        private DevExpress.XtraBars.BarButtonItem barBtnBankTransection;
+        private DevExpress.XtraBars.BarButtonItem barBtnBankTransections;
         private DevExpress.XtraBars.BarButtonItem barBtnBankMovements;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageBanks;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupBanks;
     }
