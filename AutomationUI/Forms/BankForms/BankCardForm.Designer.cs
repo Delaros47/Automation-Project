@@ -58,6 +58,7 @@
             this.colBankName = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colAccountName = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.colBalance = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colId = new AutomationUI.UserControls.Grids.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmailAddress.Properties)).BeginInit();
@@ -384,6 +385,7 @@
             this.gridViewBanks.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewBanks.Appearance.ViewCaption.Options.UseForeColor = true;
             this.gridViewBanks.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
             this.colBankName,
             this.colAccountName,
             this.colBalance});
@@ -433,6 +435,13 @@
             this.colBalance.Visible = true;
             this.colBalance.VisibleIndex = 2;
             this.colBalance.Width = 125;
+            // 
+            // colId
+            // 
+            this.colId.Caption = "ID";
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
             // 
             // BankCardForm
             // 
@@ -498,5 +507,6 @@
         private UserControls.Grids.MyGridColumn colBankName;
         private UserControls.Grids.MyGridColumn colAccountName;
         private UserControls.Grids.MyGridColumn colBalance;
+        private UserControls.Grids.MyGridColumn colId;
     }
 }

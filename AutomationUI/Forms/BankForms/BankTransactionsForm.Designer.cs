@@ -1,6 +1,6 @@
 ﻿namespace AutomationUI.Forms.BankForms
 {
-    partial class BankTransectionsForm
+    partial class BankTransactionsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // BankTransectionsForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "BankTransectionsForm";
+            this.ClientSize = new System.Drawing.Size(471, 615);
+            this.Name = "BankTransectionsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Bank Transections";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

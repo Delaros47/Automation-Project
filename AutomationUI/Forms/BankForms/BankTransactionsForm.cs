@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace AutomationUI.Forms.BankForms
 {
-    public partial class BankTransectionsForm : DevExpress.XtraEditors.XtraForm
+    public partial class BankTransactionsForm : DevExpress.XtraEditors.XtraForm
     {
-        public BankTransectionsForm()
+        public BankTransactionsForm()
         {
             InitializeComponent();
         }
