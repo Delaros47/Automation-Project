@@ -78,5 +78,10 @@ namespace AutomationUI.Forms
                 customerListsForm.Show();
             }
         }
+
+        private void ribbonControlAutomation_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

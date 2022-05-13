@@ -143,6 +143,7 @@ namespace AutomationUI.Forms.StockForms
             if (StockId != -1)
             {
                 var result = _stockService.Get(StockId);
+                GroupId = result.Data.GroupId;
                 var group = _stockGroupService.Get(result.Data.GroupId);
                 if (result.Success)
                 {
