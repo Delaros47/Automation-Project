@@ -51,6 +51,14 @@
             this.ribbonPageBanks = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupBanks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonPageCash = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroupCash = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barBtnCashCard = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCashLists = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCashPeriod = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCashReceipts = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -73,14 +81,20 @@
             this.barBtnMoneyTransfers,
             this.barBtnBankLists,
             this.barBtnBankTransactions,
-            this.barBtnBankMovements});
+            this.barBtnBankMovements,
+            this.barBtnCashCard,
+            this.barBtnCashLists,
+            this.barBtnCashPeriod,
+            this.barBtnCashReceipts});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 19;
+            this.ribbonControlAutomation.MaxItemId = 23;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageStocks,
             this.ribbonPageCustomers,
-            this.ribbonPageBanks});
+            this.ribbonPageBanks,
+            this.ribbonPageCash,
+            this.ribbonPage1});
             this.ribbonControlAutomation.Size = new System.Drawing.Size(1498, 177);
             // 
             // barBtnStockCard
@@ -175,7 +189,7 @@
             // 
             this.barBtnBankTransactions.Caption = "Bank Transactions";
             this.barBtnBankTransactions.Id = 17;
-            this.barBtnBankTransactions.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankTransections.ImageOptions.LargeImage")));
+            this.barBtnBankTransactions.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnBankTransactions.ImageOptions.LargeImage")));
             this.barBtnBankTransactions.LargeWidth = 100;
             this.barBtnBankTransactions.Name = "barBtnBankTransactions";
             // 
@@ -243,6 +257,67 @@
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
             // 
+            // ribbonPageCash
+            // 
+            this.ribbonPageCash.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroupCash});
+            this.ribbonPageCash.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageCash.ImageOptions.Image")));
+            this.ribbonPageCash.Name = "ribbonPageCash";
+            this.ribbonPageCash.Text = "Cash";
+            // 
+            // ribbonPageGroupCash
+            // 
+            this.ribbonPageGroupCash.ItemLinks.Add(this.barBtnCashCard);
+            this.ribbonPageGroupCash.ItemLinks.Add(this.barBtnCashLists);
+            this.ribbonPageGroupCash.ItemLinks.Add(this.barBtnCashPeriod);
+            this.ribbonPageGroupCash.ItemLinks.Add(this.barBtnCashReceipts);
+            this.ribbonPageGroupCash.Name = "ribbonPageGroupCash";
+            this.ribbonPageGroupCash.Text = "Cash Transactions";
+            // 
+            // barBtnCashCard
+            // 
+            this.barBtnCashCard.Caption = "Cash Card";
+            this.barBtnCashCard.Id = 19;
+            this.barBtnCashCard.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCashCard.ImageOptions.LargeImage")));
+            this.barBtnCashCard.LargeWidth = 100;
+            this.barBtnCashCard.Name = "barBtnCashCard";
+            // 
+            // barBtnCashLists
+            // 
+            this.barBtnCashLists.Caption = "Cash Lists";
+            this.barBtnCashLists.Id = 20;
+            this.barBtnCashLists.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCashLists.ImageOptions.LargeImage")));
+            this.barBtnCashLists.LargeWidth = 100;
+            this.barBtnCashLists.Name = "barBtnCashLists";
+            // 
+            // barBtnCashPeriod
+            // 
+            this.barBtnCashPeriod.Caption = "Cash Period";
+            this.barBtnCashPeriod.Id = 21;
+            this.barBtnCashPeriod.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnCashPeriod.ImageOptions.SvgImage")));
+            this.barBtnCashPeriod.LargeWidth = 100;
+            this.barBtnCashPeriod.Name = "barBtnCashPeriod";
+            // 
+            // barBtnCashReceipts
+            // 
+            this.barBtnCashReceipts.Caption = "Cash Receipts";
+            this.barBtnCashReceipts.Id = 22;
+            this.barBtnCashReceipts.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCashReceipts.ImageOptions.LargeImage")));
+            this.barBtnCashReceipts.LargeWidth = 100;
+            this.barBtnCashReceipts.Name = "barBtnCashReceipts";
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "ribbonPage1";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,5 +358,13 @@
         private DevExpress.XtraBars.BarButtonItem barBtnBankMovements;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageBanks;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupBanks;
+        private DevExpress.XtraBars.BarButtonItem barBtnCashCard;
+        private DevExpress.XtraBars.BarButtonItem barBtnCashLists;
+        private DevExpress.XtraBars.BarButtonItem barBtnCashPeriod;
+        private DevExpress.XtraBars.BarButtonItem barBtnCashReceipts;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageCash;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupCash;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }
