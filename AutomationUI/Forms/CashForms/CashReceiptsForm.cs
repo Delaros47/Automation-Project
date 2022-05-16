@@ -17,5 +17,10 @@ namespace AutomationUI.Forms.CashForms
         {
             InitializeComponent();
         }
+
+        private void CashReceiptsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
