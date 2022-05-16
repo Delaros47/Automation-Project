@@ -39,7 +39,7 @@
             this.lblTotal = new DevExpress.XtraEditors.LabelControl();
             this.txtTotal = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblExitTransaction = new DevExpress.XtraEditors.LabelControl();
             this.myToggleSwitch1 = new AutomationUI.UserControls.Controls.MyToggleSwitch();
             this.lblEnterTransaction = new DevExpress.XtraEditors.LabelControl();
             this.toggleSwitchEnterTransaction = new AutomationUI.UserControls.Controls.MyToggleSwitch();
@@ -177,7 +177,7 @@
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.labelControl1);
+            this.groupControl2.Controls.Add(this.lblExitTransaction);
             this.groupControl2.Controls.Add(this.myToggleSwitch1);
             this.groupControl2.Controls.Add(this.lblEnterTransaction);
             this.groupControl2.Controls.Add(this.toggleSwitchEnterTransaction);
@@ -195,13 +195,13 @@
             this.groupControl2.TabIndex = 26;
             this.groupControl2.Text = "Process Information";
             // 
-            // labelControl1
+            // lblExitTransaction
             // 
-            this.labelControl1.Location = new System.Drawing.Point(209, 94);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(85, 13);
-            this.labelControl1.TabIndex = 31;
-            this.labelControl1.Text = "Enter Transaction";
+            this.lblExitTransaction.Location = new System.Drawing.Point(209, 94);
+            this.lblExitTransaction.Name = "lblExitTransaction";
+            this.lblExitTransaction.Size = new System.Drawing.Size(77, 13);
+            this.lblExitTransaction.TabIndex = 31;
+            this.lblExitTransaction.Text = "Exit Transaction";
             // 
             // myToggleSwitch1
             // 
@@ -398,7 +398,7 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl lblEnterTransaction;
         private UserControls.Controls.MyToggleSwitch toggleSwitchEnterTransaction;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblExitTransaction;
         private UserControls.Controls.MyToggleSwitch myToggleSwitch1;
     }
 }
