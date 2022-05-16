@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutomationUI.Forms.BankForms;
+using AutomationUI.Forms.CashForms;
 using AutomationUI.Forms.CustomerForms;
 using AutomationUI.Forms.StockForms;
 using DevExpress.XtraBars;
@@ -98,7 +99,25 @@ namespace AutomationUI.Forms
             {
                 MoneyTransfersForm moneyTransfersForm = new MoneyTransfersForm();
                 moneyTransfersForm.ShowDialog();
+            }else if (e.Item==barBtnCashPeriods)
+            {
+                CashPeriodsForm cashPeriodsForm = new CashPeriodsForm();
+                cashPeriodsForm.ShowDialog();
+            }else if (e.Item==barBtnCashCard)
+            {
+                CashCardForm cashCardForm = new CashCardForm();
+                cashCardForm.ShowDialog();
+            }else if (e.Item==barBtnCashLists)
+            {
+                CashListsForm cashListsForm = new CashListsForm();
+                cashListsForm.MdiParent = ActiveForm;
+                cashListsForm.Show();
+            }else if (e.Item==barBtnCashReceipts)
+            {
+                CashReceiptsForm cashReceiptsForm = new CashReceiptsForm();
+                cashReceiptsForm.ShowDialog();
             }
+            
         }
     }
 }

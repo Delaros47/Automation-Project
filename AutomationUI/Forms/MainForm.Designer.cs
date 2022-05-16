@@ -48,6 +48,12 @@
             this.barBtnCashLists = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnCashPeriods = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnCashReceipts = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnSalesInvoice = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnSaleReturnInvoice = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnPurchaseInvoice = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnPurchaseReturnInvoice = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnSaleDispatchNote = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnPurchaseDispatchNote = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageStocks = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupStocks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageCustomers = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -56,8 +62,9 @@
             this.ribbonPageGroupBanks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageCash = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupCash = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageInvoice = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupDispatchNotes = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
@@ -85,16 +92,22 @@
             this.barBtnCashCard,
             this.barBtnCashLists,
             this.barBtnCashPeriods,
-            this.barBtnCashReceipts});
+            this.barBtnCashReceipts,
+            this.barBtnSalesInvoice,
+            this.barBtnSaleReturnInvoice,
+            this.barBtnPurchaseInvoice,
+            this.barBtnPurchaseReturnInvoice,
+            this.barBtnSaleDispatchNote,
+            this.barBtnPurchaseDispatchNote});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 23;
+            this.ribbonControlAutomation.MaxItemId = 29;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageStocks,
             this.ribbonPageCustomers,
             this.ribbonPageBanks,
             this.ribbonPageCash,
-            this.ribbonPage1});
+            this.ribbonPageInvoice});
             this.ribbonControlAutomation.Size = new System.Drawing.Size(1498, 177);
             // 
             // barBtnStockCard
@@ -221,7 +234,7 @@
             // 
             this.barBtnCashPeriods.Caption = "Cash Periods";
             this.barBtnCashPeriods.Id = 21;
-            this.barBtnCashPeriods.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnCashPeriod.ImageOptions.SvgImage")));
+            this.barBtnCashPeriods.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnCashPeriods.ImageOptions.SvgImage")));
             this.barBtnCashPeriods.LargeWidth = 100;
             this.barBtnCashPeriods.Name = "barBtnCashPeriods";
             // 
@@ -232,6 +245,54 @@
             this.barBtnCashReceipts.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCashReceipts.ImageOptions.LargeImage")));
             this.barBtnCashReceipts.LargeWidth = 100;
             this.barBtnCashReceipts.Name = "barBtnCashReceipts";
+            // 
+            // barBtnSalesInvoice
+            // 
+            this.barBtnSalesInvoice.Caption = "Sales Invoice";
+            this.barBtnSalesInvoice.Id = 23;
+            this.barBtnSalesInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnSalesInvoice.ImageOptions.LargeImage")));
+            this.barBtnSalesInvoice.LargeWidth = 100;
+            this.barBtnSalesInvoice.Name = "barBtnSalesInvoice";
+            // 
+            // barBtnSaleReturnInvoice
+            // 
+            this.barBtnSaleReturnInvoice.Caption = "Sales Return Invoice";
+            this.barBtnSaleReturnInvoice.Id = 24;
+            this.barBtnSaleReturnInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnSaleReturnInvoice.ImageOptions.LargeImage")));
+            this.barBtnSaleReturnInvoice.LargeWidth = 100;
+            this.barBtnSaleReturnInvoice.Name = "barBtnSaleReturnInvoice";
+            // 
+            // barBtnPurchaseInvoice
+            // 
+            this.barBtnPurchaseInvoice.Caption = "Purchase Invoice";
+            this.barBtnPurchaseInvoice.Id = 25;
+            this.barBtnPurchaseInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnPurchaseInvoice.ImageOptions.LargeImage")));
+            this.barBtnPurchaseInvoice.LargeWidth = 100;
+            this.barBtnPurchaseInvoice.Name = "barBtnPurchaseInvoice";
+            // 
+            // barBtnPurchaseReturnInvoice
+            // 
+            this.barBtnPurchaseReturnInvoice.Caption = "Purchase Return Invoice";
+            this.barBtnPurchaseReturnInvoice.Id = 26;
+            this.barBtnPurchaseReturnInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnPurchaseReturnInvoice.ImageOptions.LargeImage")));
+            this.barBtnPurchaseReturnInvoice.LargeWidth = 100;
+            this.barBtnPurchaseReturnInvoice.Name = "barBtnPurchaseReturnInvoice";
+            // 
+            // barBtnSaleDispatchNote
+            // 
+            this.barBtnSaleDispatchNote.Caption = "Sale Dispatch Note";
+            this.barBtnSaleDispatchNote.Id = 27;
+            this.barBtnSaleDispatchNote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnSaleDispatchNote.ImageOptions.LargeImage")));
+            this.barBtnSaleDispatchNote.LargeWidth = 100;
+            this.barBtnSaleDispatchNote.Name = "barBtnSaleDispatchNote";
+            // 
+            // barBtnPurchaseDispatchNote
+            // 
+            this.barBtnPurchaseDispatchNote.Caption = "Purchase Dispatch Note";
+            this.barBtnPurchaseDispatchNote.Id = 28;
+            this.barBtnPurchaseDispatchNote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnPurchaseDispatchNote.ImageOptions.LargeImage")));
+            this.barBtnPurchaseDispatchNote.LargeWidth = 100;
+            this.barBtnPurchaseDispatchNote.Name = "barBtnPurchaseDispatchNote";
             // 
             // ribbonPageStocks
             // 
@@ -302,17 +363,30 @@
             this.ribbonPageGroupCash.Name = "ribbonPageGroupCash";
             this.ribbonPageGroupCash.Text = "Cash Transactions";
             // 
-            // ribbonPage1
+            // ribbonPageInvoice
             // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
+            this.ribbonPageInvoice.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroupDispatchNotes});
+            this.ribbonPageInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageInvoice.ImageOptions.Image")));
+            this.ribbonPageInvoice.Name = "ribbonPageInvoice";
+            this.ribbonPageInvoice.Text = "Invoice";
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnSalesInvoice);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnSaleReturnInvoice);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnPurchaseInvoice, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnPurchaseReturnInvoice);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Invoice Processes";
+            // 
+            // ribbonPageGroupDispatchNotes
+            // 
+            this.ribbonPageGroupDispatchNotes.ItemLinks.Add(this.barBtnSaleDispatchNote);
+            this.ribbonPageGroupDispatchNotes.ItemLinks.Add(this.barBtnPurchaseDispatchNote);
+            this.ribbonPageGroupDispatchNotes.Name = "ribbonPageGroupDispatchNotes";
+            this.ribbonPageGroupDispatchNotes.Text = "Dispatch Processes";
             // 
             // xtraTabbedMdiManager
             // 
@@ -364,7 +438,14 @@
         private DevExpress.XtraBars.BarButtonItem barBtnCashReceipts;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageCash;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupCash;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageInvoice;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem barBtnSalesInvoice;
+        private DevExpress.XtraBars.BarButtonItem barBtnSaleReturnInvoice;
+        private DevExpress.XtraBars.BarButtonItem barBtnPurchaseInvoice;
+        private DevExpress.XtraBars.BarButtonItem barBtnPurchaseReturnInvoice;
+        private DevExpress.XtraBars.BarButtonItem barBtnSaleDispatchNote;
+        private DevExpress.XtraBars.BarButtonItem barBtnPurchaseDispatchNote;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupDispatchNotes;
     }
 }

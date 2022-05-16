@@ -30,43 +30,43 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashReceiptsForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnCustomerCode = new AutomationUI.UserControls.Controls.MyButtonEdit();
+            this.btnCashCode = new AutomationUI.UserControls.Controls.MyButtonEdit();
             this.btnSave = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnUpdate = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnDelete = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.memoDescription = new AutomationUI.UserControls.Controls.MyMemoEdit();
             this.btnExit = new AutomationUI.UserControls.Controls.MySimpleButton();
-            this.lblProcessType = new DevExpress.XtraEditors.LabelControl();
             this.txtCustomerName = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.lblDate = new DevExpress.XtraEditors.LabelControl();
             this.lblCustomerName = new DevExpress.XtraEditors.LabelControl();
-            this.lblDecription = new DevExpress.XtraEditors.LabelControl();
             this.lblCustomerCode = new DevExpress.XtraEditors.LabelControl();
             this.txtCashName = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblCashName = new DevExpress.XtraEditors.LabelControl();
             this.lblCashCode = new DevExpress.XtraEditors.LabelControl();
             this.txtDocumentNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblDocumentNumber = new DevExpress.XtraEditors.LabelControl();
+            this.memoDescription = new AutomationUI.UserControls.Controls.MyMemoEdit();
+            this.lblProcessType = new DevExpress.XtraEditors.LabelControl();
+            this.lblDate = new DevExpress.XtraEditors.LabelControl();
+            this.lblDecription = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.btnCashCode = new AutomationUI.UserControls.Controls.MyButtonEdit();
-            this.btnCustomerCode = new AutomationUI.UserControls.Controls.MyButtonEdit();
-            this.deDate = new AutomationUI.UserControls.Controls.MyDateEdit();
-            this.cbmProcessType = new AutomationUI.UserControls.Controls.MyComboBoxEdit();
-            this.txtTotal = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblTotal = new DevExpress.XtraEditors.LabelControl();
+            this.txtTotal = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.cbmProcessType = new AutomationUI.UserControls.Controls.MyComboBoxEdit();
+            this.deDate = new AutomationUI.UserControls.Controls.MyDateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomerCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCustomerName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDocumentNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomerCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbmProcessType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbmProcessType.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -91,6 +91,32 @@
             this.groupControl1.Size = new System.Drawing.Size(417, 196);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Cash/Customer Informations";
+            // 
+            // btnCustomerCode
+            // 
+            this.btnCustomerCode.EnterMoveNextControl = true;
+            this.btnCustomerCode.Location = new System.Drawing.Point(114, 115);
+            this.btnCustomerCode.Name = "btnCustomerCode";
+            this.btnCustomerCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.btnCustomerCode.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.btnCustomerCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnCustomerCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.btnCustomerCode.Size = new System.Drawing.Size(191, 20);
+            this.btnCustomerCode.TabIndex = 23;
+            // 
+            // btnCashCode
+            // 
+            this.btnCashCode.EnterMoveNextControl = true;
+            this.btnCashCode.Location = new System.Drawing.Point(114, 64);
+            this.btnCashCode.Name = "btnCashCode";
+            this.btnCashCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.btnCashCode.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.btnCashCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnCashCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.btnCashCode.Size = new System.Drawing.Size(191, 20);
+            this.btnCashCode.TabIndex = 22;
             // 
             // btnSave
             // 
@@ -125,19 +151,6 @@
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Delete";
             // 
-            // memoDescription
-            // 
-            this.memoDescription.EnterMoveNextControl = true;
-            this.memoDescription.Location = new System.Drawing.Point(114, 95);
-            this.memoDescription.Name = "memoDescription";
-            this.memoDescription.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.memoDescription.Properties.Appearance.Options.UseBackColor = true;
-            this.memoDescription.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.memoDescription.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.memoDescription.Properties.MaxLength = 500;
-            this.memoDescription.Size = new System.Drawing.Size(291, 125);
-            this.memoDescription.TabIndex = 22;
-            // 
             // btnExit
             // 
             this.btnExit.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -148,14 +161,6 @@
             this.btnExit.Size = new System.Drawing.Size(84, 34);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Exit";
-            // 
-            // lblProcessType
-            // 
-            this.lblProcessType.Location = new System.Drawing.Point(18, 66);
-            this.lblProcessType.Name = "lblProcessType";
-            this.lblProcessType.Size = new System.Drawing.Size(64, 13);
-            this.lblProcessType.TabIndex = 14;
-            this.lblProcessType.Text = "Process Type";
             // 
             // txtCustomerName
             // 
@@ -168,14 +173,6 @@
             this.txtCustomerName.Size = new System.Drawing.Size(191, 20);
             this.txtCustomerName.TabIndex = 18;
             // 
-            // lblDate
-            // 
-            this.lblDate.Location = new System.Drawing.Point(18, 41);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(23, 13);
-            this.lblDate.TabIndex = 15;
-            this.lblDate.Text = "Date";
-            // 
             // lblCustomerName
             // 
             this.lblCustomerName.Location = new System.Drawing.Point(19, 144);
@@ -183,14 +180,6 @@
             this.lblCustomerName.Size = new System.Drawing.Size(76, 13);
             this.lblCustomerName.TabIndex = 15;
             this.lblCustomerName.Text = "Customer Name";
-            // 
-            // lblDecription
-            // 
-            this.lblDecription.Location = new System.Drawing.Point(19, 96);
-            this.lblDecription.Name = "lblDecription";
-            this.lblDecription.Size = new System.Drawing.Size(39, 13);
-            this.lblDecription.TabIndex = 16;
-            this.lblDecription.Text = "Address";
             // 
             // lblCustomerCode
             // 
@@ -246,6 +235,43 @@
             this.lblDocumentNumber.TabIndex = 12;
             this.lblDocumentNumber.Text = "Document Number";
             // 
+            // memoDescription
+            // 
+            this.memoDescription.EnterMoveNextControl = true;
+            this.memoDescription.Location = new System.Drawing.Point(114, 95);
+            this.memoDescription.Name = "memoDescription";
+            this.memoDescription.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.memoDescription.Properties.Appearance.Options.UseBackColor = true;
+            this.memoDescription.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.memoDescription.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.memoDescription.Properties.MaxLength = 500;
+            this.memoDescription.Size = new System.Drawing.Size(291, 125);
+            this.memoDescription.TabIndex = 22;
+            // 
+            // lblProcessType
+            // 
+            this.lblProcessType.Location = new System.Drawing.Point(18, 66);
+            this.lblProcessType.Name = "lblProcessType";
+            this.lblProcessType.Size = new System.Drawing.Size(64, 13);
+            this.lblProcessType.TabIndex = 14;
+            this.lblProcessType.Text = "Process Type";
+            // 
+            // lblDate
+            // 
+            this.lblDate.Location = new System.Drawing.Point(18, 41);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(23, 13);
+            this.lblDate.TabIndex = 15;
+            this.lblDate.Text = "Date";
+            // 
+            // lblDecription
+            // 
+            this.lblDecription.Location = new System.Drawing.Point(19, 96);
+            this.lblDecription.Name = "lblDecription";
+            this.lblDecription.Size = new System.Drawing.Size(39, 13);
+            this.lblDecription.TabIndex = 16;
+            this.lblDecription.Text = "Address";
+            // 
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.lblTotal);
@@ -261,33 +287,45 @@
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(417, 231);
             this.groupControl2.TabIndex = 24;
-            this.groupControl2.Text = "groupControl2";
+            this.groupControl2.Text = "Process Information";
             // 
-            // btnCashCode
+            // lblTotal
             // 
-            this.btnCashCode.EnterMoveNextControl = true;
-            this.btnCashCode.Location = new System.Drawing.Point(114, 64);
-            this.btnCashCode.Name = "btnCashCode";
-            this.btnCashCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.btnCashCode.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.btnCashCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnCashCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnCashCode.Size = new System.Drawing.Size(191, 20);
-            this.btnCashCode.TabIndex = 22;
+            this.lblTotal.Location = new System.Drawing.Point(253, 40);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(24, 13);
+            this.lblTotal.TabIndex = 27;
+            this.lblTotal.Text = "Total";
             // 
-            // btnCustomerCode
+            // txtTotal
             // 
-            this.btnCustomerCode.EnterMoveNextControl = true;
-            this.btnCustomerCode.Location = new System.Drawing.Point(114, 115);
-            this.btnCustomerCode.Name = "btnCustomerCode";
-            this.btnCustomerCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.btnCustomerCode.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.btnCustomerCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnCustomerCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnCustomerCode.Size = new System.Drawing.Size(191, 20);
-            this.btnCustomerCode.TabIndex = 23;
+            this.txtTotal.EnterMoveNextControl = true;
+            this.txtTotal.Location = new System.Drawing.Point(321, 38);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtTotal.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtTotal.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtTotal.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtTotal.Properties.MaskSettings.Set("mask", "c");
+            this.txtTotal.Properties.MaxLength = 50;
+            this.txtTotal.Size = new System.Drawing.Size(84, 20);
+            this.txtTotal.TabIndex = 26;
+            // 
+            // cbmProcessType
+            // 
+            this.cbmProcessType.EnterMoveNextControl = true;
+            this.cbmProcessType.Location = new System.Drawing.Point(113, 63);
+            this.cbmProcessType.Name = "cbmProcessType";
+            this.cbmProcessType.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.cbmProcessType.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.cbmProcessType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbmProcessType.Properties.Items.AddRange(new object[] {
+            "Cash Collection",
+            "Cash Payment"});
+            this.cbmProcessType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbmProcessType.Size = new System.Drawing.Size(111, 20);
+            this.cbmProcessType.TabIndex = 25;
             // 
             // deDate
             // 
@@ -307,44 +345,6 @@
             this.deDate.Size = new System.Drawing.Size(111, 20);
             this.deDate.TabIndex = 24;
             // 
-            // cbmProcessType
-            // 
-            this.cbmProcessType.EnterMoveNextControl = true;
-            this.cbmProcessType.Location = new System.Drawing.Point(113, 63);
-            this.cbmProcessType.Name = "cbmProcessType";
-            this.cbmProcessType.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.cbmProcessType.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.cbmProcessType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbmProcessType.Properties.Items.AddRange(new object[] {
-            "Cash Collection",
-            "Cash Payment"});
-            this.cbmProcessType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbmProcessType.Size = new System.Drawing.Size(111, 20);
-            this.cbmProcessType.TabIndex = 25;
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.EnterMoveNextControl = true;
-            this.txtTotal.Location = new System.Drawing.Point(321, 38);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtTotal.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtTotal.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtTotal.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtTotal.Properties.MaskSettings.Set("mask", "c");
-            this.txtTotal.Properties.MaxLength = 50;
-            this.txtTotal.Size = new System.Drawing.Size(84, 20);
-            this.txtTotal.TabIndex = 26;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.Location = new System.Drawing.Point(253, 40);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(24, 13);
-            this.lblTotal.TabIndex = 27;
-            this.lblTotal.Text = "Total";
-            // 
             // CashReceiptsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,19 +362,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomerCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCustomerName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDocumentNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomerCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbmProcessType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbmProcessType.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
