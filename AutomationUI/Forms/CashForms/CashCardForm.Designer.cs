@@ -30,8 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashCardForm));
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControlBanks = new AutomationUI.UserControls.Grids.MyGridControl();
-            this.gridViewBanks = new AutomationUI.UserControls.Grids.MyGridView();
+            this.gridControlCashs = new AutomationUI.UserControls.Grids.MyGridControl();
+            this.gridViewCashs = new AutomationUI.UserControls.Grids.MyGridView();
+            this.colId = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colCashCode = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colCashName = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colBalance = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colDescription = new AutomationUI.UserControls.Grids.MyGridColumn();
             this.btnSave = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnUpdate = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnDelete = new AutomationUI.UserControls.Controls.MySimpleButton();
@@ -45,8 +50,8 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlBanks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewBanks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCashs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCashs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCashCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).BeginInit();
@@ -57,7 +62,7 @@
             // groupControl2
             // 
             this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.groupControl2.Controls.Add(this.gridControlBanks);
+            this.groupControl2.Controls.Add(this.gridControlCashs);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 239);
             this.groupControl2.Name = "groupControl2";
@@ -65,45 +70,97 @@
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "groupControl2";
             // 
-            // gridControlBanks
+            // gridControlCashs
             // 
-            this.gridControlBanks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlBanks.Location = new System.Drawing.Point(0, 0);
-            this.gridControlBanks.MainView = this.gridViewBanks;
-            this.gridControlBanks.Name = "gridControlBanks";
-            this.gridControlBanks.Size = new System.Drawing.Size(437, 261);
-            this.gridControlBanks.TabIndex = 0;
-            this.gridControlBanks.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewBanks});
+            this.gridControlCashs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlCashs.Location = new System.Drawing.Point(0, 0);
+            this.gridControlCashs.MainView = this.gridViewCashs;
+            this.gridControlCashs.Name = "gridControlCashs";
+            this.gridControlCashs.Size = new System.Drawing.Size(437, 261);
+            this.gridControlCashs.TabIndex = 0;
+            this.gridControlCashs.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewCashs});
             // 
-            // gridViewBanks
+            // gridViewCashs
             // 
-            this.gridViewBanks.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.gridViewBanks.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.gridViewBanks.Appearance.FooterPanel.Options.UseFont = true;
-            this.gridViewBanks.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.gridViewBanks.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.gridViewBanks.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.gridViewBanks.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.gridViewBanks.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridViewBanks.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.gridViewBanks.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.gridViewBanks.GridControl = this.gridControlBanks;
-            this.gridViewBanks.Name = "gridViewBanks";
-            this.gridViewBanks.OptionsMenu.EnableColumnMenu = false;
-            this.gridViewBanks.OptionsMenu.EnableFooterMenu = false;
-            this.gridViewBanks.OptionsMenu.EnableGroupPanelMenu = false;
-            this.gridViewBanks.OptionsNavigation.EnterMoveNextColumn = true;
-            this.gridViewBanks.OptionsPrint.AutoWidth = false;
-            this.gridViewBanks.OptionsPrint.PrintFooter = false;
-            this.gridViewBanks.OptionsPrint.PrintGroupFooter = false;
-            this.gridViewBanks.OptionsView.ColumnAutoWidth = false;
-            this.gridViewBanks.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.gridViewBanks.OptionsView.RowAutoHeight = true;
-            this.gridViewBanks.OptionsView.ShowAutoFilterRow = true;
-            this.gridViewBanks.OptionsView.ShowGroupPanel = false;
-            this.gridViewBanks.OptionsView.ShowViewCaption = true;
-            this.gridViewBanks.ViewCaption = "Banks";
+            this.gridViewCashs.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gridViewCashs.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCashs.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewCashs.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridViewCashs.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCashs.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridViewCashs.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridViewCashs.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewCashs.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCashs.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewCashs.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colCashCode,
+            this.colCashName,
+            this.colBalance,
+            this.colDescription});
+            this.gridViewCashs.GridControl = this.gridControlCashs;
+            this.gridViewCashs.Name = "gridViewCashs";
+            this.gridViewCashs.OptionsMenu.EnableColumnMenu = false;
+            this.gridViewCashs.OptionsMenu.EnableFooterMenu = false;
+            this.gridViewCashs.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridViewCashs.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gridViewCashs.OptionsPrint.AutoWidth = false;
+            this.gridViewCashs.OptionsPrint.PrintFooter = false;
+            this.gridViewCashs.OptionsPrint.PrintGroupFooter = false;
+            this.gridViewCashs.OptionsView.ColumnAutoWidth = false;
+            this.gridViewCashs.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gridViewCashs.OptionsView.RowAutoHeight = true;
+            this.gridViewCashs.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewCashs.OptionsView.ShowGroupPanel = false;
+            this.gridViewCashs.OptionsView.ShowViewCaption = true;
+            this.gridViewCashs.ViewCaption = "Cashs";
+            this.gridViewCashs.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewCashs_FocusedRowChanged);
+            // 
+            // colId
+            // 
+            this.colId.Caption = "Id";
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
+            // 
+            // colCashCode
+            // 
+            this.colCashCode.Caption = "Cash Code";
+            this.colCashCode.FieldName = "CashCode";
+            this.colCashCode.Name = "colCashCode";
+            this.colCashCode.OptionsColumn.AllowEdit = false;
+            this.colCashCode.Visible = true;
+            this.colCashCode.VisibleIndex = 0;
+            // 
+            // colCashName
+            // 
+            this.colCashName.Caption = "Cash Name";
+            this.colCashName.FieldName = "CashName";
+            this.colCashName.Name = "colCashName";
+            this.colCashName.OptionsColumn.AllowEdit = false;
+            this.colCashName.Visible = true;
+            this.colCashName.VisibleIndex = 1;
+            this.colCashName.Width = 100;
+            // 
+            // colBalance
+            // 
+            this.colBalance.Caption = "Balance";
+            this.colBalance.FieldName = "Balance";
+            this.colBalance.Name = "colBalance";
+            this.colBalance.OptionsColumn.AllowEdit = false;
+            this.colBalance.Visible = true;
+            this.colBalance.VisibleIndex = 2;
+            // 
+            // colDescription
+            // 
+            this.colDescription.Caption = "Description";
+            this.colDescription.FieldName = "Description";
+            this.colDescription.Name = "colDescription";
+            this.colDescription.OptionsColumn.AllowEdit = false;
+            this.colDescription.Visible = true;
+            this.colDescription.VisibleIndex = 3;
+            this.colDescription.Width = 150;
             // 
             // btnSave
             // 
@@ -115,6 +172,7 @@
             this.btnSave.Size = new System.Drawing.Size(92, 41);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
@@ -126,6 +184,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(92, 41);
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -137,11 +196,12 @@
             this.btnDelete.Size = new System.Drawing.Size(92, 41);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // memoDescription
             // 
             this.memoDescription.EnterMoveNextControl = true;
-            this.memoDescription.Location = new System.Drawing.Point(109, 96);
+            this.memoDescription.Location = new System.Drawing.Point(109, 92);
             this.memoDescription.Name = "memoDescription";
             this.memoDescription.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.memoDescription.Properties.Appearance.Options.UseBackColor = true;
@@ -161,14 +221,15 @@
             this.btnExit.Size = new System.Drawing.Size(92, 41);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblDescription
             // 
-            this.lblDescription.Location = new System.Drawing.Point(19, 97);
+            this.lblDescription.Location = new System.Drawing.Point(19, 93);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(39, 13);
+            this.lblDescription.Size = new System.Drawing.Size(53, 13);
             this.lblDescription.TabIndex = 16;
-            this.lblDescription.Text = "Address";
+            this.lblDescription.Text = "Description";
             // 
             // lblCashName
             // 
@@ -234,15 +295,17 @@
             this.ClientSize = new System.Drawing.Size(437, 500);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("CashCardForm.IconOptions.Image")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CashCardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "CashCardForm";
+            this.Text = "Cash Card";
+            this.Load += new System.EventHandler(this.CashCardForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlBanks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewBanks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCashs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCashs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCashCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).EndInit();
@@ -256,8 +319,8 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private UserControls.Grids.MyGridControl gridControlBanks;
-        private UserControls.Grids.MyGridView gridViewBanks;
+        private UserControls.Grids.MyGridControl gridControlCashs;
+        private UserControls.Grids.MyGridView gridViewCashs;
         private UserControls.Controls.MySimpleButton btnSave;
         private UserControls.Controls.MySimpleButton btnUpdate;
         private UserControls.Controls.MySimpleButton btnDelete;
@@ -269,5 +332,10 @@
         private DevExpress.XtraEditors.LabelControl lblCashCode;
         private UserControls.Controls.MyTextEdit txtCashName;
         private DevExpress.XtraEditors.GroupControl groupControl1;
+        private UserControls.Grids.MyGridColumn colId;
+        private UserControls.Grids.MyGridColumn colCashCode;
+        private UserControls.Grids.MyGridColumn colCashName;
+        private UserControls.Grids.MyGridColumn colBalance;
+        private UserControls.Grids.MyGridColumn colDescription;
     }
 }

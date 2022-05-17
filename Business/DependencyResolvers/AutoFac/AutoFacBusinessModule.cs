@@ -27,6 +27,9 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<CustomerGroupManager>().As<ICustomerGroupService>().SingleInstance();
             builder.RegisterType<EfCustomerGroupDal>().As<ICustomerGroupDal>().SingleInstance();
 
+            builder.RegisterType<CashManager>().As<ICashService>().SingleInstance();
+            builder.RegisterType<EfCashDal>().As<ICashDal>().SingleInstance();
+
 
         }
     }
