@@ -247,9 +247,9 @@
             this.lblDecription.Appearance.Options.UseForeColor = true;
             this.lblDecription.Location = new System.Drawing.Point(19, 127);
             this.lblDecription.Name = "lblDecription";
-            this.lblDecription.Size = new System.Drawing.Size(39, 13);
+            this.lblDecription.Size = new System.Drawing.Size(53, 13);
             this.lblDecription.TabIndex = 16;
-            this.lblDecription.Text = "Address";
+            this.lblDecription.Text = "Description";
             // 
             // lblProcessType
             // 
