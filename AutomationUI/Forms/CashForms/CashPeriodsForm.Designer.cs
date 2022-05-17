@@ -40,7 +40,7 @@
             this.txtTotal = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.lblExitTransaction = new DevExpress.XtraEditors.LabelControl();
-            this.myToggleSwitch1 = new AutomationUI.UserControls.Controls.MyToggleSwitch();
+            this.toggleSwitchExitTransaction = new AutomationUI.UserControls.Controls.MyToggleSwitch();
             this.lblEnterTransaction = new DevExpress.XtraEditors.LabelControl();
             this.toggleSwitchEnterTransaction = new AutomationUI.UserControls.Controls.MyToggleSwitch();
             this.lblDecription = new DevExpress.XtraEditors.LabelControl();
@@ -49,9 +49,9 @@
             this.lblDate = new DevExpress.XtraEditors.LabelControl();
             this.lblCashName = new DevExpress.XtraEditors.LabelControl();
             this.lblCashCode = new DevExpress.XtraEditors.LabelControl();
-            this.txtDocumentNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblDocumentNumber = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnDocumentNumber = new AutomationUI.UserControls.Controls.MyButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).BeginInit();
@@ -59,12 +59,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitchExitTransaction.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitchEnterTransaction.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDocumentNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDocumentNumber.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // deDate
@@ -106,6 +106,7 @@
             this.btnSave.Size = new System.Drawing.Size(82, 31);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
@@ -139,6 +140,7 @@
             this.btnExit.Size = new System.Drawing.Size(82, 31);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtCashName
             // 
@@ -178,7 +180,7 @@
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.lblExitTransaction);
-            this.groupControl2.Controls.Add(this.myToggleSwitch1);
+            this.groupControl2.Controls.Add(this.toggleSwitchExitTransaction);
             this.groupControl2.Controls.Add(this.lblEnterTransaction);
             this.groupControl2.Controls.Add(this.toggleSwitchEnterTransaction);
             this.groupControl2.Controls.Add(this.lblTotal);
@@ -197,30 +199,30 @@
             // 
             // lblExitTransaction
             // 
-            this.lblExitTransaction.Location = new System.Drawing.Point(209, 94);
+            this.lblExitTransaction.Location = new System.Drawing.Point(209, 95);
             this.lblExitTransaction.Name = "lblExitTransaction";
             this.lblExitTransaction.Size = new System.Drawing.Size(77, 13);
             this.lblExitTransaction.TabIndex = 31;
             this.lblExitTransaction.Text = "Exit Transaction";
             // 
-            // myToggleSwitch1
+            // toggleSwitchExitTransaction
             // 
-            this.myToggleSwitch1.EnterMoveNextControl = true;
-            this.myToggleSwitch1.Location = new System.Drawing.Point(114, 93);
-            this.myToggleSwitch1.Name = "myToggleSwitch1";
-            this.myToggleSwitch1.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.myToggleSwitch1.Properties.Appearance.Options.UseForeColor = true;
-            this.myToggleSwitch1.Properties.AutoHeight = false;
-            this.myToggleSwitch1.Properties.AutoWidth = true;
-            this.myToggleSwitch1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.myToggleSwitch1.Properties.OffText = "Passive";
-            this.myToggleSwitch1.Properties.OnText = "Active";
-            this.myToggleSwitch1.Size = new System.Drawing.Size(89, 18);
-            this.myToggleSwitch1.TabIndex = 30;
+            this.toggleSwitchExitTransaction.EnterMoveNextControl = true;
+            this.toggleSwitchExitTransaction.Location = new System.Drawing.Point(114, 93);
+            this.toggleSwitchExitTransaction.Name = "toggleSwitchExitTransaction";
+            this.toggleSwitchExitTransaction.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.toggleSwitchExitTransaction.Properties.Appearance.Options.UseForeColor = true;
+            this.toggleSwitchExitTransaction.Properties.AutoHeight = false;
+            this.toggleSwitchExitTransaction.Properties.AutoWidth = true;
+            this.toggleSwitchExitTransaction.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.toggleSwitchExitTransaction.Properties.OffText = "Passive";
+            this.toggleSwitchExitTransaction.Properties.OnText = "Active";
+            this.toggleSwitchExitTransaction.Size = new System.Drawing.Size(89, 18);
+            this.toggleSwitchExitTransaction.TabIndex = 30;
             // 
             // lblEnterTransaction
             // 
-            this.lblEnterTransaction.Location = new System.Drawing.Point(209, 65);
+            this.lblEnterTransaction.Location = new System.Drawing.Point(209, 66);
             this.lblEnterTransaction.Name = "lblEnterTransaction";
             this.lblEnterTransaction.Size = new System.Drawing.Size(85, 13);
             this.lblEnterTransaction.TabIndex = 29;
@@ -304,17 +306,6 @@
             this.lblCashCode.TabIndex = 12;
             this.lblCashCode.Text = "Cash Code";
             // 
-            // txtDocumentNumber
-            // 
-            this.txtDocumentNumber.EnterMoveNextControl = true;
-            this.txtDocumentNumber.Location = new System.Drawing.Point(114, 37);
-            this.txtDocumentNumber.Name = "txtDocumentNumber";
-            this.txtDocumentNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtDocumentNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtDocumentNumber.Properties.MaxLength = 50;
-            this.txtDocumentNumber.Size = new System.Drawing.Size(191, 20);
-            this.txtDocumentNumber.TabIndex = 13;
-            // 
             // lblDocumentNumber
             // 
             this.lblDocumentNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -327,6 +318,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnDocumentNumber);
             this.groupControl1.Controls.Add(this.btnCashCode);
             this.groupControl1.Controls.Add(this.btnSave);
             this.groupControl1.Controls.Add(this.btnUpdate);
@@ -335,7 +327,6 @@
             this.groupControl1.Controls.Add(this.txtCashName);
             this.groupControl1.Controls.Add(this.lblCashName);
             this.groupControl1.Controls.Add(this.lblCashCode);
-            this.groupControl1.Controls.Add(this.txtDocumentNumber);
             this.groupControl1.Controls.Add(this.lblDocumentNumber);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
@@ -343,6 +334,19 @@
             this.groupControl1.Size = new System.Drawing.Size(415, 176);
             this.groupControl1.TabIndex = 25;
             this.groupControl1.Text = "Cash/Customer Informations";
+            // 
+            // btnDocumentNumber
+            // 
+            this.btnDocumentNumber.EnterMoveNextControl = true;
+            this.btnDocumentNumber.Location = new System.Drawing.Point(114, 37);
+            this.btnDocumentNumber.Name = "btnDocumentNumber";
+            this.btnDocumentNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.btnDocumentNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.btnDocumentNumber.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnDocumentNumber.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.btnDocumentNumber.Size = new System.Drawing.Size(191, 20);
+            this.btnDocumentNumber.TabIndex = 23;
             // 
             // CashPeriodsForm
             // 
@@ -364,13 +368,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitchExitTransaction.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitchEnterTransaction.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDocumentNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDocumentNumber.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,12 +397,12 @@
         private DevExpress.XtraEditors.LabelControl lblDate;
         private DevExpress.XtraEditors.LabelControl lblCashName;
         private DevExpress.XtraEditors.LabelControl lblCashCode;
-        private UserControls.Controls.MyTextEdit txtDocumentNumber;
         private DevExpress.XtraEditors.LabelControl lblDocumentNumber;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl lblEnterTransaction;
         private UserControls.Controls.MyToggleSwitch toggleSwitchEnterTransaction;
         private DevExpress.XtraEditors.LabelControl lblExitTransaction;
-        private UserControls.Controls.MyToggleSwitch myToggleSwitch1;
+        private UserControls.Controls.MyToggleSwitch toggleSwitchExitTransaction;
+        private UserControls.Controls.MyButtonEdit btnDocumentNumber;
     }
 }

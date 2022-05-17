@@ -30,6 +30,9 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<CashManager>().As<ICashService>().SingleInstance();
             builder.RegisterType<EfCashDal>().As<ICashDal>().SingleInstance();
 
+            builder.RegisterType<CashMovementManager>().As<ICashMovementService>().SingleInstance();
+            builder.RegisterType<EfCashMovementDal>().As<ICashMovementDal>().SingleInstance();
+
 
         }
     }
