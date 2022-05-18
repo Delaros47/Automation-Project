@@ -225,6 +225,8 @@
             // 
             // lblDescription
             // 
+            this.lblDescription.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDescription.Appearance.Options.UseForeColor = true;
             this.lblDescription.Location = new System.Drawing.Point(19, 93);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(53, 13);
@@ -233,6 +235,8 @@
             // 
             // lblCashName
             // 
+            this.lblCashName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCashName.Appearance.Options.UseForeColor = true;
             this.lblCashName.Location = new System.Drawing.Point(18, 65);
             this.lblCashName.Name = "lblCashName";
             this.lblCashName.Size = new System.Drawing.Size(54, 13);
@@ -252,6 +256,8 @@
             // 
             // lblCashCode
             // 
+            this.lblCashCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCashCode.Appearance.Options.UseForeColor = true;
             this.lblCashCode.Location = new System.Drawing.Point(18, 39);
             this.lblCashCode.Name = "lblCashCode";
             this.lblCashCode.Size = new System.Drawing.Size(52, 13);

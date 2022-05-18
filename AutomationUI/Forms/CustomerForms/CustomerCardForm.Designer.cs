@@ -138,6 +138,8 @@
             // 
             // lblCustomerGroupName
             // 
+            this.lblCustomerGroupName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerGroupName.Appearance.Options.UseForeColor = true;
             this.lblCustomerGroupName.Location = new System.Drawing.Point(343, 98);
             this.lblCustomerGroupName.Name = "lblCustomerGroupName";
             this.lblCustomerGroupName.Size = new System.Drawing.Size(59, 13);
@@ -157,6 +159,8 @@
             // 
             // lblTaxNumber
             // 
+            this.lblTaxNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblTaxNumber.Appearance.Options.UseForeColor = true;
             this.lblTaxNumber.Location = new System.Drawing.Point(343, 70);
             this.lblTaxNumber.Name = "lblTaxNumber";
             this.lblTaxNumber.Size = new System.Drawing.Size(58, 13);
@@ -176,6 +180,8 @@
             // 
             // lblTaxOffice
             // 
+            this.lblTaxOffice.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblTaxOffice.Appearance.Options.UseForeColor = true;
             this.lblTaxOffice.Location = new System.Drawing.Point(343, 42);
             this.lblTaxOffice.Name = "lblTaxOffice";
             this.lblTaxOffice.Size = new System.Drawing.Size(50, 13);
@@ -184,6 +190,8 @@
             // 
             // lblCustomerGroupCode
             // 
+            this.lblCustomerGroupCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerGroupCode.Appearance.Options.UseForeColor = true;
             this.lblCustomerGroupCode.Location = new System.Drawing.Point(24, 98);
             this.lblCustomerGroupCode.Name = "lblCustomerGroupCode";
             this.lblCustomerGroupCode.Size = new System.Drawing.Size(106, 13);
@@ -217,6 +225,8 @@
             // 
             // lblCustomerName
             // 
+            this.lblCustomerName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerName.Appearance.Options.UseForeColor = true;
             this.lblCustomerName.Location = new System.Drawing.Point(24, 70);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(76, 13);
@@ -225,6 +235,8 @@
             // 
             // lblCustomerCode
             // 
+            this.lblCustomerCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerCode.Appearance.Options.UseForeColor = true;
             this.lblCustomerCode.Location = new System.Drawing.Point(24, 42);
             this.lblCustomerCode.Name = "lblCustomerCode";
             this.lblCustomerCode.Size = new System.Drawing.Size(74, 13);
@@ -394,6 +406,8 @@
             // 
             // lblFax2
             // 
+            this.lblFax2.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblFax2.Appearance.Options.UseForeColor = true;
             this.lblFax2.Location = new System.Drawing.Point(343, 220);
             this.lblFax2.Name = "lblFax2";
             this.lblFax2.Size = new System.Drawing.Size(27, 13);
@@ -413,6 +427,8 @@
             // 
             // lblFax1
             // 
+            this.lblFax1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblFax1.Appearance.Options.UseForeColor = true;
             this.lblFax1.Location = new System.Drawing.Point(343, 194);
             this.lblFax1.Name = "lblFax1";
             this.lblFax1.Size = new System.Drawing.Size(27, 13);
@@ -421,6 +437,8 @@
             // 
             // lblAuthorizedEmail2
             // 
+            this.lblAuthorizedEmail2.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAuthorizedEmail2.Appearance.Options.UseForeColor = true;
             this.lblAuthorizedEmail2.Location = new System.Drawing.Point(343, 168);
             this.lblAuthorizedEmail2.Name = "lblAuthorizedEmail2";
             this.lblAuthorizedEmail2.Size = new System.Drawing.Size(79, 13);
@@ -440,6 +458,8 @@
             // 
             // lblAuthorized2
             // 
+            this.lblAuthorized2.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAuthorized2.Appearance.Options.UseForeColor = true;
             this.lblAuthorized2.Location = new System.Drawing.Point(343, 142);
             this.lblAuthorized2.Name = "lblAuthorized2";
             this.lblAuthorized2.Size = new System.Drawing.Size(52, 13);
@@ -448,6 +468,8 @@
             // 
             // lblAuthorizedEmail1
             // 
+            this.lblAuthorizedEmail1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAuthorizedEmail1.Appearance.Options.UseForeColor = true;
             this.lblAuthorizedEmail1.Location = new System.Drawing.Point(343, 116);
             this.lblAuthorizedEmail1.Name = "lblAuthorizedEmail1";
             this.lblAuthorizedEmail1.Size = new System.Drawing.Size(79, 13);
@@ -467,6 +489,8 @@
             // 
             // lblAuthorized1
             // 
+            this.lblAuthorized1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAuthorized1.Appearance.Options.UseForeColor = true;
             this.lblAuthorized1.Location = new System.Drawing.Point(343, 90);
             this.lblAuthorized1.Name = "lblAuthorized1";
             this.lblAuthorized1.Size = new System.Drawing.Size(52, 13);
@@ -475,6 +499,8 @@
             // 
             // lblEmailInfo
             // 
+            this.lblEmailInfo.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblEmailInfo.Appearance.Options.UseForeColor = true;
             this.lblEmailInfo.Location = new System.Drawing.Point(343, 64);
             this.lblEmailInfo.Name = "lblEmailInfo";
             this.lblEmailInfo.Size = new System.Drawing.Size(47, 13);
@@ -494,6 +520,8 @@
             // 
             // lblWebAddress
             // 
+            this.lblWebAddress.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblWebAddress.Appearance.Options.UseForeColor = true;
             this.lblWebAddress.Location = new System.Drawing.Point(343, 38);
             this.lblWebAddress.Name = "lblWebAddress";
             this.lblWebAddress.Size = new System.Drawing.Size(64, 13);
@@ -502,6 +530,8 @@
             // 
             // lblPhoneNumber2
             // 
+            this.lblPhoneNumber2.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPhoneNumber2.Appearance.Options.UseForeColor = true;
             this.lblPhoneNumber2.Location = new System.Drawing.Point(24, 291);
             this.lblPhoneNumber2.Name = "lblPhoneNumber2";
             this.lblPhoneNumber2.Size = new System.Drawing.Size(79, 13);
@@ -510,6 +540,8 @@
             // 
             // lblPhoneNumber1
             // 
+            this.lblPhoneNumber1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPhoneNumber1.Appearance.Options.UseForeColor = true;
             this.lblPhoneNumber1.Location = new System.Drawing.Point(24, 265);
             this.lblPhoneNumber1.Name = "lblPhoneNumber1";
             this.lblPhoneNumber1.Size = new System.Drawing.Size(79, 13);
@@ -518,6 +550,8 @@
             // 
             // lblAddress
             // 
+            this.lblAddress.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAddress.Appearance.Options.UseForeColor = true;
             this.lblAddress.Location = new System.Drawing.Point(24, 119);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(39, 13);
@@ -548,6 +582,8 @@
             // 
             // lblDistrict
             // 
+            this.lblDistrict.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDistrict.Appearance.Options.UseForeColor = true;
             this.lblDistrict.Location = new System.Drawing.Point(24, 94);
             this.lblDistrict.Name = "lblDistrict";
             this.lblDistrict.Size = new System.Drawing.Size(33, 13);
@@ -567,6 +603,8 @@
             // 
             // lblCity
             // 
+            this.lblCity.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCity.Appearance.Options.UseForeColor = true;
             this.lblCity.Location = new System.Drawing.Point(24, 68);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(19, 13);
@@ -586,6 +624,8 @@
             // 
             // lblCountry
             // 
+            this.lblCountry.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCountry.Appearance.Options.UseForeColor = true;
             this.lblCountry.Location = new System.Drawing.Point(24, 42);
             this.lblCountry.Name = "lblCountry";
             this.lblCountry.Size = new System.Drawing.Size(39, 13);

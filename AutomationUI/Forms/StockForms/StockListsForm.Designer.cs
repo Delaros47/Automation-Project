@@ -125,6 +125,8 @@
             // 
             // lblStockBarcode
             // 
+            this.lblStockBarcode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblStockBarcode.Appearance.Options.UseForeColor = true;
             this.lblStockBarcode.Location = new System.Drawing.Point(14, 143);
             this.lblStockBarcode.Name = "lblStockBarcode";
             this.lblStockBarcode.Size = new System.Drawing.Size(68, 13);
@@ -145,6 +147,8 @@
             // 
             // lblStockName
             // 
+            this.lblStockName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblStockName.Appearance.Options.UseForeColor = true;
             this.lblStockName.Location = new System.Drawing.Point(13, 97);
             this.lblStockName.Name = "lblStockName";
             this.lblStockName.Size = new System.Drawing.Size(56, 13);
@@ -169,6 +173,8 @@
             // 
             // lblStockCode
             // 
+            this.lblStockCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblStockCode.Appearance.Options.UseForeColor = true;
             this.lblStockCode.Location = new System.Drawing.Point(14, 51);
             this.lblStockCode.Name = "lblStockCode";
             this.lblStockCode.Size = new System.Drawing.Size(54, 13);

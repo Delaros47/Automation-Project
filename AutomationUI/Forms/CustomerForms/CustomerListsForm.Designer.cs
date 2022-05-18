@@ -91,6 +91,8 @@
             // 
             // lblCustomerGroup
             // 
+            this.lblCustomerGroup.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerGroup.Appearance.Options.UseForeColor = true;
             this.lblCustomerGroup.Location = new System.Drawing.Point(14, 143);
             this.lblCustomerGroup.Name = "lblCustomerGroup";
             this.lblCustomerGroup.Size = new System.Drawing.Size(78, 13);
@@ -111,6 +113,8 @@
             // 
             // lblCustomerName
             // 
+            this.lblCustomerName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerName.Appearance.Options.UseForeColor = true;
             this.lblCustomerName.Location = new System.Drawing.Point(13, 97);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(76, 13);
@@ -135,6 +139,8 @@
             // 
             // lblCustomerCode
             // 
+            this.lblCustomerCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerCode.Appearance.Options.UseForeColor = true;
             this.lblCustomerCode.Location = new System.Drawing.Point(14, 51);
             this.lblCustomerCode.Name = "lblCustomerCode";
             this.lblCustomerCode.Size = new System.Drawing.Size(74, 13);

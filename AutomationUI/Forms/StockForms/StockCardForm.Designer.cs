@@ -142,6 +142,8 @@
             // 
             // lblStockName
             // 
+            this.lblStockName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblStockName.Appearance.Options.UseForeColor = true;
             this.lblStockName.Location = new System.Drawing.Point(40, 91);
             this.lblStockName.Name = "lblStockName";
             this.lblStockName.Size = new System.Drawing.Size(56, 13);
@@ -150,6 +152,8 @@
             // 
             // lblStockCode
             // 
+            this.lblStockCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblStockCode.Appearance.Options.UseForeColor = true;
             this.lblStockCode.Location = new System.Drawing.Point(40, 62);
             this.lblStockCode.Name = "lblStockCode";
             this.lblStockCode.Size = new System.Drawing.Size(54, 13);
@@ -205,6 +209,8 @@
             // 
             // lblSaleVAT
             // 
+            this.lblSaleVAT.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblSaleVAT.Appearance.Options.UseForeColor = true;
             this.lblSaleVAT.Location = new System.Drawing.Point(13, 75);
             this.lblSaleVAT.Name = "lblSaleVAT";
             this.lblSaleVAT.Size = new System.Drawing.Size(42, 13);
@@ -213,6 +219,8 @@
             // 
             // lblPurchaseVAT
             // 
+            this.lblPurchaseVAT.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPurchaseVAT.Appearance.Options.UseForeColor = true;
             this.lblPurchaseVAT.Location = new System.Drawing.Point(13, 45);
             this.lblPurchaseVAT.Name = "lblPurchaseVAT";
             this.lblPurchaseVAT.Size = new System.Drawing.Size(66, 13);
@@ -247,6 +255,8 @@
             // 
             // lblSalePrice
             // 
+            this.lblSalePrice.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblSalePrice.Appearance.Options.UseForeColor = true;
             this.lblSalePrice.Location = new System.Drawing.Point(13, 71);
             this.lblSalePrice.Name = "lblSalePrice";
             this.lblSalePrice.Size = new System.Drawing.Size(46, 13);
@@ -269,6 +279,8 @@
             // 
             // lblPurchasePrice
             // 
+            this.lblPurchasePrice.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPurchasePrice.Appearance.Options.UseForeColor = true;
             this.lblPurchasePrice.Location = new System.Drawing.Point(13, 40);
             this.lblPurchasePrice.Name = "lblPurchasePrice";
             this.lblPurchasePrice.Size = new System.Drawing.Size(70, 13);
@@ -300,6 +312,8 @@
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(13, 75);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(39, 13);
@@ -327,6 +341,8 @@
             // 
             // lblUnit
             // 
+            this.lblUnit.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblUnit.Appearance.Options.UseForeColor = true;
             this.lblUnit.Location = new System.Drawing.Point(12, 45);
             this.lblUnit.Name = "lblUnit";
             this.lblUnit.Size = new System.Drawing.Size(48, 13);
@@ -372,6 +388,8 @@
             // 
             // lblGroupName
             // 
+            this.lblGroupName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblGroupName.Appearance.Options.UseForeColor = true;
             this.lblGroupName.Location = new System.Drawing.Point(12, 71);
             this.lblGroupName.Name = "lblGroupName";
             this.lblGroupName.Size = new System.Drawing.Size(59, 13);
@@ -380,6 +398,8 @@
             // 
             // lblGroupCode
             // 
+            this.lblGroupCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblGroupCode.Appearance.Options.UseForeColor = true;
             this.lblGroupCode.Location = new System.Drawing.Point(13, 40);
             this.lblGroupCode.Name = "lblGroupCode";
             this.lblGroupCode.Size = new System.Drawing.Size(57, 13);

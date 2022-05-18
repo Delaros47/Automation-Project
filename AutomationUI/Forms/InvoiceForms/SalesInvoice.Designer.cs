@@ -30,6 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesInvoice));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.btnCashCode = new AutomationUI.UserControls.Controls.MyButtonEdit();
+            this.btnAccountName = new AutomationUI.UserControls.Controls.MyButtonEdit();
+            this.lblAccountName = new DevExpress.XtraEditors.LabelControl();
+            this.txtCashName = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.txtAccountNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.txtCashCode = new DevExpress.XtraEditors.LabelControl();
+            this.lblCashName = new DevExpress.XtraEditors.LabelControl();
+            this.lblAccountNumber = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnDelete = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -66,17 +75,14 @@
             this.txtDiscount = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.memoDescription = new AutomationUI.UserControls.Controls.MyMemoEdit();
             this.lblDescription = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.lblAccountName = new DevExpress.XtraEditors.LabelControl();
-            this.txtCashName = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.txtAccountNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.txtCashCode = new DevExpress.XtraEditors.LabelControl();
-            this.lblCashName = new DevExpress.XtraEditors.LabelControl();
-            this.lblAccountNumber = new DevExpress.XtraEditors.LabelControl();
-            this.btnAccountName = new AutomationUI.UserControls.Controls.MyButtonEdit();
-            this.btnCashCode = new AutomationUI.UserControls.Controls.MyButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deDispatchNoteDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -102,12 +108,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtVAT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiscount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -125,6 +125,109 @@
             this.groupControl1.Size = new System.Drawing.Size(1148, 159);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Invoice Informations";
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.btnCashCode);
+            this.panelControl4.Controls.Add(this.btnAccountName);
+            this.panelControl4.Controls.Add(this.lblAccountName);
+            this.panelControl4.Controls.Add(this.txtCashName);
+            this.panelControl4.Controls.Add(this.txtAccountNumber);
+            this.panelControl4.Controls.Add(this.txtCashCode);
+            this.panelControl4.Controls.Add(this.lblCashName);
+            this.panelControl4.Controls.Add(this.lblAccountNumber);
+            this.panelControl4.Location = new System.Drawing.Point(581, 27);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(253, 119);
+            this.panelControl4.TabIndex = 16;
+            // 
+            // btnCashCode
+            // 
+            this.btnCashCode.EnterMoveNextControl = true;
+            this.btnCashCode.Location = new System.Drawing.Point(105, 62);
+            this.btnCashCode.Name = "btnCashCode";
+            this.btnCashCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.btnCashCode.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.btnCashCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnCashCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.btnCashCode.Size = new System.Drawing.Size(127, 20);
+            this.btnCashCode.TabIndex = 3;
+            // 
+            // btnAccountName
+            // 
+            this.btnAccountName.EnterMoveNextControl = true;
+            this.btnAccountName.Location = new System.Drawing.Point(105, 10);
+            this.btnAccountName.Name = "btnAccountName";
+            this.btnAccountName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.btnAccountName.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.btnAccountName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnAccountName.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.btnAccountName.Size = new System.Drawing.Size(127, 20);
+            this.btnAccountName.TabIndex = 2;
+            // 
+            // lblAccountName
+            // 
+            this.lblAccountName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountName.Appearance.Options.UseForeColor = true;
+            this.lblAccountName.Location = new System.Drawing.Point(16, 14);
+            this.lblAccountName.Name = "lblAccountName";
+            this.lblAccountName.Size = new System.Drawing.Size(69, 13);
+            this.lblAccountName.TabIndex = 0;
+            this.lblAccountName.Text = "Account Name";
+            // 
+            // txtCashName
+            // 
+            this.txtCashName.EnterMoveNextControl = true;
+            this.txtCashName.Location = new System.Drawing.Point(105, 90);
+            this.txtCashName.Name = "txtCashName";
+            this.txtCashName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCashName.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtCashName.Properties.MaxLength = 50;
+            this.txtCashName.Size = new System.Drawing.Size(127, 20);
+            this.txtCashName.TabIndex = 1;
+            // 
+            // txtAccountNumber
+            // 
+            this.txtAccountNumber.EnterMoveNextControl = true;
+            this.txtAccountNumber.Location = new System.Drawing.Point(105, 37);
+            this.txtAccountNumber.Name = "txtAccountNumber";
+            this.txtAccountNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAccountNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAccountNumber.Properties.MaxLength = 50;
+            this.txtAccountNumber.Size = new System.Drawing.Size(127, 20);
+            this.txtAccountNumber.TabIndex = 1;
+            // 
+            // txtCashCode
+            // 
+            this.txtCashCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.txtCashCode.Appearance.Options.UseForeColor = true;
+            this.txtCashCode.Location = new System.Drawing.Point(16, 67);
+            this.txtCashCode.Name = "txtCashCode";
+            this.txtCashCode.Size = new System.Drawing.Size(52, 13);
+            this.txtCashCode.TabIndex = 0;
+            this.txtCashCode.Text = "Cash Code";
+            // 
+            // lblCashName
+            // 
+            this.lblCashName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCashName.Appearance.Options.UseForeColor = true;
+            this.lblCashName.Location = new System.Drawing.Point(16, 93);
+            this.lblCashName.Name = "lblCashName";
+            this.lblCashName.Size = new System.Drawing.Size(54, 13);
+            this.lblCashName.TabIndex = 0;
+            this.lblCashName.Text = "Cash Name";
+            // 
+            // lblAccountNumber
+            // 
+            this.lblAccountNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountNumber.Appearance.Options.UseForeColor = true;
+            this.lblAccountNumber.Location = new System.Drawing.Point(16, 40);
+            this.lblAccountNumber.Name = "lblAccountNumber";
+            this.lblAccountNumber.Size = new System.Drawing.Size(79, 13);
+            this.lblAccountNumber.TabIndex = 0;
+            this.lblAccountNumber.Text = "Account Number";
             // 
             // btnSave
             // 
@@ -199,6 +302,8 @@
             // 
             // lblInvoiceNumber
             // 
+            this.lblInvoiceNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblInvoiceNumber.Appearance.Options.UseForeColor = true;
             this.lblInvoiceNumber.Location = new System.Drawing.Point(16, 14);
             this.lblInvoiceNumber.Name = "lblInvoiceNumber";
             this.lblInvoiceNumber.Size = new System.Drawing.Size(75, 13);
@@ -218,6 +323,8 @@
             // 
             // lblDispatchNoteNumber
             // 
+            this.lblDispatchNoteNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDispatchNoteNumber.Appearance.Options.UseForeColor = true;
             this.lblDispatchNoteNumber.Location = new System.Drawing.Point(16, 67);
             this.lblDispatchNoteNumber.Name = "lblDispatchNoteNumber";
             this.lblDispatchNoteNumber.Size = new System.Drawing.Size(107, 13);
@@ -226,6 +333,8 @@
             // 
             // lblDispatchNoteDate
             // 
+            this.lblDispatchNoteDate.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDispatchNoteDate.Appearance.Options.UseForeColor = true;
             this.lblDispatchNoteDate.Location = new System.Drawing.Point(16, 93);
             this.lblDispatchNoteDate.Name = "lblDispatchNoteDate";
             this.lblDispatchNoteDate.Size = new System.Drawing.Size(93, 13);
@@ -234,6 +343,8 @@
             // 
             // lblInvoiceDate
             // 
+            this.lblInvoiceDate.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblInvoiceDate.Appearance.Options.UseForeColor = true;
             this.lblInvoiceDate.Location = new System.Drawing.Point(16, 40);
             this.lblInvoiceDate.Name = "lblInvoiceDate";
             this.lblInvoiceDate.Size = new System.Drawing.Size(61, 13);
@@ -268,6 +379,8 @@
             // 
             // lblCustomerCode
             // 
+            this.lblCustomerCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerCode.Appearance.Options.UseForeColor = true;
             this.lblCustomerCode.Location = new System.Drawing.Point(16, 14);
             this.lblCustomerCode.Name = "lblCustomerCode";
             this.lblCustomerCode.Size = new System.Drawing.Size(74, 13);
@@ -309,6 +422,8 @@
             // 
             // lblInvoiceType
             // 
+            this.lblInvoiceType.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblInvoiceType.Appearance.Options.UseForeColor = true;
             this.lblInvoiceType.Location = new System.Drawing.Point(16, 67);
             this.lblInvoiceType.Name = "lblInvoiceType";
             this.lblInvoiceType.Size = new System.Drawing.Size(62, 13);
@@ -317,6 +432,8 @@
             // 
             // lblPaymentPlace
             // 
+            this.lblPaymentPlace.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPaymentPlace.Appearance.Options.UseForeColor = true;
             this.lblPaymentPlace.Location = new System.Drawing.Point(16, 93);
             this.lblPaymentPlace.Name = "lblPaymentPlace";
             this.lblPaymentPlace.Size = new System.Drawing.Size(70, 13);
@@ -325,6 +442,8 @@
             // 
             // lblCustomerName
             // 
+            this.lblCustomerName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerName.Appearance.Options.UseForeColor = true;
             this.lblCustomerName.Location = new System.Drawing.Point(16, 40);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(76, 13);
@@ -432,6 +551,8 @@
             // 
             // lblSubTotal
             // 
+            this.lblSubTotal.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblSubTotal.Appearance.Options.UseForeColor = true;
             this.lblSubTotal.Location = new System.Drawing.Point(16, 14);
             this.lblSubTotal.Name = "lblSubTotal";
             this.lblSubTotal.Size = new System.Drawing.Size(45, 13);
@@ -473,6 +594,8 @@
             // 
             // lblDiscount
             // 
+            this.lblDiscount.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDiscount.Appearance.Options.UseForeColor = true;
             this.lblDiscount.Location = new System.Drawing.Point(16, 67);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(41, 13);
@@ -481,6 +604,8 @@
             // 
             // lblTotal
             // 
+            this.lblTotal.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblTotal.Appearance.Options.UseForeColor = true;
             this.lblTotal.Location = new System.Drawing.Point(16, 93);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(24, 13);
@@ -489,6 +614,8 @@
             // 
             // lblVAT
             // 
+            this.lblVAT.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblVAT.Appearance.Options.UseForeColor = true;
             this.lblVAT.Location = new System.Drawing.Point(16, 40);
             this.lblVAT.Name = "lblVAT";
             this.lblVAT.Size = new System.Drawing.Size(19, 13);
@@ -521,106 +648,13 @@
             // 
             // lblDescription
             // 
+            this.lblDescription.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDescription.Appearance.Options.UseForeColor = true;
             this.lblDescription.Location = new System.Drawing.Point(28, 449);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(53, 13);
             this.lblDescription.TabIndex = 5;
             this.lblDescription.Text = "Description";
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.btnCashCode);
-            this.panelControl4.Controls.Add(this.btnAccountName);
-            this.panelControl4.Controls.Add(this.lblAccountName);
-            this.panelControl4.Controls.Add(this.txtCashName);
-            this.panelControl4.Controls.Add(this.txtAccountNumber);
-            this.panelControl4.Controls.Add(this.txtCashCode);
-            this.panelControl4.Controls.Add(this.lblCashName);
-            this.panelControl4.Controls.Add(this.lblAccountNumber);
-            this.panelControl4.Location = new System.Drawing.Point(581, 27);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(253, 119);
-            this.panelControl4.TabIndex = 16;
-            // 
-            // lblAccountName
-            // 
-            this.lblAccountName.Location = new System.Drawing.Point(16, 14);
-            this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(69, 13);
-            this.lblAccountName.TabIndex = 0;
-            this.lblAccountName.Text = "Account Name";
-            // 
-            // txtCashName
-            // 
-            this.txtCashName.EnterMoveNextControl = true;
-            this.txtCashName.Location = new System.Drawing.Point(105, 90);
-            this.txtCashName.Name = "txtCashName";
-            this.txtCashName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtCashName.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtCashName.Properties.MaxLength = 50;
-            this.txtCashName.Size = new System.Drawing.Size(127, 20);
-            this.txtCashName.TabIndex = 1;
-            // 
-            // txtAccountNumber
-            // 
-            this.txtAccountNumber.EnterMoveNextControl = true;
-            this.txtAccountNumber.Location = new System.Drawing.Point(105, 37);
-            this.txtAccountNumber.Name = "txtAccountNumber";
-            this.txtAccountNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtAccountNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtAccountNumber.Properties.MaxLength = 50;
-            this.txtAccountNumber.Size = new System.Drawing.Size(127, 20);
-            this.txtAccountNumber.TabIndex = 1;
-            // 
-            // txtCashCode
-            // 
-            this.txtCashCode.Location = new System.Drawing.Point(16, 67);
-            this.txtCashCode.Name = "txtCashCode";
-            this.txtCashCode.Size = new System.Drawing.Size(52, 13);
-            this.txtCashCode.TabIndex = 0;
-            this.txtCashCode.Text = "Cash Code";
-            // 
-            // lblCashName
-            // 
-            this.lblCashName.Location = new System.Drawing.Point(16, 93);
-            this.lblCashName.Name = "lblCashName";
-            this.lblCashName.Size = new System.Drawing.Size(54, 13);
-            this.lblCashName.TabIndex = 0;
-            this.lblCashName.Text = "Cash Name";
-            // 
-            // lblAccountNumber
-            // 
-            this.lblAccountNumber.Location = new System.Drawing.Point(16, 40);
-            this.lblAccountNumber.Name = "lblAccountNumber";
-            this.lblAccountNumber.Size = new System.Drawing.Size(79, 13);
-            this.lblAccountNumber.TabIndex = 0;
-            this.lblAccountNumber.Text = "Account Number";
-            // 
-            // btnAccountName
-            // 
-            this.btnAccountName.EnterMoveNextControl = true;
-            this.btnAccountName.Location = new System.Drawing.Point(105, 10);
-            this.btnAccountName.Name = "btnAccountName";
-            this.btnAccountName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.btnAccountName.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.btnAccountName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnAccountName.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnAccountName.Size = new System.Drawing.Size(127, 20);
-            this.btnAccountName.TabIndex = 2;
-            // 
-            // btnCashCode
-            // 
-            this.btnCashCode.EnterMoveNextControl = true;
-            this.btnCashCode.Location = new System.Drawing.Point(105, 62);
-            this.btnCashCode.Name = "btnCashCode";
-            this.btnCashCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.btnCashCode.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.btnCashCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnCashCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnCashCode.Size = new System.Drawing.Size(127, 20);
-            this.btnCashCode.TabIndex = 3;
             // 
             // SalesInvoice
             // 
@@ -636,6 +670,13 @@
             this.Text = "Sales Invoice";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            this.panelControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
@@ -664,13 +705,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtVAT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiscount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoDescription.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            this.panelControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCashName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

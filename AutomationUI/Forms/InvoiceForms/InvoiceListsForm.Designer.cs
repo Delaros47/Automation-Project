@@ -32,16 +32,16 @@
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.xtraTabControlStocks = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.deDate = new AutomationUI.UserControls.Controls.MyDateEdit();
+            this.lblDate = new DevExpress.XtraEditors.LabelControl();
+            this.myPrivateCodeTextEdit1 = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
+            this.cmbInvoiceTypes = new AutomationUI.UserControls.Controls.MyComboBoxEdit();
             this.lblInvoiceNumber = new DevExpress.XtraEditors.LabelControl();
             this.lblInvoiceType = new DevExpress.XtraEditors.LabelControl();
             this.btnClean = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.btnSearch = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.gridControlInvoiceLists = new AutomationUI.UserControls.Grids.MyGridControl();
             this.gridViewInvoiceLists = new AutomationUI.UserControls.Grids.MyGridView();
-            this.cmbInvoiceTypes = new AutomationUI.UserControls.Controls.MyComboBoxEdit();
-            this.myPrivateCodeTextEdit1 = new AutomationUI.UserControls.Controls.MyPrivateCodeTextEdit();
-            this.lblDate = new DevExpress.XtraEditors.LabelControl();
-            this.deDate = new AutomationUI.UserControls.Controls.MyDateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
             this.splitContainerControl1.Panel1.SuspendLayout();
@@ -51,12 +51,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControlStocks)).BeginInit();
             this.xtraTabControlStocks.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceLists)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoiceLists)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbInvoiceTypes.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myPrivateCodeTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myPrivateCodeTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbInvoiceTypes.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceLists)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoiceLists)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -103,8 +103,71 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(227, 523);
             this.xtraTabPage1.Text = "Search";
             // 
+            // deDate
+            // 
+            this.deDate.EditValue = null;
+            this.deDate.EnterMoveNextControl = true;
+            this.deDate.Location = new System.Drawing.Point(13, 161);
+            this.deDate.Name = "deDate";
+            this.deDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.deDate.Properties.Appearance.Options.UseTextOptions = true;
+            this.deDate.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.deDate.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.deDate.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.deDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.deDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.deDate.Size = new System.Drawing.Size(181, 20);
+            this.deDate.TabIndex = 9;
+            // 
+            // lblDate
+            // 
+            this.lblDate.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDate.Appearance.Options.UseForeColor = true;
+            this.lblDate.Location = new System.Drawing.Point(13, 142);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(23, 13);
+            this.lblDate.TabIndex = 8;
+            this.lblDate.Text = "Date";
+            // 
+            // myPrivateCodeTextEdit1
+            // 
+            this.myPrivateCodeTextEdit1.EnterMoveNextControl = true;
+            this.myPrivateCodeTextEdit1.Location = new System.Drawing.Point(13, 116);
+            this.myPrivateCodeTextEdit1.Name = "myPrivateCodeTextEdit1";
+            this.myPrivateCodeTextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.myPrivateCodeTextEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.myPrivateCodeTextEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.myPrivateCodeTextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myPrivateCodeTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myPrivateCodeTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myPrivateCodeTextEdit1.Properties.MaxLength = 20;
+            this.myPrivateCodeTextEdit1.Size = new System.Drawing.Size(183, 20);
+            this.myPrivateCodeTextEdit1.TabIndex = 7;
+            // 
+            // cmbInvoiceTypes
+            // 
+            this.cmbInvoiceTypes.EnterMoveNextControl = true;
+            this.cmbInvoiceTypes.Location = new System.Drawing.Point(13, 71);
+            this.cmbInvoiceTypes.Name = "cmbInvoiceTypes";
+            this.cmbInvoiceTypes.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.cmbInvoiceTypes.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.cmbInvoiceTypes.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbInvoiceTypes.Properties.Items.AddRange(new object[] {
+            "Sales Invoice",
+            "Sales Return Invoice",
+            "Purchase Invoice",
+            "Purchase Return Invoice"});
+            this.cmbInvoiceTypes.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbInvoiceTypes.Size = new System.Drawing.Size(181, 20);
+            this.cmbInvoiceTypes.TabIndex = 6;
+            // 
             // lblInvoiceNumber
             // 
+            this.lblInvoiceNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblInvoiceNumber.Appearance.Options.UseForeColor = true;
             this.lblInvoiceNumber.Location = new System.Drawing.Point(13, 97);
             this.lblInvoiceNumber.Name = "lblInvoiceNumber";
             this.lblInvoiceNumber.Size = new System.Drawing.Size(75, 13);
@@ -113,6 +176,8 @@
             // 
             // lblInvoiceType
             // 
+            this.lblInvoiceType.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblInvoiceType.Appearance.Options.UseForeColor = true;
             this.lblInvoiceType.Location = new System.Drawing.Point(14, 51);
             this.lblInvoiceType.Name = "lblInvoiceType";
             this.lblInvoiceType.Size = new System.Drawing.Size(62, 13);
@@ -181,65 +246,6 @@
             this.gridViewInvoiceLists.OptionsView.ShowViewCaption = true;
             this.gridViewInvoiceLists.ViewCaption = "Inovice Lists";
             // 
-            // cmbInvoiceTypes
-            // 
-            this.cmbInvoiceTypes.EnterMoveNextControl = true;
-            this.cmbInvoiceTypes.Location = new System.Drawing.Point(13, 71);
-            this.cmbInvoiceTypes.Name = "cmbInvoiceTypes";
-            this.cmbInvoiceTypes.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.cmbInvoiceTypes.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.cmbInvoiceTypes.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbInvoiceTypes.Properties.Items.AddRange(new object[] {
-            "Sales Invoice",
-            "Sales Return Invoice",
-            "Purchase Invoice",
-            "Purchase Return Invoice"});
-            this.cmbInvoiceTypes.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbInvoiceTypes.Size = new System.Drawing.Size(181, 20);
-            this.cmbInvoiceTypes.TabIndex = 6;
-            // 
-            // myPrivateCodeTextEdit1
-            // 
-            this.myPrivateCodeTextEdit1.EnterMoveNextControl = true;
-            this.myPrivateCodeTextEdit1.Location = new System.Drawing.Point(13, 116);
-            this.myPrivateCodeTextEdit1.Name = "myPrivateCodeTextEdit1";
-            this.myPrivateCodeTextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.myPrivateCodeTextEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.myPrivateCodeTextEdit1.Properties.Appearance.Options.UseTextOptions = true;
-            this.myPrivateCodeTextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.myPrivateCodeTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myPrivateCodeTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myPrivateCodeTextEdit1.Properties.MaxLength = 20;
-            this.myPrivateCodeTextEdit1.Size = new System.Drawing.Size(183, 20);
-            this.myPrivateCodeTextEdit1.TabIndex = 7;
-            // 
-            // lblDate
-            // 
-            this.lblDate.Location = new System.Drawing.Point(13, 142);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(23, 13);
-            this.lblDate.TabIndex = 8;
-            this.lblDate.Text = "Date";
-            // 
-            // deDate
-            // 
-            this.deDate.EditValue = null;
-            this.deDate.EnterMoveNextControl = true;
-            this.deDate.Location = new System.Drawing.Point(13, 161);
-            this.deDate.Name = "deDate";
-            this.deDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
-            this.deDate.Properties.Appearance.Options.UseTextOptions = true;
-            this.deDate.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.deDate.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.deDate.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.deDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.deDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.deDate.Size = new System.Drawing.Size(181, 20);
-            this.deDate.TabIndex = 9;
-            // 
             // InvoiceListsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,12 +264,12 @@
             this.xtraTabControlStocks.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceLists)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoiceLists)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbInvoiceTypes.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myPrivateCodeTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myPrivateCodeTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbInvoiceTypes.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceLists)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoiceLists)).EndInit();
             this.ResumeLayout(false);
 
         }

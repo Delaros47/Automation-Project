@@ -245,6 +245,8 @@
             // 
             // labelControl2
             // 
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(13, 68);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(59, 13);
@@ -253,6 +255,8 @@
             // 
             // lblGroupCode
             // 
+            this.lblGroupCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblGroupCode.Appearance.Options.UseForeColor = true;
             this.lblGroupCode.Location = new System.Drawing.Point(13, 41);
             this.lblGroupCode.Name = "lblGroupCode";
             this.lblGroupCode.Size = new System.Drawing.Size(57, 13);

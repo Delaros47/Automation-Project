@@ -175,6 +175,8 @@
             // 
             // lblCustomerName
             // 
+            this.lblCustomerName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerName.Appearance.Options.UseForeColor = true;
             this.lblCustomerName.Location = new System.Drawing.Point(19, 144);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(76, 13);
@@ -183,6 +185,8 @@
             // 
             // lblCustomerCode
             // 
+            this.lblCustomerCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCustomerCode.Appearance.Options.UseForeColor = true;
             this.lblCustomerCode.Location = new System.Drawing.Point(19, 118);
             this.lblCustomerCode.Name = "lblCustomerCode";
             this.lblCustomerCode.Size = new System.Drawing.Size(74, 13);
@@ -202,6 +206,8 @@
             // 
             // lblCashName
             // 
+            this.lblCashName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCashName.Appearance.Options.UseForeColor = true;
             this.lblCashName.Location = new System.Drawing.Point(19, 92);
             this.lblCashName.Name = "lblCashName";
             this.lblCashName.Size = new System.Drawing.Size(54, 13);
@@ -210,6 +216,8 @@
             // 
             // lblCashCode
             // 
+            this.lblCashCode.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCashCode.Appearance.Options.UseForeColor = true;
             this.lblCashCode.Location = new System.Drawing.Point(19, 67);
             this.lblCashCode.Name = "lblCashCode";
             this.lblCashCode.Size = new System.Drawing.Size(52, 13);
@@ -229,6 +237,8 @@
             // 
             // lblDocumentNumber
             // 
+            this.lblDocumentNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDocumentNumber.Appearance.Options.UseForeColor = true;
             this.lblDocumentNumber.Location = new System.Drawing.Point(19, 41);
             this.lblDocumentNumber.Name = "lblDocumentNumber";
             this.lblDocumentNumber.Size = new System.Drawing.Size(88, 13);
@@ -250,6 +260,8 @@
             // 
             // lblProcessType
             // 
+            this.lblProcessType.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblProcessType.Appearance.Options.UseForeColor = true;
             this.lblProcessType.Location = new System.Drawing.Point(18, 66);
             this.lblProcessType.Name = "lblProcessType";
             this.lblProcessType.Size = new System.Drawing.Size(64, 13);
@@ -258,6 +270,8 @@
             // 
             // lblDate
             // 
+            this.lblDate.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDate.Appearance.Options.UseForeColor = true;
             this.lblDate.Location = new System.Drawing.Point(18, 41);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(23, 13);
@@ -266,6 +280,8 @@
             // 
             // lblDecription
             // 
+            this.lblDecription.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDecription.Appearance.Options.UseForeColor = true;
             this.lblDecription.Location = new System.Drawing.Point(19, 96);
             this.lblDecription.Name = "lblDecription";
             this.lblDecription.Size = new System.Drawing.Size(39, 13);
@@ -291,6 +307,8 @@
             // 
             // lblTotal
             // 
+            this.lblTotal.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblTotal.Appearance.Options.UseForeColor = true;
             this.lblTotal.Location = new System.Drawing.Point(253, 40);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(24, 13);
