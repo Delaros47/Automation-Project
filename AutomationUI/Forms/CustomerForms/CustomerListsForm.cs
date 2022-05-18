@@ -16,11 +16,13 @@ namespace AutomationUI.Forms.CustomerForms
     public partial class CustomerListsForm : DevExpress.XtraEditors.XtraForm
     {
         private readonly ICustomerService _customerService;
+        private readonly ICustomerGroupService _customerGroupService;
         private int CustomerId = -1;
         public CustomerListsForm()
         {
             InitializeComponent();
             _customerService = InstanceFactory.GetInstance<ICustomerService>();
+            _customerGroupService = InstanceFactory.GetInstance<ICustomerGroupService>();
         }
 
         private void CustomerListsForm_Load(object sender, EventArgs e)
@@ -36,6 +38,7 @@ namespace AutomationUI.Forms.CustomerForms
         private void gridViewCustomerLists_DoubleClick(object sender, EventArgs e)
         {
             CustomerCardForm.CustomerId = Convert.ToInt32(gridViewCustomerLists.GetFocusedRowCellValue("Id").ToString());
+            CustomerCardForm.CustomerGroupId = _customerGroupService.GetCustomerGroupId(gridViewCustomerLists.GetFocusedRowCellValue("GroupName").ToString()).Data;
             this.Close();
         }
 
@@ -64,17 +67,17 @@ namespace AutomationUI.Forms.CustomerForms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (txtCustomerCode.Text!="")
+            if (txtCustomerCode.Text != "")
             {
                 SearchCustomerCodeDetailDto();
             }
 
-            if (txtCustomerGroup.Text!="")
+            if (txtCustomerGroup.Text != "")
             {
                 SearchCustomerGroupDetailDto();
             }
 
-            if (txtCustomerName.Text!="")
+            if (txtCustomerName.Text != "")
             {
                 SearchCustomerNameDetailDto();
             }

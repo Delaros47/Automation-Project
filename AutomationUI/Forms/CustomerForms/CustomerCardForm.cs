@@ -115,11 +115,14 @@ namespace AutomationUI.Forms.CustomerForms
         {
             CustomerListsForm customerListsForm = new CustomerListsForm();
             customerListsForm.ShowDialog();
-            if (CustomerId != -1)
+            if (CustomerId != -1 && CustomerGroupId != -1)
             {
                 var result = _customerService.Get(CustomerId);
-                if (result.Success)
+                var resultGroup = _customerGroupService.Get(CustomerGroupId);
+                if (result.Success && resultGroup.Success)
                 {
+                    btnCustomerGroupCode.Text = resultGroup.Data.GroupCode;
+                    txtCustomerGroupName.Text = resultGroup.Data.GroupName;
                     txtCity.Text = result.Data.City;
                     txtCustomerName.Text = result.Data.CustomerName;
                     txtAuthorized2.Text = result.Data.Authorized2;

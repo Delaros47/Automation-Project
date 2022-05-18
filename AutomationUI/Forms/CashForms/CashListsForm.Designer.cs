@@ -40,6 +40,10 @@
             this.btnSearch = new AutomationUI.UserControls.Controls.MySimpleButton();
             this.gridControlCashLists = new AutomationUI.UserControls.Grids.MyGridControl();
             this.gridViewCashLists = new AutomationUI.UserControls.Grids.MyGridView();
+            this.colId = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colCashCode = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colCashName = new AutomationUI.UserControls.Grids.MyGridColumn();
+            this.colBalance = new AutomationUI.UserControls.Grids.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
             this.splitContainerControl1.Panel1.SuspendLayout();
@@ -188,6 +192,11 @@
             this.gridViewCashLists.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewCashLists.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewCashLists.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewCashLists.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colCashCode,
+            this.colCashName,
+            this.colBalance});
             this.gridViewCashLists.GridControl = this.gridControlCashLists;
             this.gridViewCashLists.Name = "gridViewCashLists";
             this.gridViewCashLists.OptionsMenu.EnableColumnMenu = false;
@@ -204,6 +213,44 @@
             this.gridViewCashLists.OptionsView.ShowGroupPanel = false;
             this.gridViewCashLists.OptionsView.ShowViewCaption = true;
             this.gridViewCashLists.ViewCaption = "Cash Lists";
+            this.gridViewCashLists.DoubleClick += new System.EventHandler(this.gridViewCashLists_DoubleClick);
+            // 
+            // colId
+            // 
+            this.colId.Caption = "ID";
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
+            // 
+            // colCashCode
+            // 
+            this.colCashCode.Caption = "Cash Code";
+            this.colCashCode.FieldName = "CashCode";
+            this.colCashCode.Name = "colCashCode";
+            this.colCashCode.OptionsColumn.AllowEdit = false;
+            this.colCashCode.Visible = true;
+            this.colCashCode.VisibleIndex = 0;
+            this.colCashCode.Width = 400;
+            // 
+            // colCashName
+            // 
+            this.colCashName.Caption = "Cash Name";
+            this.colCashName.FieldName = "CashName";
+            this.colCashName.Name = "colCashName";
+            this.colCashName.OptionsColumn.AllowEdit = false;
+            this.colCashName.Visible = true;
+            this.colCashName.VisibleIndex = 1;
+            this.colCashName.Width = 450;
+            // 
+            // colBalance
+            // 
+            this.colBalance.Caption = "Balance";
+            this.colBalance.FieldName = "Balance";
+            this.colBalance.Name = "colBalance";
+            this.colBalance.OptionsColumn.AllowEdit = false;
+            this.colBalance.Visible = true;
+            this.colBalance.VisibleIndex = 2;
+            this.colBalance.Width = 350;
             // 
             // CashListsForm
             // 
@@ -214,6 +261,7 @@
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("CashListsForm.IconOptions.LargeImage")));
             this.Name = "CashListsForm";
             this.Text = "Cash Lists";
+            this.Load += new System.EventHandler(this.CashListsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
             this.splitContainerControl1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();
@@ -245,5 +293,9 @@
         private UserControls.Controls.MySimpleButton btnSearch;
         private UserControls.Grids.MyGridControl gridControlCashLists;
         private UserControls.Grids.MyGridView gridViewCashLists;
+        private UserControls.Grids.MyGridColumn colId;
+        private UserControls.Grids.MyGridColumn colCashCode;
+        private UserControls.Grids.MyGridColumn colCashName;
+        private UserControls.Grids.MyGridColumn colBalance;
     }
 }

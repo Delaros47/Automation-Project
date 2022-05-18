@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BankMovementsForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.lblAccountName = new DevExpress.XtraEditors.LabelControl();
-            this.btnAccountName = new DevExpress.XtraEditors.ButtonEdit();
-            this.lblAccountNumber = new DevExpress.XtraEditors.LabelControl();
-            this.txtAccountNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtEnter = new AutomationUI.UserControls.Controls.MyTextEdit();
-            this.lblExit = new DevExpress.XtraEditors.LabelControl();
-            this.txtExit = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.myTextEdit1 = new AutomationUI.UserControls.Controls.MyTextEdit();
             this.lblBalance = new DevExpress.XtraEditors.LabelControl();
+            this.txtExit = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.txtEnter = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.lblExit = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtAccountNumber = new AutomationUI.UserControls.Controls.MyTextEdit();
+            this.lblAccountNumber = new DevExpress.XtraEditors.LabelControl();
+            this.btnAccountName = new DevExpress.XtraEditors.ButtonEdit();
+            this.lblAccountName = new DevExpress.XtraEditors.LabelControl();
             this.gridControlBankMovements = new AutomationUI.UserControls.Grids.MyGridControl();
             this.gridViewBankMovements = new AutomationUI.UserControls.Grids.MyGridView();
             this.colId = new AutomationUI.UserControls.Grids.MyGridColumn();
@@ -51,11 +51,11 @@
             this.colDescription = new AutomationUI.UserControls.Grids.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEnter.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtExit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEnter.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlBankMovements)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewBankMovements)).BeginInit();
             this.SuspendLayout();
@@ -79,49 +79,37 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Bank Informations";
             // 
-            // lblAccountName
+            // myTextEdit1
             // 
-            this.lblAccountName.Location = new System.Drawing.Point(17, 39);
-            this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(69, 13);
-            this.lblAccountName.TabIndex = 0;
-            this.lblAccountName.Text = "Account Name";
+            this.myTextEdit1.EnterMoveNextControl = true;
+            this.myTextEdit1.Location = new System.Drawing.Point(358, 88);
+            this.myTextEdit1.Name = "myTextEdit1";
+            this.myTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myTextEdit1.Properties.MaxLength = 50;
+            this.myTextEdit1.Size = new System.Drawing.Size(69, 20);
+            this.myTextEdit1.TabIndex = 7;
             // 
-            // btnAccountName
+            // lblBalance
             // 
-            this.btnAccountName.Location = new System.Drawing.Point(103, 37);
-            this.btnAccountName.Name = "btnAccountName";
-            this.btnAccountName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnAccountName.Size = new System.Drawing.Size(324, 20);
-            this.btnAccountName.TabIndex = 1;
+            this.lblBalance.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblBalance.Appearance.Options.UseForeColor = true;
+            this.lblBalance.Location = new System.Drawing.Point(308, 91);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(37, 13);
+            this.lblBalance.TabIndex = 6;
+            this.lblBalance.Text = "Balance";
             // 
-            // lblAccountNumber
+            // txtExit
             // 
-            this.lblAccountNumber.Location = new System.Drawing.Point(17, 67);
-            this.lblAccountNumber.Name = "lblAccountNumber";
-            this.lblAccountNumber.Size = new System.Drawing.Size(79, 13);
-            this.lblAccountNumber.TabIndex = 2;
-            this.lblAccountNumber.Text = "Account Number";
-            // 
-            // txtAccountNumber
-            // 
-            this.txtAccountNumber.EnterMoveNextControl = true;
-            this.txtAccountNumber.Location = new System.Drawing.Point(103, 63);
-            this.txtAccountNumber.Name = "txtAccountNumber";
-            this.txtAccountNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtAccountNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtAccountNumber.Properties.MaxLength = 50;
-            this.txtAccountNumber.Size = new System.Drawing.Size(324, 20);
-            this.txtAccountNumber.TabIndex = 3;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(17, 95);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(26, 13);
-            this.labelControl1.TabIndex = 4;
-            this.labelControl1.Text = "Enter";
+            this.txtExit.EnterMoveNextControl = true;
+            this.txtExit.Location = new System.Drawing.Point(222, 88);
+            this.txtExit.Name = "txtExit";
+            this.txtExit.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtExit.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtExit.Properties.MaxLength = 50;
+            this.txtExit.Size = new System.Drawing.Size(69, 20);
+            this.txtExit.TabIndex = 5;
             // 
             // txtEnter
             // 
@@ -136,41 +124,63 @@
             // 
             // lblExit
             // 
+            this.lblExit.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblExit.Appearance.Options.UseForeColor = true;
             this.lblExit.Location = new System.Drawing.Point(183, 91);
             this.lblExit.Name = "lblExit";
             this.lblExit.Size = new System.Drawing.Size(18, 13);
             this.lblExit.TabIndex = 4;
             this.lblExit.Text = "Exit";
             // 
-            // txtExit
+            // labelControl1
             // 
-            this.txtExit.EnterMoveNextControl = true;
-            this.txtExit.Location = new System.Drawing.Point(222, 88);
-            this.txtExit.Name = "txtExit";
-            this.txtExit.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtExit.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtExit.Properties.MaxLength = 50;
-            this.txtExit.Size = new System.Drawing.Size(69, 20);
-            this.txtExit.TabIndex = 5;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(17, 95);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(26, 13);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "Enter";
             // 
-            // myTextEdit1
+            // txtAccountNumber
             // 
-            this.myTextEdit1.EnterMoveNextControl = true;
-            this.myTextEdit1.Location = new System.Drawing.Point(358, 88);
-            this.myTextEdit1.Name = "myTextEdit1";
-            this.myTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myTextEdit1.Properties.MaxLength = 50;
-            this.myTextEdit1.Size = new System.Drawing.Size(69, 20);
-            this.myTextEdit1.TabIndex = 7;
+            this.txtAccountNumber.EnterMoveNextControl = true;
+            this.txtAccountNumber.Location = new System.Drawing.Point(103, 63);
+            this.txtAccountNumber.Name = "txtAccountNumber";
+            this.txtAccountNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAccountNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAccountNumber.Properties.MaxLength = 50;
+            this.txtAccountNumber.Size = new System.Drawing.Size(324, 20);
+            this.txtAccountNumber.TabIndex = 3;
             // 
-            // lblBalance
+            // lblAccountNumber
             // 
-            this.lblBalance.Location = new System.Drawing.Point(308, 91);
-            this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(37, 13);
-            this.lblBalance.TabIndex = 6;
-            this.lblBalance.Text = "Balance";
+            this.lblAccountNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountNumber.Appearance.Options.UseForeColor = true;
+            this.lblAccountNumber.Location = new System.Drawing.Point(17, 67);
+            this.lblAccountNumber.Name = "lblAccountNumber";
+            this.lblAccountNumber.Size = new System.Drawing.Size(79, 13);
+            this.lblAccountNumber.TabIndex = 2;
+            this.lblAccountNumber.Text = "Account Number";
+            // 
+            // btnAccountName
+            // 
+            this.btnAccountName.Location = new System.Drawing.Point(103, 37);
+            this.btnAccountName.Name = "btnAccountName";
+            this.btnAccountName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnAccountName.Size = new System.Drawing.Size(324, 20);
+            this.btnAccountName.TabIndex = 1;
+            // 
+            // lblAccountName
+            // 
+            this.lblAccountName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountName.Appearance.Options.UseForeColor = true;
+            this.lblAccountName.Location = new System.Drawing.Point(17, 39);
+            this.lblAccountName.Name = "lblAccountName";
+            this.lblAccountName.Size = new System.Drawing.Size(69, 13);
+            this.lblAccountName.TabIndex = 0;
+            this.lblAccountName.Text = "Account Name";
             // 
             // gridControlBankMovements
             // 
@@ -298,11 +308,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEnter.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtExit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEnter.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAccountName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlBankMovements)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewBankMovements)).EndInit();
             this.ResumeLayout(false);

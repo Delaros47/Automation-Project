@@ -115,6 +115,8 @@
             // 
             // lblIBAN
             // 
+            this.lblIBAN.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblIBAN.Appearance.Options.UseForeColor = true;
             this.lblIBAN.Location = new System.Drawing.Point(14, 143);
             this.lblIBAN.Name = "lblIBAN";
             this.lblIBAN.Size = new System.Drawing.Size(24, 13);
@@ -134,6 +136,8 @@
             // 
             // lblAccountNumber
             // 
+            this.lblAccountNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountNumber.Appearance.Options.UseForeColor = true;
             this.lblAccountNumber.Location = new System.Drawing.Point(13, 97);
             this.lblAccountNumber.Name = "lblAccountNumber";
             this.lblAccountNumber.Size = new System.Drawing.Size(79, 13);
@@ -157,6 +161,8 @@
             // 
             // lblAccountName
             // 
+            this.lblAccountName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountName.Appearance.Options.UseForeColor = true;
             this.lblAccountName.Location = new System.Drawing.Point(14, 51);
             this.lblAccountName.Name = "lblAccountName";
             this.lblAccountName.Size = new System.Drawing.Size(69, 13);

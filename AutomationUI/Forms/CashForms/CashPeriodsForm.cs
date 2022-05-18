@@ -17,12 +17,14 @@ namespace AutomationUI.Forms.CashForms
 {
     public partial class CashPeriodsForm : DevExpress.XtraEditors.XtraForm
     {
-        private int CashId = -1;
+        public static int CashId = -1;
         private readonly ICashMovementService _cashMovementService;
+        private readonly ICashService _cashService;
         public CashPeriodsForm()
         {
             InitializeComponent();
             _cashMovementService = InstanceFactory.GetInstance<ICashMovementService>();
+            _cashService = InstanceFactory.GetInstance<ICashService>();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -65,5 +67,35 @@ namespace AutomationUI.Forms.CashForms
             toggleSwitchExitTransaction.IsOn = false;
         }
 
+        private void btnCashCode_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            CashListsForm cashListsForm = new CashListsForm();
+            cashListsForm.ShowDialog();
+            if (CashId != -1)
+            {
+                var result = _cashService.Get(CashId);
+                if (result.Success)
+                {
+                    btnCashCode.Text = result.Data.CashCode;
+                    txtCashName.Text = result.Data.CashName;
+                }
+            }
+
+        }
+
+        private void toggleSwitchEnterTransaction_Toggled(object sender, EventArgs e)
+        {
+            toggleSwitchExitTransaction.IsOn = false;
+        }
+
+        private void toggleSwitchExitTransaction_Toggled(object sender, EventArgs e)
+        {
+            toggleSwitchEnterTransaction.IsOn = false;
+        }
+
+        private void CashPeriodsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

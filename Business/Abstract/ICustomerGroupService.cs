@@ -12,6 +12,7 @@ namespace Business.Abstract
     {
         IDataResult<List<CustomerGroup>> GetAll();
         IDataResult<CustomerGroup> Get(int customerGroupId);
+        IDataResult<int> GetCustomerGroupId(string customerGroupName);
         IResult Add(CustomerGroup customerGroup);
         IResult Update(CustomerGroup customerGroup);
         IResult Delete(CustomerGroup customerGroup);

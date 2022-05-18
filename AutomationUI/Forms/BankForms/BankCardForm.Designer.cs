@@ -136,6 +136,10 @@
             this.txtEmailAddress.Name = "txtEmailAddress";
             this.txtEmailAddress.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtEmailAddress.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtEmailAddress.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.txtEmailAddress.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.txtEmailAddress.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEmailAddress.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtEmailAddress.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtEmailAddress.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -190,6 +194,9 @@
             this.txtPhoneNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPhoneNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPhoneNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPhoneNumber.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.txtPhoneNumber.Properties.Mask.EditMask = "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
+            this.txtPhoneNumber.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtPhoneNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtPhoneNumber.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtPhoneNumber.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -205,6 +212,9 @@
             this.txtIBAN.Name = "txtIBAN";
             this.txtIBAN.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtIBAN.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtIBAN.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.txtIBAN.Properties.Mask.EditMask = "TR\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?";
+            this.txtIBAN.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtIBAN.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtIBAN.Properties.MaskSettings.Set("mask", "TR\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?");
             this.txtIBAN.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -215,6 +225,8 @@
             // 
             // lblEmail
             // 
+            this.lblEmail.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblEmail.Appearance.Options.UseForeColor = true;
             this.lblEmail.Location = new System.Drawing.Point(19, 350);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(66, 13);
@@ -223,6 +235,8 @@
             // 
             // lblPhoneNumber
             // 
+            this.lblPhoneNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPhoneNumber.Appearance.Options.UseForeColor = true;
             this.lblPhoneNumber.Location = new System.Drawing.Point(18, 167);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(70, 13);
@@ -253,6 +267,8 @@
             // 
             // lblRepresentative
             // 
+            this.lblRepresentative.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblRepresentative.Appearance.Options.UseForeColor = true;
             this.lblRepresentative.Location = new System.Drawing.Point(19, 325);
             this.lblRepresentative.Name = "lblRepresentative";
             this.lblRepresentative.Size = new System.Drawing.Size(74, 13);
@@ -261,6 +277,8 @@
             // 
             // lblBankBranch
             // 
+            this.lblBankBranch.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblBankBranch.Appearance.Options.UseForeColor = true;
             this.lblBankBranch.Location = new System.Drawing.Point(18, 142);
             this.lblBankBranch.Name = "lblBankBranch";
             this.lblBankBranch.Size = new System.Drawing.Size(59, 13);
@@ -269,6 +287,8 @@
             // 
             // lblAddress
             // 
+            this.lblAddress.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAddress.Appearance.Options.UseForeColor = true;
             this.lblAddress.Location = new System.Drawing.Point(19, 192);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(39, 13);
@@ -277,6 +297,8 @@
             // 
             // labelControl6
             // 
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(18, 116);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(24, 13);
@@ -296,6 +318,8 @@
             // 
             // lblAccountNumber
             // 
+            this.lblAccountNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountNumber.Appearance.Options.UseForeColor = true;
             this.lblAccountNumber.Location = new System.Drawing.Point(18, 90);
             this.lblAccountNumber.Name = "lblAccountNumber";
             this.lblAccountNumber.Size = new System.Drawing.Size(79, 13);
@@ -315,6 +339,8 @@
             // 
             // lblAccountName
             // 
+            this.lblAccountName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountName.Appearance.Options.UseForeColor = true;
             this.lblAccountName.Location = new System.Drawing.Point(18, 65);
             this.lblAccountName.Name = "lblAccountName";
             this.lblAccountName.Size = new System.Drawing.Size(69, 13);
@@ -334,6 +360,8 @@
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(18, 39);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(53, 13);

@@ -145,6 +145,8 @@
             // 
             // lblAccountNumber
             // 
+            this.lblAccountNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountNumber.Appearance.Options.UseForeColor = true;
             this.lblAccountNumber.Location = new System.Drawing.Point(18, 126);
             this.lblAccountNumber.Name = "lblAccountNumber";
             this.lblAccountNumber.Size = new System.Drawing.Size(79, 13);
@@ -164,6 +166,8 @@
             // 
             // lblAccountName
             // 
+            this.lblAccountName.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAccountName.Appearance.Options.UseForeColor = true;
             this.lblAccountName.Location = new System.Drawing.Point(18, 94);
             this.lblAccountName.Name = "lblAccountName";
             this.lblAccountName.Size = new System.Drawing.Size(69, 13);
@@ -183,6 +187,8 @@
             // 
             // lblDocumentNumber
             // 
+            this.lblDocumentNumber.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDocumentNumber.Appearance.Options.UseForeColor = true;
             this.lblDocumentNumber.Location = new System.Drawing.Point(18, 65);
             this.lblDocumentNumber.Name = "lblDocumentNumber";
             this.lblDocumentNumber.Size = new System.Drawing.Size(53, 13);
@@ -196,6 +202,10 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtTotal.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtTotal.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.txtTotal.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.txtTotal.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtTotal.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtTotal.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtTotal.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -221,6 +231,8 @@
             // 
             // lblTotal
             // 
+            this.lblTotal.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblTotal.Appearance.Options.UseForeColor = true;
             this.lblTotal.Location = new System.Drawing.Point(20, 68);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(24, 13);
@@ -229,6 +241,8 @@
             // 
             // lblDate
             // 
+            this.lblDate.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDate.Appearance.Options.UseForeColor = true;
             this.lblDate.Location = new System.Drawing.Point(20, 39);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(23, 13);
@@ -237,6 +251,8 @@
             // 
             // lblDescription
             // 
+            this.lblDescription.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDescription.Appearance.Options.UseForeColor = true;
             this.lblDescription.Location = new System.Drawing.Point(20, 100);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(53, 13);

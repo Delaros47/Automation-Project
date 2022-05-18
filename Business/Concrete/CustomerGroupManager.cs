@@ -31,6 +31,11 @@ namespace Business.Concrete
             return new SuccessDataResult<CustomerGroup>(_customerGroupDal.Get(c=>c.Id==customerGroupId));
         }
 
+        public IDataResult<int> GetCustomerGroupId(string customerGroupName)
+        {
+            return new SuccessDataResult<int>(_customerGroupDal.Get(c=>c.GroupName==customerGroupName).Id);
+        }
+
         public IResult Add(CustomerGroup customerGroup)
         {
             _customerGroupDal.Add(customerGroup);
