@@ -170,6 +170,7 @@
             this.txtCustomerName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtCustomerName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtCustomerName.Properties.MaxLength = 50;
+            this.txtCustomerName.Properties.ReadOnly = true;
             this.txtCustomerName.Size = new System.Drawing.Size(191, 20);
             this.txtCustomerName.TabIndex = 18;
             // 
@@ -201,6 +202,7 @@
             this.txtCashName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtCashName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtCashName.Properties.MaxLength = 50;
+            this.txtCashName.Properties.ReadOnly = true;
             this.txtCashName.Size = new System.Drawing.Size(191, 20);
             this.txtCashName.TabIndex = 13;
             // 
@@ -375,7 +377,7 @@
             this.MinimizeBox = false;
             this.Name = "CashReceiptsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "CashReceipts";
+            this.Text = "Cash Receipts";
             this.Load += new System.EventHandler(this.CashReceiptsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

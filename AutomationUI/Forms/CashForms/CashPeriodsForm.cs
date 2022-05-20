@@ -97,5 +97,10 @@ namespace AutomationUI.Forms.CashForms
         {
 
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

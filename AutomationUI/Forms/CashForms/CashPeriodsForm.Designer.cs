@@ -51,7 +51,7 @@
             this.lblCashCode = new DevExpress.XtraEditors.LabelControl();
             this.lblDocumentNumber = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnDocumentNumber = new AutomationUI.UserControls.Controls.MyButtonEdit();
+            this.btnDocumentNumber = new DevExpress.XtraEditors.ButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCashCode.Properties)).BeginInit();
@@ -86,14 +86,14 @@
             // btnCashCode
             // 
             this.btnCashCode.EnterMoveNextControl = true;
-            this.btnCashCode.Location = new System.Drawing.Point(114, 63);
+            this.btnCashCode.Location = new System.Drawing.Point(116, 63);
             this.btnCashCode.Name = "btnCashCode";
             this.btnCashCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.btnCashCode.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.btnCashCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.btnCashCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnCashCode.Size = new System.Drawing.Size(191, 20);
+            this.btnCashCode.Size = new System.Drawing.Size(189, 20);
             this.btnCashCode.TabIndex = 22;
             this.btnCashCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnCashCode_ButtonClick);
             // 
@@ -119,6 +119,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(82, 31);
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -146,12 +147,12 @@
             // txtCashName
             // 
             this.txtCashName.EnterMoveNextControl = true;
-            this.txtCashName.Location = new System.Drawing.Point(114, 88);
+            this.txtCashName.Location = new System.Drawing.Point(116, 88);
             this.txtCashName.Name = "txtCashName";
             this.txtCashName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtCashName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtCashName.Properties.MaxLength = 50;
-            this.txtCashName.Size = new System.Drawing.Size(191, 20);
+            this.txtCashName.Size = new System.Drawing.Size(189, 20);
             this.txtCashName.TabIndex = 13;
             // 
             // lblTotal
@@ -340,15 +341,11 @@
             // 
             // btnDocumentNumber
             // 
-            this.btnDocumentNumber.EnterMoveNextControl = true;
-            this.btnDocumentNumber.Location = new System.Drawing.Point(113, 37);
+            this.btnDocumentNumber.Location = new System.Drawing.Point(116, 36);
             this.btnDocumentNumber.Name = "btnDocumentNumber";
-            this.btnDocumentNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.btnDocumentNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.btnDocumentNumber.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnDocumentNumber.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnDocumentNumber.Size = new System.Drawing.Size(192, 20);
+            this.btnDocumentNumber.Size = new System.Drawing.Size(189, 20);
             this.btnDocumentNumber.TabIndex = 23;
             // 
             // CashPeriodsForm
@@ -407,6 +404,6 @@
         private UserControls.Controls.MyToggleSwitch toggleSwitchEnterTransaction;
         private DevExpress.XtraEditors.LabelControl lblExitTransaction;
         private UserControls.Controls.MyToggleSwitch toggleSwitchExitTransaction;
-        private UserControls.Controls.MyButtonEdit btnDocumentNumber;
+        private DevExpress.XtraEditors.ButtonEdit btnDocumentNumber;
     }
 }
