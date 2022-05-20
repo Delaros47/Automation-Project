@@ -25,6 +25,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<CustomerGroup> CustomerGroups { get; set; }
         public DbSet<Cash> Cashs { get; set; }
         public DbSet<CashMovement> CashMovements { get; set; }
+        public DbSet<CustomerMovement> CustomerMovements { get; set; }
 
 
 

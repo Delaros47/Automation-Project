@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutomationUI.Forms.CashForms;
 using Business.Abstract;
 using Business.DependencyResolvers.AutoFac;
 
@@ -39,6 +40,7 @@ namespace AutomationUI.Forms.CustomerForms
         {
             CustomerCardForm.CustomerId = Convert.ToInt32(gridViewCustomerLists.GetFocusedRowCellValue("Id").ToString());
             CustomerCardForm.CustomerGroupId = _customerGroupService.GetCustomerGroupId(gridViewCustomerLists.GetFocusedRowCellValue("GroupName").ToString()).Data;
+            CashReceiptsForm.CustomerID = Convert.ToInt32(gridViewCustomerLists.GetFocusedRowCellValue("Id").ToString());
             this.Close();
         }
 

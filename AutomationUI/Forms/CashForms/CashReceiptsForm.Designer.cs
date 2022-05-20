@@ -104,6 +104,7 @@
             this.btnCustomerCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnCustomerCode.Size = new System.Drawing.Size(191, 20);
             this.btnCustomerCode.TabIndex = 23;
+            this.btnCustomerCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnCustomerCode_ButtonClick);
             // 
             // btnCashCode
             // 
@@ -117,6 +118,7 @@
             this.btnCashCode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnCashCode.Size = new System.Drawing.Size(191, 20);
             this.btnCashCode.TabIndex = 22;
+            this.btnCashCode.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnCashCode_ButtonClick);
             // 
             // btnSave
             // 
@@ -128,6 +130,7 @@
             this.btnSave.Size = new System.Drawing.Size(84, 34);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
@@ -139,6 +142,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(84, 34);
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -161,6 +165,7 @@
             this.btnExit.Size = new System.Drawing.Size(84, 34);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtCustomerName
             // 

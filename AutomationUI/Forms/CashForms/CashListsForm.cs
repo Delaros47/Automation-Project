@@ -44,6 +44,7 @@ namespace AutomationUI.Forms.CashForms
         {
             CashId = Convert.ToInt32(gridViewCashLists.GetFocusedRowCellValue("Id").ToString());
             CashPeriodsForm.CashId = CashId;
+            CashReceiptsForm.CashId = CashId;
             this.Close();
         }
     }
