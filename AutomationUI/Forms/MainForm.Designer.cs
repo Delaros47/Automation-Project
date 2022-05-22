@@ -66,6 +66,7 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupDispatchNotes = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -108,7 +109,7 @@
             this.ribbonPageBanks,
             this.ribbonPageCash,
             this.ribbonPageInvoice});
-            this.ribbonControlAutomation.Size = new System.Drawing.Size(1498, 177);
+            this.ribbonControlAutomation.Size = new System.Drawing.Size(1490, 162);
             // 
             // barBtnStockCard
             // 
@@ -392,11 +393,15 @@
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
             // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "DevExpress Style";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1498, 799);
+            this.ClientSize = new System.Drawing.Size(1490, 795);
             this.Controls.Add(this.ribbonControlAutomation);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
@@ -447,5 +452,6 @@
         private DevExpress.XtraBars.BarButtonItem barBtnSaleDispatchNote;
         private DevExpress.XtraBars.BarButtonItem barBtnPurchaseDispatchNote;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupDispatchNotes;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
     }
 }
