@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
+using Business.Constants;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Universal.Utilities.Results.Abstract;
@@ -32,17 +33,20 @@ namespace Business.Concrete
 
         public IResult Add(CustomerMovement customerMovement)
         {
-            throw new NotImplementedException();
+            _customerMovementDal.Add(customerMovement);
+            return new SuccessResult(Messages.GetMessage("Customer Movement",Process.Add));
         }
 
         public IResult Update(CustomerMovement customerMovement)
         {
-            throw new NotImplementedException();
+            _customerMovementDal.Update(customerMovement);
+            return new SuccessResult(Messages.GetMessage("Customer Movement", Process.Update));
         }
 
         public IResult Delete(CustomerMovement customerMovement)
         {
-            throw new NotImplementedException();
+            _customerMovementDal.Delete(customerMovement);
+            return new SuccessResult(Messages.GetMessage("Customer Movement", Process.Delete));
         }
     }
 }
